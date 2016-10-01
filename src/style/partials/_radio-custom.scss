@@ -1,0 +1,46 @@
+.radio-custom {
+  display: none;
+  + .radio-custom-view {
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    &:before {
+      background-color: #fff;
+      border: 1px solid #82878a;
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 17px;
+      height: 17px;
+      margin-right: .5em
+    }
+    &.indented {
+      padding-left: calc(19px + .5em);
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0
+      }
+    }
+  }
+  &:checked + .radio-custom-view {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 9px;
+      height: 9px;
+      background-color: #000;
+      border-radius: 50%
+    }
+  }
+  &:disabled + .radio-custom-view:before {
+    background-color: #f2f2f2
+  }
+  &-view {
+    cursor: pointer;
+  }
+}

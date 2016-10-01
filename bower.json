@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "description": "Gulp frontend",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alex Lenk"
+  ],
+  "license": "MIT",
+  "homepage": "artlenk.ru",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.*",
+    "normalize-css": "^4.*",
+    "bootstrap": "^3.*",
+    "owlcarousel": "^1.*",
+    "font-awesome": "^4.*",
+    "isotope": "^3.0.1"
+  }
+}

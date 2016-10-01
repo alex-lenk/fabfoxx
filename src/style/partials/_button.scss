@@ -1,0 +1,24 @@
+.button {
+  border: 0;
+  background: transparent;
+  padding: 13px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: .3s ease;
+  cursor: pointer;
+  &-default {
+    background-color: #000;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &-blue {
+    color: #000;
+    &:hover {
+      background-color: #fff;
+      outline: 1px solid;
+    }
+  }
+}
