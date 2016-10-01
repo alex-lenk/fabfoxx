@@ -1,0 +1,70 @@
+.top-panel {
+  height: 107px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #000;
+  overflow: hidden;
+  .logo {
+    padding: 15px 15px 0;
+  }
+  &-info {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .top {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-end;
+      .user {
+        padding: 0 5px 5px;
+        background-color: #000;
+        li {
+          display: inline-block;
+          padding: 0 8px;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 1px;
+          @include BebasNeueBold;
+          a {
+            color: #fff;
+            &:hover {
+              opacity: .8;
+            }
+          }
+        }
+      }
+      .currency {
+        width: 54px;
+        text-align: center;
+        padding: 0;
+      }
+    }
+    .basket {
+      display: flex;
+      justify-content: flex-end;
+      .amount {
+        color: #a2a1a1;
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+      .checkout {
+        font-size: 18px;
+        letter-spacing: 5.5px;
+        @include BebasNeueBold;
+      }
+      .bag-icon {
+        height: 71px;
+        margin: 0 19px 0 26px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .count {
+        font-size: 24px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

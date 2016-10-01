@@ -12,10 +12,12 @@
 html, body {
   width: 100%;
   height: 100%;
+  @include BebasNeueRegular;
 }
 
 body {
   line-height: 1.4;
+  border: 7px solid #000;
 }
 
 a, .as-link {
