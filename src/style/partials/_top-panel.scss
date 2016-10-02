@@ -47,11 +47,6 @@
           }
         }
       }
-      .currency {
-        width: 54px;
-        text-align: center;
-        padding: 0;
-      }
     }
     .basket {
       display: flex;
@@ -77,5 +72,35 @@
         margin-right: 5px;
       }
     }
+  }
+}
+
+.currency-select {
+  margin-left: 10px;
+  .jq-selectbox {
+    &__select {
+      height: auto;
+      padding: 2px 16px 0 5px;
+      border: 0;
+      background-color: transparent;
+      &-text {
+        font-size: 14px;
+        @include BebasNeueBold;
+      }
+    }
+    &__trigger {
+      border-left: 0;
+      &-arrow {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        border-top: 6px solid #000;
+        border-right-width: 4px;
+        border-left-width: 4px;
+      }
+    }
+  }
+  &.jq-selectbox.focused .jq-selectbox__select {
+    outline: 0;
   }
 }
