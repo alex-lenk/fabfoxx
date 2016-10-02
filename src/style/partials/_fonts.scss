@@ -1,17 +1,3 @@
-@mixin BebasNeueRegular {
-  font-family: 'BebasNeueRegular', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@mixin BebasNeueBold {
-  font-family: 'BebasNeueBold', sans-serif;
-}
-
-@mixin MinionProRegular {
-  font-family: 'MinionPro-Regular', sans-serif;
-}
-
 @font-face {
   font-family: 'BebasNeueRegular';
   src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype'), url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
@@ -33,4 +19,3 @@
   font-weight: normal;
   font-style: normal;
 }
-

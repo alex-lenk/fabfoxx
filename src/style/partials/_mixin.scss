@@ -1,3 +1,17 @@
+@mixin BebasNeueRegular {
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin BebasNeueBold {
+  font-family: 'BebasNeueBold', sans-serif;
+}
+
+@mixin MinionProRegular {
+  font-family: 'MinionPro-Regular', sans-serif;
+}
+
 @function calculateRem($size) {
   $remSize: $size / 13px;
   @return $remSize * 1rem;
@@ -19,15 +33,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-//@include show-display;
-@mixin show-display() {
-  position: inherit;
-  overflow: inherit;
-  height: inherit;
-  width: inherit;
+@mixin visible-display() {
   opacity: 1;
-  transition: all 0.3s ease-in-out;
-  content: counter();
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 //Очиститель потоков

@@ -1,18 +1,32 @@
 .top-panel {
   height: 107px;
   padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  border-bottom: 3px solid;
+  border-top: 7px solid;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  border-bottom: 3px solid #000;
-  overflow: hidden;
   .logo {
-    padding: 15px 15px 0;
+    padding-top: 15px;
+    transition: .4s ease-in-out;
+    &:hover {
+      opacity: .9;
+    }
   }
   &-info {
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
+    }
+    a {
+      transition: .3s ease-in-out;
+      &:hover {
+        opacity: .8;
+      }
     }
     .top {
       margin-bottom: 20px;
@@ -30,9 +44,6 @@
           @include BebasNeueBold;
           a {
             color: #fff;
-            &:hover {
-              opacity: .8;
-            }
           }
         }
       }
