@@ -1,157 +1,24 @@
 //= templates/head.html
 
-<header class="top-panel">
-    <div class="logo">
-        <a href="#"><img src="img/logo.png" alt=""></a>
+//= templates/top-panel.html
+
+<form action="#" class="searching-area">
+    <div class="wrap">
+        <input type="search" placeholder="Type what you are looking for" class="searching-area-input">
     </div>
-    <div class="top-panel-info">
-        <div class="top">
-            <ul class="user">
-                <li><a href="#">REGISTER</a></li>
-                <li><a href="#">SIGN IN</a></li>
-            </ul>
-            <select class="currency-select">
-                <option value="usd">$ usd</option>
-                <option value="eur">€ eur</option>
-            </select>
+    <div class="searching-area-close">
+        <svg class="icon-cross" viewBox="0 0 91.89 94.03">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use>
+        </svg>
+    </div>
+
+    <div class="search-results">
+        <div class="wrap">
+            search-results
         </div>
-        <ul class="basket">
-            <li>
-                <div class="amount">5 item(s) - $530.00</div>
-                <a href="#" class="checkout">CHECKOUT</a>
-            </li>
-            <li>
-                <svg class="bag-icon" viewBox="0 0 60.4 92">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bag-icon"></use>
-                </svg>
-                <span class="count">5</span>
-            </li>
-        </ul>
+        <div class="blur"></div>
     </div>
-</header>
+</form>
 
-<nav class="nav-area">
-    <ul class="main-menu">
-        <li><a href="#">MAIN</a></li>
-        <li><a href="#">What’s new</a></li>
-        <li class="parent">
-            <a href="#">clothes</a>
-            <ul class="child">
-                <li>
-                    <a href="#">Hoodies/Sweaters</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-2.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Dresses</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jeans</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-3.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jumpsuits / Playsuits</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li><a href="#">Jackets / Coats</a></li>
-                <li><a href="#">Cardigans</a></li>
-                <li><a href="#">Sets</a></li>
-                <li><a href="#">Skirts</a></li>
-                <li><a href="#">Shorts</a></li>
-                <li><a href="#">Swimwear / Beachwear</a></li>
-                <li><a href="#">Tees / Jersey Tops</a></li>
-                <li><a href="#">Tops/Shirts</a></li>
-                <li><a href="#">Trousers / Leggings</a></li>
-            </ul>
-        </li>
-        <li class="parent">
-            <a href="#">Swimwear</a>
-            <ul class="child">
-                <li>
-                    <a href="#">Hoodies/Sweaters</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-2.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Dresses</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jeans</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-3.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jumpsuits / Playsuits</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li><a href="#">Jackets / Coats</a></li>
-                <li><a href="#">Cardigans</a></li>
-                <li><a href="#">Sets</a></li>
-                <li><a href="#">Skirts</a></li>
-                <li><a href="#">Shorts</a></li>
-                <li><a href="#">Swimwear / Beachwear</a></li>
-                <li><a href="#">Tees / Jersey Tops</a></li>
-                <li><a href="#">Tops/Shirts</a></li>
-                <li><a href="#">Trousers / Leggings</a></li>
-            </ul>
-        </li>
-        <li class="parent">
-            <a href="#">Accessories</a>
-            <ul class="child">
-                <li>
-                    <a href="#">Hoodies/Sweaters</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-2.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Dresses</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jeans</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu-3.jpg" alt="">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Jumpsuits / Playsuits</a>
-                    <div class="category-img">
-                        <img src="img/example/img-menu.jpg" alt="">
-                    </div>
-                </li>
-                <li><a href="#">Jackets / Coats</a></li>
-                <li><a href="#">Cardigans</a></li>
-                <li><a href="#">Sets</a></li>
-                <li><a href="#">Skirts</a></li>
-                <li><a href="#">Shorts</a></li>
-                <li><a href="#">Swimwear / Beachwear</a></li>
-                <li><a href="#">Tees / Jersey Tops</a></li>
-                <li><a href="#">Tops/Shirts</a></li>
-                <li><a href="#">Trousers / Leggings</a></li>
-            </ul>
-        </li>
-        <li class="sale"><a href="#">SALE</a></li>
-        <li><a href="#">GIFT</a></li>
-        <li class="search"><a href="#">SERCH</a></li>
-    </ul>
-</nav>
-
+//= templates/nav-area.html
 //= templates/footer.html

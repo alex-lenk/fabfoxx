@@ -1,39 +1,39 @@
-::-webkit-input-placeholder {
+.hide-placeholder::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-::-moz-placeholder {
+.hide-placeholder::-moz-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-:-moz-placeholder {
+.hide-placeholder:-moz-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-:-ms-input-placeholder {
+.hide-placeholder:-ms-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-:focus::-webkit-input-placeholder {
+.hide-placeholder:focus::-webkit-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-:focus::-moz-placeholder {
+.hide-placeholder:focus::-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-:focus:-moz-placeholder {
+.hide-placeholder:focus:-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-:focus:-ms-input-placeholder {
+.hide-placeholder:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
