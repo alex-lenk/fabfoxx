@@ -11,10 +11,12 @@ $(document).ready(function () {
 
     $('.nav-area-search,.searching-area-close').on('click', function () {
         $('.searching-area,.searching-area-input').toggleClass("searching-open").focus();
-            $('.nav-area-search').toggleClass("active");
+        $('.nav-area-search').toggleClass("active");
+        $('.nav-area-search').removeClass("search-results-show");
+
     });
 
-    $('.searching-area-input').keyup(function(){
+    $('.searching-area-input').keyup(function () {
         $('.search-results').addClass('search-results-show');
     });
 });
