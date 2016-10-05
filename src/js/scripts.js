@@ -44,4 +44,16 @@ $(document).ready(function () {
         $('.main-catalog-image').toggleClass("main-catalog-image-zoom");
     });
 
+    // owl-carousel - initializing plugin owlCarousel
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 10,
+        margin: 12,
+        nav: true,
+        pagination: false,
+        navContainerClass: "slider-loop-nav",
+        navText: ['<svg class="left-arrow" viewBox="0 0 46.02 92.06"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#left-arrow"></use></svg>',
+            '<svg class="right-arrow" viewBox="0 0 45.98 91.99"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow"></use></svg>']
+    })
+
 });

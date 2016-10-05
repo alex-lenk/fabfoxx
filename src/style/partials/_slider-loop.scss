@@ -21,25 +21,32 @@
     }
   }
   &-nav {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    margin-top: -20px;
-    display: flex;
-    justify-content: space-between;
     div {
       width: 20px;
       height: 20px;
       background-color: #000;
       cursor: pointer;
       text-align: center;
+      transition: .4s ease-in-out;
+      position: absolute;
+      bottom: 0;
       &:hover {
-        opacity: .9;
+        background-color: #efefef;
+        svg {
+          fill: #000;
+        }
       }
+    }
+    .owl-prev {
+      left: 7px;
+    }
+    .owl-next {
+      right: 0;
     }
     svg {
       fill: #fff;
       width: 5px;
+      transition: .4s ease-in-out;
     }
   }
   .center {

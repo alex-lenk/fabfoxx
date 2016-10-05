@@ -1,0 +1,52 @@
+.recently-viewed {
+  margin-bottom: 50px;
+  &-title {
+    margin: 0;
+    padding: 95px 0 30px;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    @include MinionProRegular;
+    span {
+      padding: 0 15px;
+    }
+    &:before, &:after {
+      width: 165px;
+      height: 1px;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #000;
+      content: '';
+    }
+    &:before {
+
+    }
+    &:after {
+
+    }
+  }
+  .owl-carousel {
+    img {
+      border: 1px solid #ededed;
+      transition: .4s ease-in-out;
+      &:hover {
+        border-color: #000;
+      }
+    }
+    .slider-loop-nav {
+      div {
+        bottom: 50%;
+        margin-bottom: -14px;
+      }
+      .owl-prev {
+        left: -49px;
+      }
+      .owl-next {
+        right: -53px;
+      }
+    }
+  }
+}
