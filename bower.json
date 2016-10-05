@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.*",
+    "jquery": "^2.*",
     "normalize-css": "^4.*",
     "bootstrap": "^3.*",
     "owlcarousel": "^1.*",

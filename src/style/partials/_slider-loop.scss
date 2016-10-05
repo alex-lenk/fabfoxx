@@ -1,0 +1,60 @@
+.slider-loop {
+  &-title {
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 50px;
+    color: #efefef;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+    @include MinionProRegular;
+    span {
+      font-size: 36px;
+      display: block;
+    }
+  }
+  &-nav {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+      cursor: pointer;
+      text-align: center;
+      &:hover {
+        opacity: .9;
+      }
+    }
+    svg {
+      fill: #fff;
+      width: 5px;
+    }
+  }
+  .center {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    transition: .4s ease-in-out;
+    &:hover {
+      .slider-loop-title {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .item {
+    height: 573px;
+    padding: 0;
+  }
+}
