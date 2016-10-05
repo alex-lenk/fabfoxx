@@ -35,4 +35,13 @@ $(document).ready(function () {
     $('.search-area-input').keyup(function () {
         $('.search-results').addClass('search-results-show');
     });
+
+    $("body").mCustomScrollbar({
+        theme: 'minimal'
+    });
+
+    $(".catalog-show-more").hover(function () {
+        $('.main-catalog-image').toggleClass("main-catalog-image-zoom");
+    });
+
 });

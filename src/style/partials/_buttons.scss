@@ -1,0 +1,23 @@
+.button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  &-default {
+    font-size: 13px;
+    background-color: #fff;
+    @include BebasNeueRegular;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &-black {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    @include MinionProRegular;
+  }
+}

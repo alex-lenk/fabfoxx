@@ -1,7 +1,5 @@
 @mixin BebasNeueRegular {
   font-family: 'BebasNeueRegular', sans-serif;
-  font-weight: normal;
-  font-style: normal;
 }
 
 @mixin BebasNeueBold {
@@ -12,8 +10,6 @@
 @mixin MinionProRegular {
   font-family: 'MinionPro-Regular', sans-serif;
 }
-
-$RobotoCondensed: 'Roboto Condensed', sans-serif;
 
 @function calculateRem($size) {
   $remSize: $size / 13px;
