@@ -1,6 +1,6 @@
 .top-panel {
   height: 115px;
-  padding: 0 15px;
+  padding: 0 20px;
   overflow: hidden;
   position: relative;
   z-index: 10;
@@ -49,20 +49,13 @@
       }
     }
   }
+  .basket-count {
+    padding-right: 10px;
+  }
   .favorite {
     padding: 0 5px 6px 0;
-    position: absolute;
-    top: 43px;
-    left: 376px;
-    cursor: pointer;
-    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .03);
-    transition: .4s ease-in-out;
-    svg {
-      width: 20px;
-    }
-    &:hover {
-      opacity: .9;
-    }
+    top: 44px;
+    left: 381px;
   }
 }
 
@@ -70,6 +63,7 @@
   display: flex;
   justify-content: flex-end;
   .amount {
+    margin: 3px 0 1px;
     color: #a2a1a1;
     font-size: 13px;
     letter-spacing: 1px;
@@ -81,17 +75,10 @@
   }
   .bag-icon {
     height: 71px;
-    margin: 0 19px 0 26px;
+    margin: 0 17px 0 25px;
     display: inline-block;
     vertical-align: middle;
   }
-}
-
-.basket-count[data-count]:not([data-count='']):after {
-  content: attr(data-count);
-  margin-right: 5px;
-  font-size: 24px;
-  display: inline;
 }
 
 .currency-select {
@@ -103,6 +90,7 @@
       border: 0;
       background-color: transparent;
       &-text {
+        width: 28px !important;
         font-size: 14px;
         @include BebasNeueBold;
       }

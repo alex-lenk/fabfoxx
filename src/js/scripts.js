@@ -29,7 +29,6 @@ $(document).ready(function () {
         $('.search-area,.search-area-input').toggleClass("search-area-open").focus();
         $('.nav-area-search').toggleClass("active");
         $('.nav-area-search').removeClass("search-results-show");
-
     });
 
     $('.search-area-input').keyup(function () {
@@ -93,4 +92,10 @@ $(document).ready(function () {
             }
         })
     });
+
+    // Different events
+    $('.social-share').on('click', function () {
+        $('.nav-second').toggleClass("share-open");
+    });
+
 });

@@ -1,0 +1,113 @@
+.nav-second {
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:hover {
+    .nav-second-menu {
+      a {
+        color: #070708;
+      }
+      li:not(:last-of-type):after {
+        border-right-color: #070708;
+        content: '';
+      }
+    }
+  }
+  &-menu {
+    height: 100%;
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+    font-size: 15px;
+    z-index: 4;
+    position: relative;
+    @include BebasNeueBook;
+    li {
+      line-height: 34px;
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: 1px;
+      position: relative;
+      &:not(:last-of-type) {
+        margin-right: 10px;
+        &:after {
+          margin-left: 10px;
+          display: inline-block;
+          height: 11px;
+          border-right: 1px solid #dcdbdb;
+          transition: .4s ease-in-out;
+          content: '';
+        }
+      }
+    }
+    a {
+      color: #dcdbdb;
+      transition: .4s ease-in-out;
+    }
+  }
+  .social {
+    padding-right: 15px;
+    z-index: 6;
+    position: relative;
+    li {
+      height: 100%;
+      line-height: 33px;
+      transition: .4s ease-in-out;
+      &:not(.social-share) {
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+    svg {
+      width: 13px;
+      &.g-plus {
+        width: 16px;
+      }
+      &.pinterest {
+        width: 11px;
+      }
+      &.twitter {
+        width: 14px;
+      }
+      &.facebook {
+        width: 11px;
+      }
+    }
+    .text {
+      font-size: 11px;
+      color: #838383;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .social-share svg {
+      fill: #000;
+    }
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #000;
+    content: '';
+    z-index: 5;
+    transition: .4s ease-in-out;
+  }
+  &.share-open {
+    &:after {
+      width: 100%;
+    }
+    .social li:not(.social-share) {
+      visibility: visible;
+      opacity: 1;
+    }
+    .social-share svg {
+      fill: #838383;
+    }
+  }
+}

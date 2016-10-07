@@ -25,7 +25,7 @@
     font-size: 15px;
     @include MinionProRegular;
     & > li {
-      margin: 0 15px;
+      margin: 0 12px;
       display: inline-block;
       vertical-align: top;
       text-align: left;
@@ -60,11 +60,13 @@
         }
         .child {
           @include visible-display;
+          width: 213px;
         }
       }
     }
   }
   .child {
+    padding: 0 0 26px;
     top: 41px;
     left: 0;
     padding-top: 26px;
@@ -133,12 +135,8 @@
   }
 
   .favorite {
-    position: absolute;
     top: 10px;
-    left: 77px;
-    svg {
-      width: 13px;
-    }
+    left: 72px;
   }
 
   .info-panel {

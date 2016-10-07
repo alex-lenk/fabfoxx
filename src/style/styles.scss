@@ -16,44 +16,120 @@
 @import "partials/main-catalog";
 @import "partials/recently-viewed";
 @import "partials/footer";
+@import "partials/nav-second";
+@import "partials/filter";
 
-.social {
+.header-page {
+  position: relative;
+  background: url("../img/example/bg-header.jpg") no-repeat center;
+  .container {
+    height: 313px;
+  }
+  .title {
+    max-width: 310px;
+    top: 60px;
+    margin: 0;
+    line-height: 1;
+    padding: 13px 0 5px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: normal;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    @include MinionProRegular;
+    &:after {
+      height: 100%;
+      width: 2000px;
+      left: -2000px;
+      top: 0;
+      position: absolute;
+      background-color: #000;
+      content: '';
+    }
+  }
+  .list-sections {
+    width: 228px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 21px;
+    right: 7px;
+    li {
+      margin-bottom: 1px;
+    }
+    a {
+      padding: 3px 0 2px 4px;
+      letter-spacing: .8px;
+      display: block;
+      color: #fff;
+      background-color: #000;
+      text-transform: uppercase;
+      font-size: 14px;
+      @include BebasNeueRegular;
+    }
+  }
+}
+
+.catalog {
   margin: 0;
   padding: 0;
   list-style: none;
-  li {
-    display: inline-block;
-    vertical-align: top;
-    &:not(:last-child) {
-      margin-right: 30px;
+  &-item {
+    max-width: 265px;
+    text-align: center;
+    position: relative;
+    &-img {
+      border: 1px solid #ededed;
+      transition: .4s ease-in-out;
+      position: relative;
+      display: block;
+      .quick-view {
+        width: 100%;
+        height: 0;
+        padding: 13px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, .4);
+        transition: .4s ease-in-out;
+        letter-spacing: 1.4px;
+        visibility: hidden;
+        opacity: 0;
+        @include BebasNeueRegular;
+      }
     }
-  }
-  svg {
-    width: 18px;
-    height: 18px;
-    fill: #fff;
-    transition: .3s ease;
-  }
-  .fb svg {
-    width: 15px;
-    height: 18px;
-  }
-  .yt {
-    svg {
-      width: 18px;
-      height: 21px;
+    &-info {
+      font-size: 14px;
+      color: #a7a7a7;
+      font-weight: 400;
+      display: block;
+      padding: 9px 0 0;
+      letter-spacing: .5px;
+      transition: .4s ease-in-out;
+      font-family: $RobotoCondensed;
     }
-  }
-  .tumblr {
-    svg {
-      width: 14px;
-      height: 20px;
+    &:hover {
+      .catalog-item-img {
+        border-color: #000;
+      }
+      .quick-view {
+        height: 47px;
+        visibility: visible;
+        opacity: 1;
+      }
+      .catalog-item-info {
+        color: #000;
+      }
     }
-  }
-  .gp {
-    svg {
-      width: 21px;
-      height: 21px;
+    .favorite {
+      top: 15px;
+      left: auto;
+      right: -11px;
+      background-color: #fff;
     }
   }
 }

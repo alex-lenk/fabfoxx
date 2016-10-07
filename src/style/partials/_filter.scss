@@ -1,0 +1,95 @@
+.filter {
+  &-group {
+    padding: 30px 1px 0 24px;
+    width: 310px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 9px 9px 0 0 rgba(0, 0, 0, .04);
+  }
+  &-default {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  &-heading {
+    height: 18px;
+    font-size: 25px;
+    line-height: 1;
+    background-color: #efefef;
+    cursor: pointer;
+    position: relative;
+    @include BebasNeueBook;
+    span {
+      top: -3px;
+      position: relative;
+      padding-right: 5px;
+      background-color: #fff;
+    }
+    svg {
+      position: absolute;
+      top: 7px;
+      right: 9px;
+      width: 9px;
+      fill: #6a6a6a;
+    }
+    .icon-down {
+      visibility: hidden;
+    }
+    &.collapsed {
+      .icon-up {
+        visibility: hidden;
+      }
+      .icon-down {
+        visibility: visible;
+      }
+    }
+  }
+  &-body {
+    padding-bottom: 42px;
+    position: relative;
+  }
+  ul {
+    margin: 0;
+    padding: 20px 0 0;
+    list-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: $RobotoCondensed;
+    li {
+      width: 140px;
+      margin-bottom: 14px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  a {
+    color: #979797;
+    transition: .4s ease-in-out;
+    &:hover {
+      color: #000;
+    }
+  }
+  .show-more {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -10px;
+    text-align: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    svg {
+      width: 10px;
+      fill: #fff;
+      vertical-align: middle;
+      transition: .4s ease-in-out;
+    }
+    &:hover {
+      background-color: #efefef;
+      svg {
+        fill: #000;
+      }
+    }
+  }
+}
