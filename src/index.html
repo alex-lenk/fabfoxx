@@ -1,21 +1,260 @@
-//= templates/head.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body>
+<!-- часть SVG поместил сюда, чтобы возможно было использовать в коде css-стайлинг иконок -->
+<svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
 
-//= templates/top-panel.html
+    <g id="basket" data-name="basket">
+        <path class="basket" fill-rule="evenodd" clip-rule="evenodd" d="M93.14,35.2A4.92,4.92,0,0,0,91.78,35L91.5,35h-19V27a22.5,22.5,0,0,0-45,0v8H8.5a3.48,3.48,0,0,0-2.67,5.74L19.32,91.06A3.49,3.49,0,0,0,22.5,96h54a3.48,3.48,0,0,0,.8-0.1c1.71,0.29,3.27-.34,3.59-1.53l15-55.9C96.27,37.16,95,35.7,93.14,35.2ZM35,27a15,15,0,0,1,30,0v8H35V27ZM75,89H26L13.42,42H28v6.5a3.5,3.5,0,0,0,7,0V42H65v6.5a3.5,3.5,0,0,0,7,0V42H87.65Z" transform="translate(-5 -5)"></path>
+    </g>
 
-//= templates/search-area.html
+    <g id="profile" data-name="profile">
+        <path class="profile" fill-rule="evenodd" clip-rule="evenodd" d="M65.63 63.92a21.77 21.77 0 0 0 6.87-15.85V37a22.5 22.5 0 0 0-45 0v11a21.77 21.77 0 0 0 6.87 15.85C17.22 66.54 5 73.32 5 81.23V85q3.65-1.26 7.5-2.32v-1.45c0-.86 2.16-3.62 8.58-6.26 7.5-3.08 18-4.85 28.92-4.85S71.41 71.89 78.91 75c6.42 2.65 8.59 5.42 8.59 6.28v.37c2.57.63 5.06 1.33 7.5 2.09v-2.48c0-7.91-12.22-14.71-29.37-17.34zM65 48.07a15 15 0 0 1-30 0V37a15 15 0 0 1 30 0v11z" transform="translate(-5 -15)" ></path>
+    </g>
 
-//= templates/nav-area.html
+    <g id="subscribe-post" data-name="subscribe-post">
+        <path class="subscribe-post" fill-rule="evenodd" clip-rule="evenodd"
+              d="M50.72,80.69C57.16,80.69,62.39,75,62.39,68S57.16,55.28,50.72,55.28,39,61,39,68,44.27,80.69,50.72,80.69ZM78,41c0.23-1.83,4.3-37-28.54-37-31.93,0-29,33.41-28.57,37H8V95H91V41H78ZM49.5,9.78C77.07,9.78,73.05,39.15,72.78,41H26.12C25.7,38,22.46,9.78,49.5,9.78ZM85.81,89.49H13.19V46.66H85.81V89.49Z"
+              transform="translate(-8 -4)"></path>
+    </g>
 
-//= templates/slider-loop.html
+    <g id="next-player-select" data-name="next-player-select">
+        <path class="next-player-select" fill-rule="evenodd" clip-rule="evenodd" d="M93.63,47.45L51.85,22.19a2.77,2.77,0,0,0-2.83,0,2.86,2.86,0,0,0-1.42,2.48V44.57L9.24,21.38a2.77,2.77,0,0,0-2.83,0A2.86,2.86,0,0,0,5,23.83v50.5a2.86,2.86,0,0,0,1.42,2.48,2.77,2.77,0,0,0,2.83,0L47.6,53.6V75.15A2.86,2.86,0,0,0,49,77.63a2.77,2.77,0,0,0,2.83,0L93.63,52.34A2.87,2.87,0,0,0,93.63,47.45Z" transform="translate(-4.98 -20.98)"></path>
+    </g>
 
-<div class="container">
+    <g id="next-player" data-name="next-player">
+        <path class="next-player" fill-rule="evenodd" clip-rule="evenodd" d="M93.63,47.45L51.85,22.19a2.77,2.77,0,0,0-2.83,0,2.86,2.86,0,0,0-1.42,2.48V44.57L9.24,21.38a2.77,2.77,0,0,0-2.83,0A2.86,2.86,0,0,0,5,23.83v50.5a2.86,2.86,0,0,0,1.42,2.48,2.77,2.77,0,0,0,2.83,0L47.6,53.6V75.15A2.86,2.86,0,0,0,49,77.63a2.77,2.77,0,0,0,2.83,0L93.63,52.34A2.87,2.87,0,0,0,93.63,47.45Zm-83,21.87V28.85L44.08,49.08Zm42.62,0.81V29.66L86.7,49.89Z" transform="translate(-4.98 -20.98)"></path>
+    </g>
 
-    //= templates/delivery-panel.html
+    <g id="back-player-select" data-name="back-player-select">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M93.56,22.19a2.77,2.77,0,0,0-2.83,0L52.39,45.4V23.85A2.86,2.86,0,0,0,51,21.37a2.77,2.77,0,0,0-2.83,0L6.37,46.66a2.87,2.87,0,0,0,0,4.9L48.13,76.81a2.77,2.77,0,0,0,2.83,0,2.86,2.86,0,0,0,1.42-2.48V54.43L90.73,77.62a2.77,2.77,0,0,0,2.83,0A2.86,2.86,0,0,0,95,75.17V24.67A2.86,2.86,0,0,0,93.56,22.19Z" transform="translate(-4.99 -21)"></path>
+    </g>
 
-    //= templates/main-catalog.html
+    <g id="back-player" data-name="back-player">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M93.56,22.19a2.77,2.77,0,0,0-2.83,0L52.39,45.4V23.85A2.86,2.86,0,0,0,51,21.37a2.77,2.77,0,0,0-2.83,0L6.37,46.66a2.87,2.87,0,0,0,0,4.9L48.13,76.81a2.77,2.77,0,0,0,2.83,0,2.86,2.86,0,0,0,1.42-2.48V54.43L90.73,77.62a2.77,2.77,0,0,0,2.83,0A2.86,2.86,0,0,0,95,75.17V24.67A2.86,2.86,0,0,0,93.56,22.19ZM46.76,69.34L13.3,49.11,46.76,28.87V69.34Zm42.6,0.81L55.9,49.92,89.36,29.69V70.15Z" transform="translate(-4.99 -21)"></path>
+    </g>
 
-    //= templates/recently-viewed.html
+    <g id="pause-player" data-name="pause-player">
+        <path class="pause-player" fill-rule="evenodd" clip-rule="evenodd" d="M12,92H42V8H12V92ZM58,8V92H88V8H58Z" transform="translate(-12 -8)"></path>
+    </g>
+
+    <g id="play-player-bottom" data-name="play-player-bottom" fill-rule="evenodd" clip-rule="evenodd">
+        <polygon points="0 0 0 84.95 75 42.47 0 0"></polygon>
+    </g>
+
+    <g id="play-player" data-name="play-player">
+       <path class="play-player" fill-rule="evenodd" clip-rule="evenodd" d="M83.66,47.61L18.17,5.42a2.65,2.65,0,0,0-2.77-.07A2.83,2.83,0,0,0,14,7.81V92.19a2.83,2.83,0,0,0,1.41,2.46,2.68,2.68,0,0,0,1.32.35,2.65,2.65,0,0,0,1.45-.43L83.66,52.38A2.86,2.86,0,0,0,83.66,47.61Zm-64.2,39.5V12.88L77.06,50Z" transform="translate(-14 -5)"></path>
+    </g>
+
+    <g id="play-player-select" data-name="play-player-select">
+        <path class="play-player-select" fill-rule="evenodd" clip-rule="evenodd" d="M83.66,47.61L18.17,5.42a2.65,2.65,0,0,0-2.77-.07A2.83,2.83,0,0,0,14,7.81V92.19a2.83,2.83,0,0,0,1.41,2.46,2.68,2.68,0,0,0,1.32.35,2.65,2.65,0,0,0,1.45-.43L83.66,52.38A2.86,2.86,0,0,0,83.66,47.61Z" transform="translate(-14 -5)"></path>
+    </g>
+
+    <g id="reply" data-name="reply">
+    <path class="reply" fill-rule="evenodd" clip-rule="evenodd"
+          d="M58.18,40.91H18.91L38,21.83A4.1,4.1,0,0,0,32.19,16L6.12,42.11a4.1,4.1,0,0,0,0,5.79L32.19,74A4.1,4.1,0,1,0,38,68.18L18.91,49.11H58.18A28.68,28.68,0,0,1,86.85,77.78v4.1a4.1,4.1,0,0,0,8.19,0v-4.1A36.87,36.87,0,0,0,58.18,40.91Z"
+          transform="translate(-4.92 -14.84)"></path>
+    </g>
+
+        <g id="burger-menu" data-name="burger-menu">
+            <path class="burger-menu" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.5,27.14h81a4.57,4.57,0,0,0,0-9.14H9.5A4.57,4.57,0,0,0,9.5,27.14Zm81,18.29H9.5a4.57,4.57,0,0,0,0,9.14h81A4.57,4.57,0,0,0,90.5,45.43Zm0,27.43H9.5A4.57,4.57,0,0,0,9.5,82h81A4.57,4.57,0,0,0,90.5,72.85Z"
+                  transform="translate(-5 -18)"></path>
+    </g>
+
+    <g id="letter-email" class="cls-1"><g id="letter-email-2" data-name="letter-email"><path class="letter-email" fill-rule="evenodd" clip-rule="evenodd" d="M94.76,18H5.32L50,55.54ZM65.11,46.46L95,82V21.22ZM50,59.21L36.93,48.49,8.44,82.06H91.64l-28.5-33.9ZM5,21.22V82L34.85,46.46Z" transform="translate(-4.98 -18.01)"></path></g></g>
+
+    <g id="twitter" class="cls-1"><g id="twitter-2" data-name="twitter"><path class="twitter" fill-rule="evenodd" clip-rule="evenodd" d="M95,22.72a33.19,33.19,0,0,1-10.4,2.92c2.75-1.47,6.81-6.26,7.81-10.07-2.64,1.67-8.71,4.1-11.7,4.1h0A18.8,18.8,0,0,0,48.38,32.48a18.38,18.38,0,0,0,.47,4.14h0c-14.05-.37-29.42-7.33-38.67-19.24-5.69,9.73-.77,20.56,5.69,24.5-2.21.16-6.28-.25-8.19-2.1-0.13,6.46,3,15,14.47,18.12-2.21,1.17-6.11.84-7.81,0.59,0.6,5.45,8.32,12.58,16.77,12.58-3,3.44-14.34,9.68-27.05,7.7A56.85,56.85,0,0,0,33.4,87c30.26,0,53.77-24.24,52.5-54.14,0,0,0-.07,0-0.1s0-.15,0-0.23,0-.18,0-0.27A32.16,32.16,0,0,0,95,22.72Z" transform="translate(-4.06 -13.94)"></path></g></g>
+
+    <g id="facebook" class="cls-1"><g id="facebook-2" data-name="facebook"><path class="facebook" fill-rule="evenodd" clip-rule="evenodd" d="M86,5H13.94A9.84,9.84,0,0,0,4,14.72v70.5a9.84,9.84,0,0,0,9.94,9.72H48.52V58.21H40.29V44.9h8.24V36.23c0-11.35,4.82-18.1,18.5-18.1H78.58V31.28H70.43c-5.33,0-5.68,1.95-5.68,5.58l0,8h13.8L78.39,58.21H65V94.95H86A9.84,9.84,0,0,0,96,85.22V14.72A9.84,9.84,0,0,0,86,5Z" transform="translate(-4 -5)"></path></g></g>
+
+    <g id="pinterest" class="cls-1"><g id="pinterest-2" data-name="pinterest"><path class="pinterest" fill-rule="evenodd" clip-rule="evenodd" d="M49.51,3.92C24.94,3.92,5,24.31,5,49.46A45.6,45.6,0,0,0,31.89,91.29a41.42,41.42,0,0,1,.78-10.39c0.86-3.7,5.75-24.9,5.75-24.9A17.9,17.9,0,0,1,37,48.76c0-6.77,3.84-11.83,8.61-11.83,4.06,0,6,3.13,6,6.87C51.63,48,49,54.23,47.69,60a7,7,0,0,0,7.05,8.8c8.45,0,14.15-11.12,14.15-24.3,0-10-6.58-17.51-18.57-17.51-13.54,0-22,10.34-22,21.89a13.36,13.36,0,0,0,3,9,2.25,2.25,0,0,1,.64,2.55c-0.22.84-.7,2.86-0.9,3.67a1.53,1.53,0,0,1-2.24,1.13c-6.23-2.6-9.15-9.59-9.15-17.45,0-13,10.7-28.55,31.91-28.55,17.05,0,28.27,12.63,28.27,26.17,0,17.94-9.74,31.32-24.09,31.32-4.82,0-9.36-2.67-10.91-5.69,0,0-2.6,10.52-3.14,12.56a38.76,38.76,0,0,1-4.42,9.67A43.56,43.56,0,0,0,49.51,95C74.08,95,94,74.61,94,49.46S74.08,3.92,49.51,3.92Z" transform="translate(-5.02 -3.92)"></path></g></g>
+
+    <g id="g-plus" data-name="g-plus" class="cls-1"><g id="G_2" data-name="g-plus"><path class="g-plus" fill-rule="evenodd" clip-rule="evenodd" d="M66.35,43.72V43.61H36.61V55.93H54.07c-2.17,9.2-9.19,12.69-17.7,12.69-10.26,0-18.53-8.39-18.51-19.09A19,19,0,0,1,36.61,30.32,19.81,19.81,0,0,1,49,35.15l8.86-8.94c-5.48-5-11.35-8-21.24-8.22C19.49,17.67,5,32.33,5,49.71s14.22,31,31.19,31.35c19,0.36,30.93-13,30.89-30.93a36.93,36.93,0,0,0-.61-6.4H66.35Zm21.22-.1V36.24h-8v7.38H72v8h7.52v7.48h8V51.59H95v-8H87.57Z" transform="translate(-5 -17.99)"></path></g></g>
+
+    <g id="tumbler" class="cls-1"><g id="tumbler-2" data-name="tumbler"><path class="tumbler" fill-rule="evenodd" clip-rule="evenodd" d="M83.52,6.07h-67A11.37,11.37,0,0,0,5,17.31V82.78A11.37,11.37,0,0,0,16.53,94h67A11.37,11.37,0,0,0,95,82.78V17.31A11.37,11.37,0,0,0,83.52,6.07ZM69.29,76.76a22.29,22.29,0,0,1-12.22,3.35H56.66a13.6,13.6,0,0,1-2.32.15c-8.8-.37-15.67-5-15.67-13.42,0,0,0,0,0-.07h0V44.43H30.33V35.58h0.1A19,19,0,0,0,43.37,19.11l0.19-.06v0.23h8.91V32.91H66.85V44.43H52.47v9.09l0.14,11.57v0.14c0.27,3,3.44,5,6.9,5.06A32.37,32.37,0,0,0,63.25,70a16.78,16.78,0,0,0,4.46-1.69,11.24,11.24,0,0,0,1.58-1.12v9.57Z" transform="translate(-5.03 -6.07)"></path></g></g>
+
+    <g id="bag-icon" class="bag-icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.56,26.9c0.35-4.37.35-8.08,1-11.92,0.81-4.59,3.88-7.32,7.72-7.69,5.36-.51,9.12,2.82,9.75,8.93,0.31,3,.21,6,0.28,9,0,1.4,0,2.81,0,4.3l12.53,1.83c0.28,12.38.78,24.63,1.05,36.88a0.36,0.36,0,0,0,0-.13c0.36-10,.83-20,1.17-30,0.11-3.37.05-5.61,0.27-6.93,0,0,3.2-.65,6.38-1.5s6.48-1.78,9.72-2.65a2,2,0,0,1,.91-0.12c0,0.73,0,2,0,2.86,0,18.75,0,37.51,0,56.26,0,2.51,0,2.51-2.43,3.79-4.4,2.31-9,4.26-13.45,6.42-2.14,1-1.61,1-4,.28-12.69-3.71-25.38-7.4-38-11.31-3-.93-2.49-0.87-2.41-3.35,0.57-17.77.35-37.48,0-55.26,0-2-.55-1.73,1.94-1.13C24,25.89,27.63,26.67,29.56,26.9Zm3.59-2.39a22.34,22.34,0,0,0,0,2.92C37.32,28,40.72,28.51,45,29.1a116.9,116.9,0,0,0-.7-14.35,4.52,4.52,0,0,0-4.63-4c-2.5-.1-4.53,1-5.15,3.38A57.67,57.67,0,0,0,33.29,23,7.71,7.71,0,0,0,33.14,24.51Z" transform="translate(-20 -5)"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M53.48,24.18l-3.2-.24c0-3.49-.07-6.84,0-10.19,0.13-4.74,2.49-7.8,6.46-8.58s8.85,1.35,10.09,5.57C68.22,15.43,68.56,20.85,69.4,26c-1.62,0-2.54-.42-3.65-0.42-0.19-2.85-.28-5.66-0.59-8.45A19,19,0,0,0,64,11.95a6,6,0,0,0-6.81-3.44C54.87,9,53.58,10.82,53.5,14S53.48,20.54,53.48,24.18Z" transform="translate(-20 -5)"></path>
+        <polygon points="60.38 21.85 49.4 20.79 33.48 18.94 19.88 17.32 0 20.07 1.75 20.34 19.78 17.64 58.74 22.17 60.38 21.85"></polygon>
+    </g>
+
+    <g id="left-arrow"><g id="left-2" data-name="left-arrow">
+        <path class="right-arrow" d="M33.38,50L72.07,8.91a3,3,0,0,0,0-4.07,2.59,2.59,0,0,0-3.83,0L27.64,48a3,3,0,0,0,0,4.07l40.6,43.15a2.59,2.59,0,0,0,3.83,0,3,3,0,0,0,0-4.06Z" transform="translate(-26.84 -4)"></path>
+    </g></g>
+
+    <g id="right-arrow"><g id="right-2" data-name="right-arrow">
+        <path class="right-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M72.21,48L31.63,4.85a2.59,2.59,0,0,0-3.83,0,3,3,0,0,0,0,4.06L66.47,50,27.81,91.1a3,3,0,0,0,0,4.06,2.59,2.59,0,0,0,3.83,0L72.21,52A3,3,0,0,0,72.21,48Z" transform="translate(-27.02 -4.01)"></path>
+    </g></g>
+    <g id="logo-bottom" data-name="logo-bottom" class="logo-bottom"><g id="bottom_logo-2" data-name="logo-bottom">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17,91.84h1.28V83.23h5V82.09h-5V74H24.4V72.83H17v19ZM83.84,8H51V69H83.84V8Zm-7.59,7.63H59.84V38.88H73.53v1.47H59.84v23H58.3V14.15h18v1.48ZM49.81,8H17V69H49.81V8ZM42.55,63.32H41v-23H27.32V38.88H41V15.63H24.59V14.15h18V63.32ZM45.3,91.84h1.28V83.23h5V82.09h-5V74H52.7V72.83H45.3v19ZM79.63,82l4.09-9.15H82.5L78.8,81l-3.67-8.17H73.79L77.88,82l-4.4,9.85h1.25l4-8.85,4,8.85H84Zm-7-9.15H71.37L67.67,81,64,72.83H62.66L66.75,82l-4.4,9.85h1.25l4-8.85,4,8.85h1.36L68.5,82Zm-43.74,0-4.26,19h1.17l1-4.21H32.8l1,4.21h1.28l-4.34-19H28.85ZM26.93,86.54l2.81-12.3,2.87,12.3H26.93ZM41.4,81.71C43.38,81.3,44,80,44,78V76.88c0-2.63-1.06-4-4-4H35.89v19h4.17c3,0,4.26-1.66,4.26-4.4V85.78C44.32,83.64,43.51,82.12,41.4,81.71ZM37.17,74H40c2.09,0,2.73,1,2.73,3v1.22c0,2.42-1.06,3-3.34,3H37.17V74ZM43,87.41c0,2.12-.83,3.28-3,3.28H37.17V82.36h2.42c2.31,0,3.45.87,3.45,3.34v1.71ZM57.71,72.67c-2.95,0-4.26,2-4.26,4.8V87.2C53.45,90,54.76,92,57.71,92S62,90,62,87.2V77.48C62,74.71,60.71,72.67,57.71,72.67Zm3,14.61c0,2.06-.86,3.58-3,3.58s-3-1.52-3-3.58V77.4c0-2.06.83-3.58,3-3.58s3,1.52,3,3.58v9.88Z" transform="translate(-17 -8)"></path>
+    </g></g>
+
+    <g id="icon-youtube"><g id="youtube-2" data-name="icon-youtube">
+        <path class="icon-youtube" fill-rule="evenodd" clip-rule="evenodd" d="M85.78,13H14.29C8.65,13,4.07,18.06,4.07,24.35V75.59C4.07,81.88,8.65,87,14.29,87h71.5C91.42,87,96,81.88,96,75.59V24.35C96,18.06,91.42,13,85.78,13Zm-46,52.87V34.11L70.46,50Z" transform="translate(-4.07 -12.96)"></path>
+    </g></g>
+
+    <g id="icon-instagram"><g id="instagram-2" data-name="icon-instagram">
+        <path class="icon-instagram" fill-rule="evenodd" clip-rule="evenodd" d="M49.71,29.82A20.81,20.81,0,1,0,70.63,50.63,20.87,20.87,0,0,0,49.71,29.82ZM81.63,3.93H18.33A13.38,13.38,0,0,0,4.92,17.27V82.65A13.37,13.37,0,0,0,18.33,96h63.3A13.38,13.38,0,0,0,95,82.65V17.27A13.38,13.38,0,0,0,81.63,3.93ZM49.85,77.84A27.06,27.06,0,1,1,77.19,50.77,27.21,27.21,0,0,1,49.85,77.84ZM76.37,30.27a7.93,7.93,0,1,1,8-7.93A8,8,0,0,1,76.37,30.27Zm0.2-12.17a4.32,4.32,0,1,0,4.28,4.32A4.3,4.3,0,0,0,76.56,18.1Z" transform="translate(-4.92 -3.93)"></path>
+    </g></g>
+
+    <g id="logo-short" ><g id="logo-short" data-name="logo-short">
+        <path class="logo-short" fill-rule="evenodd" clip-rule="evenodd" d="M24,75H50V26H24V75Zm6-44.05H44.26V70.46H43V52H32.18V50.82H43V32.13H30V30.95ZM51,26V75H77V26H51Zm20,6.13H58V50.82H68.82V52H58V70.46H56.74V30.95H71v1.19Z" transform="translate(-24 -26)"></path>
+    </g></g>
+
+    <g id="icon-down"><g id="down-2" data-name="icon-down">
+        <path class="icon-down" fill-rule="evenodd" clip-rule="evenodd" d="M95.15,27.81a3,3,0,0,0-4.06,0L50,66.47,8.9,27.81a3,3,0,0,0-4.06,0,2.59,2.59,0,0,0,0,3.83L48,72.21a3,3,0,0,0,4.07,0L95.15,31.63A2.59,2.59,0,0,0,95.15,27.81Z" transform="translate(-4 -27.02)"></path>
+    </g></g>
+
+    <g id="icon-up"><g id="up-2" data-name="icon-up">
+        <path class="icon-up" fill-rule="evenodd" clip-rule="evenodd" d="M95.16,68.4L52,27.82a3,3,0,0,0-4.07,0L4.85,68.4a2.59,2.59,0,0,0,0,3.83,3,3,0,0,0,4.06,0L50,33.56,91.1,72.22a3,3,0,0,0,4.06,0A2.59,2.59,0,0,0,95.16,68.4Z" transform="translate(-4.01 -27.03)"></path>
+    </g></g>
+
+    <g id="icon-favorite"><g id="Ellipse_6-2" data-name="icon-favorite">
+        <path class="icon-favorite" fill-rule="evenodd" clip-rule="evenodd" d="M95.75,32.68C93.84,19.19,81.82,10,69.08,10a26.14,26.14,0,0,0-11.65,2.73,83.67,83.67,0,0,0-7.66,4.86s-0.17-.13-0.33-0.28a27.05,27.05,0,0,0-32-3.72A26.24,26.24,0,0,0,4.47,41a29.13,29.13,0,0,0,8.68,15.87c8.46,8.39,23.1,22.85,31.16,30.82a8.21,8.21,0,0,0,11.5,0c8.28-8.15,23.5-23.19,32.29-32.11A26.11,26.11,0,0,0,95.75,32.68Z" transform="translate(-4.07 -10)"></path>
+    </g></g>
+
+        <g id="icon-share"><g id="share-2" data-name="icon-share">
+            <path class="icon-share" fill-rule="evenodd" clip-rule="evenodd" d="M77.6,59.2a18.35,18.35,0,0,0-13.86,6.32L40.39,53.85a18.24,18.24,0,0,0,0-7.7L63.74,34.47a18.36,18.36,0,1,0-4.13-8.22L36.26,37.92a18.4,18.4,0,1,0,0,24.15L59.61,73.74A18.4,18.4,0,1,0,77.6,59.2Zm0-46a9.2,9.2,0,1,1-9.2,9.2A9.2,9.2,0,0,1,77.6,13.2Zm-55.2,46A9.2,9.2,0,1,1,31.6,50,9.2,9.2,0,0,1,22.4,59.2ZM77.6,86.8a9.2,9.2,0,1,1,9.2-9.2A9.2,9.2,0,0,1,77.6,86.8Z" transform="translate(-4 -4)"></path>
+        </g></g>
+    <g id="icon-cross"><g id="cross-2" data-name="icon-cross">
+        <polygon class="icon-cross" fill-rule="evenodd" clip-rule="evenodd" points="49.8 46.95 91.83 3.94 88.05 0.07 46.01 43.08 3.92 0 0.09 3.92 42.18 47 0 90.16 3.78 94.03 45.97 50.87 88.06 93.94 91.89 90.03 49.8 46.95"></polygon>
+    </g></g>
+</svg>
+
+<!--<svg class="icon-share" viewBox="0 0 92 92">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-share"></use>-->
+<!--</svg>-->
+
+<!--<svg class="icon-favorite" viewBox="0 0 91.97 79.99">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-favorite"></use>-->
+<!--</svg>-->
+
+<!--<svg class="icon-down" viewBox="0 0 91.99 45.98">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-down"></use>-->
+<!--</svg>-->
+
+<!--<svg class="icon-up" viewBox="0 0 91.99 45.98">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up"></use>-->
+<!--</svg>-->
+
+<!--<svg class="icon-youtube" viewBox="0 0 91.92 74.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>-->
+<!--</svg>-->
+
+<!--<svg class="icon-instagram" viewBox="0 0 90.12 92.06">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>-->
+<!--</svg>-->
+
+<!--<svg class="logo-short" viewBox="0 0 53 49">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-short"></use>-->
+<!--</svg>-->
+
+<!--<svg class="logo-bottom" viewBox="0 0 67 84">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-bottom"></use>-->
+<!--</svg>-->
+
+<!--<svg class="left-arrow" viewBox="0 0 46.02 92.06">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#left-arrow"></use>-->
+<!--</svg>-->
+
+<!--<svg class="right-arrow" viewBox="0 0 45.98 91.99">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow"></use>-->
+<!--</svg>-->
+
+<!--<svg class="bag-icon" viewBox="0 0 60.4 92">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bag-icon"></use>-->
+<!--</svg>-->
+
+<!--<svg class="g-plus icon" viewBox="0 0 89.99 63.08">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#g-plus"></use>-->
+<!--</svg>-->
+
+<!--<svg class="tumbler icon" viewBox="0 0 89.99 87.95">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tumbler"></use>-->
+<!--</svg>-->
+
+<!--<svg class="pinterest icon" viewBox="0 0 88.98 91.07">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use>-->
+<!--</svg>-->
+
+<!--<svg class="facebook icon" viewBox="0 0 91.98 89.95">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>-->
+<!--</svg>-->
+
+<!--<svg class="twitter icon" viewBox="0 0 90.93 73.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>-->
+<!--</svg>-->
+
+<!--<svg class="letter-email icon" viewBox="0 0 90.01 64.04">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#letter-email"></use>-->
+<!--</svg>-->
+
+<!--<svg class="burger-menu icon" viewBox="0 0 90 64">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#burger-menu"></use>-->
+<!--</svg>-->
+<!--<svg class="reply icon" viewBox="0 0 90.13 71.14">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#reply"></use>-->
+<!--</svg>-->
+<!--<svg class="play-player icon" viewBox="0 0 70.94 90">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play-player"></use>-->
+<!--</svg>-->
+<!--<svg class="play-player-select icon" viewBox="0 0 70.94 90">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play-player-select"></use>-->
+<!--</svg>-->
+<!--<svg class="next-player-select icon" viewBox="0 0 90.02 57.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-player-select"></use>-->
+<!--</svg>-->
+<!--<svg class="next-player icon" viewBox="0 0 90.02 57.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-player"></use>-->
+<!--</svg>-->
+<!--<svg class="back-player-select icon" viewBox="0 0 89.99 57.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-player-select"></use>-->
+<!--</svg>-->
+<!--<svg class="back-player icon" viewBox="0 0 89.99 57.02">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-player"></use>-->
+<!--</svg>-->
+<!--<svg class="pause-player icon" viewBox="0 0 76 84">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pause-player"></use>-->
+<!--</svg>-->
+<!--<svg class="play-player-bottom icon" viewBox="0 0 75.01 84.95">-->
+<!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play-player-bottom"></use>-->
+<!--</svg>-->
+
+<div class="wrapper" id="to-top">
+
+    //= templates/top-panel.html
+
+    <div class="fixed-block-top">
+        //= templates/search-area.html
+
+        //= templates/nav-area.html
+    </div>
+
+    //= templates/slider-loop.html
+
+    <div class="container">
+
+        //= templates/delivery-panel.html
+
+        //= templates/main-catalog.html
+
+        //= templates/recently-viewed.html
+
+    </div>
+
+    //= templates/footer.html
 
 </div>
 
-//= templates/footer.html
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

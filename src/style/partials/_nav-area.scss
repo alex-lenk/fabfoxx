@@ -113,3 +113,78 @@
     }
   }
 }
+
+.fixed-block-top {
+  width: 100%;
+  z-index: 9;
+
+  .logo, .favorite, .info-panel {
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
+  }
+  .logo {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    .logo-short {
+      width: 37px;
+    }
+  }
+
+  .favorite {
+    position: absolute;
+    top: 10px;
+    left: 77px;
+    svg {
+      width: 13px;
+    }
+  }
+
+  .info-panel {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    .user {
+      display: inline-block;
+      vertical-align: top;
+      background-color: #000;
+      li {
+        display: inline-block;
+        padding: 5px 19px 9px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        @include BebasNeueBold;
+      }
+      a {
+        color: #fff;
+      }
+    }
+    .basket-count {
+      margin: 6px 10px 0 15px;
+      display: inline-block;
+      vertical-align: bottom;
+      svg {
+        width: 20px;
+        margin-right: 12px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:after {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.fixed-block-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 7px;
+  .logo, .favorite, .info-panel {
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -17,32 +17,6 @@
 @import "partials/recently-viewed";
 @import "partials/footer";
 
-.to-up {
-  margin-left: -22px;
-  position: absolute;
-  bottom: 126px;
-  left: 50%;
-  border-bottom: 27px solid #000;
-  width: 0;
-  height: 0;
-  border-right: 37px solid transparent;
-  border-left: 37px solid transparent;
-  cursor: pointer;
-  svg {
-    position: absolute;
-    top: 13px;
-    left: -10px;
-    width: 19px;
-    fill: #fff;
-    transition: .3s ease;
-  }
-  &:hover {
-    svg {
-      fill: #ccc;
-    }
-  }
-}
-
 .social {
   margin: 0;
   padding: 0;

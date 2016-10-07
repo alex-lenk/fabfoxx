@@ -48,31 +48,35 @@
         }
       }
     }
-    .basket {
-      display: flex;
-      justify-content: flex-end;
-      .amount {
-        color: #a2a1a1;
-        font-size: 13px;
-        letter-spacing: 1px;
-      }
-      .checkout {
-        font-size: 18px;
-        letter-spacing: 5.5px;
-        @include BebasNeueBold;
-      }
-      .bag-icon {
-        height: 71px;
-        margin: 0 19px 0 26px;
-        display: inline-block;
-        vertical-align: middle;
-      }
-      .count {
-        font-size: 24px;
-        margin-right: 5px;
-      }
-    }
   }
+}
+
+.top-basket {
+  display: flex;
+  justify-content: flex-end;
+  .amount {
+    color: #a2a1a1;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .checkout {
+    font-size: 18px;
+    letter-spacing: 5.5px;
+    @include BebasNeueBold;
+  }
+  .bag-icon {
+    height: 71px;
+    margin: 0 19px 0 26px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.basket-count[data-count]:not([data-count='']):after {
+  content: attr(data-count);
+  margin-right: 5px;
+  font-size: 24px;
+  display: inline;
 }
 
 .currency-select {

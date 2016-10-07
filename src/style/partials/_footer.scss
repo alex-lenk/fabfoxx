@@ -1,6 +1,40 @@
+.to-up {
+  margin-left: -22px;
+  position: fixed;
+  bottom: 7px;
+  left: 50%;
+  border-bottom: 27px solid #000;
+  width: 0;
+  height: 0;
+  border-right: 37px solid transparent;
+  border-left: 37px solid transparent;
+  cursor: pointer;
+  z-index: 90;
+  display: none;
+  transition: .4s ease-in-out;
+  svg {
+    position: absolute;
+    top: 13px;
+    left: -10px;
+    width: 19px;
+    fill: #fff;
+    transition: .3s ease;
+  }
+  &:hover {
+    svg {
+      fill: #ccc;
+    }
+  }
+  &.fix {
+    position: absolute;
+    bottom: 126px;
+  }
+}
+
 footer {
   padding-top: 2px;
   background: #000;
+  position: relative;
   .footer-info {
     padding: 73px 0 75px;
     background-color: #efefef;
