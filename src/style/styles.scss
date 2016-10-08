@@ -22,23 +22,6 @@
 @import "partials/catalog";
 @import "partials/main-catalog";
 
-.catalog-show-more {
-  .button {
-    height: 33px;
-    line-height: 33px;
-    padding: 0 25px;
-    background-color: #fff;
-    color: #bababa;
-    border: 1px solid #efefef;
-    letter-spacing: 2px;
-    transition: .3s ease-in-out;
-    &:hover {
-      color: #000;
-      border-color: #000;
-    }
-  }
-}
-
 .product-page {
   display: flex;
 }
@@ -49,22 +32,28 @@
     padding: 19px 22px 14px 0;
     letter-spacing: 0;
     font-size: 25px;
-
   }
 }
 
 .sale-product-page {
-  .header-page-title {
+  .header-page-title,
+  .catalog-item-img .quick-view {
     background-color: #f00;
   }
   .catalog-item:hover .catalog-item-img {
     border-color: #f00;
   }
-  .catalog-item-img .quick-view {
-    background-color: rgba(255, 0, 0, .6);
-  }
   s {
     margin-left: 10px;
     color: #f00;
+  }
+}
+
+.search-title {
+  margin: 13px 0 0 -39px;
+  font-size: 24px;
+  letter-spacing: 2.5px;
+  & + .sorting-goods {
+    margin-top: 8px;
   }
 }
