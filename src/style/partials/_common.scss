@@ -12,6 +12,7 @@ body {
   line-height: 1.4;
   font-size: 15px;
   color: #000;
+  overflow-x: hidden;
   &:before {
     content: '';
     background-color: #000;
@@ -118,6 +119,12 @@ img {
   width: 1206px;
   margin-left: auto;
   margin-right: auto;
+  &-fluid {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .social {

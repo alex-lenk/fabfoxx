@@ -90,7 +90,7 @@
       border: 0;
       background-color: transparent;
       &-text {
-        width: 28px !important;
+        width: auto !important;
         font-size: 14px;
         @include BebasNeueBold;
       }

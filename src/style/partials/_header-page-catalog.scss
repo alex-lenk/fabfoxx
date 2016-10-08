@@ -1,0 +1,53 @@
+.header-page-catalog {
+  position: relative;
+  background: url("../img/example/bg-header.jpg") no-repeat center;
+  .container-fluid {
+    height: 313px;
+  }
+  .title {
+    max-width: 307px;
+    top: 58px;
+    margin: 0;
+    line-height: 1;
+    padding: 13px 15px 5px 0;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: normal;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    text-align: right;
+    @include MinionProRegular;
+    &:after {
+      height: 100%;
+      width: 2000px;
+      left: -2000px;
+      top: 0;
+      position: absolute;
+      background-color: #000;
+      content: '';
+    }
+  }
+  .list-sections {
+    width: 228px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 21px;
+    right: 7px;
+    li {
+      margin-bottom: 1px;
+    }
+    a {
+      padding: 3px 0 2px 4px;
+      letter-spacing: .8px;
+      display: block;
+      color: #fff;
+      background-color: #000;
+      text-transform: uppercase;
+      font-size: 14px;
+      @include BebasNeueRegular;
+    }
+  }
+}

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  border-bottom: 1px solid #000;
   &:hover {
     .nav-second-menu {
       a {

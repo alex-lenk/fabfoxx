@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
 
     $(".catalog-show-more").hover(function () {
-        $('.main-catalog-image').toggleClass("main-catalog-image-zoom");
+        $('.home-catalog-image').toggleClass("home-catalog-image-zoom");
     });
 
     // owl-carousel - initializing plugin owlCarousel
