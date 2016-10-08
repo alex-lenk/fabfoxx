@@ -9,20 +9,6 @@
     flex-basis: calc(100% - 320px);
     padding: 0 57px;
   }
-  .button {
-    height: 33px;
-    line-height: 33px;
-    padding: 0 25px;
-    background-color: #fff;
-    color: #bababa;
-    border: 1px solid #efefef;
-    letter-spacing: 2px;
-    transition: .3s ease-in-out;
-    &:hover {
-      color: #000;
-      border-color: #000;
-    }
-  }
 }
 
 .sorting-goods {

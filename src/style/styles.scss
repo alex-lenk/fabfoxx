@@ -22,3 +22,33 @@
 @import "partials/catalog";
 @import "partials/main-catalog";
 
+.catalog-show-more {
+  .button {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 25px;
+    background-color: #fff;
+    color: #bababa;
+    border: 1px solid #efefef;
+    letter-spacing: 2px;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: #000;
+      border-color: #000;
+    }
+  }
+}
+
+.product-page {
+  display: flex;
+}
+
+.left-column {
+  .header-page-title {
+    top: auto;
+    padding: 19px 22px 14px 0;
+    letter-spacing: 0;
+    font-size: 25px;
+
+  }
+}

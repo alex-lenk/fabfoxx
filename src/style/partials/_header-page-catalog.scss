@@ -1,11 +1,6 @@
-.header-page-catalog {
-  position: relative;
-  background: url("../img/example/bg-header.jpg") no-repeat center;
-  .container-fluid {
-    height: 313px;
-  }
-  .title {
-    max-width: 307px;
+.header-page {
+  &-title {
+    max-width: 320px;
     top: 58px;
     margin: 0;
     line-height: 1;
@@ -17,6 +12,7 @@
     color: #fff;
     position: relative;
     text-align: right;
+    text-transform: uppercase;
     @include MinionProRegular;
     &:after {
       height: 100%;
@@ -28,26 +24,33 @@
       content: '';
     }
   }
-  .list-sections {
-    width: 228px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 21px;
-    right: 7px;
-    li {
-      margin-bottom: 1px;
+  &-catalog {
+    position: relative;
+    background: url("../img/example/bg-header.jpg") no-repeat center;
+    .container-fluid {
+      height: 313px;
     }
-    a {
-      padding: 3px 0 2px 4px;
-      letter-spacing: .8px;
-      display: block;
-      color: #fff;
-      background-color: #000;
-      text-transform: uppercase;
-      font-size: 14px;
-      @include BebasNeueRegular;
+    .list-sections {
+      width: 228px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      top: 21px;
+      right: 7px;
+      li {
+        margin-bottom: 1px;
+      }
+      a {
+        padding: 3px 0 2px 4px;
+        letter-spacing: .8px;
+        display: block;
+        color: #fff;
+        background-color: #000;
+        text-transform: uppercase;
+        font-size: 14px;
+        @include BebasNeueRegular;
+      }
     }
   }
 }
