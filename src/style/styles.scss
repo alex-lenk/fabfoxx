@@ -52,3 +52,19 @@
 
   }
 }
+
+.sale-product-page {
+  .header-page-title {
+    background-color: #f00;
+  }
+  .catalog-item:hover .catalog-item-img {
+    border-color: #f00;
+  }
+  .catalog-item-img .quick-view {
+    background-color: rgba(255, 0, 0, .6);
+  }
+  s {
+    margin-left: 10px;
+    color: #f00;
+  }
+}

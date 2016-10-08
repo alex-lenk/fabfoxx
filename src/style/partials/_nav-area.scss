@@ -30,9 +30,11 @@
       vertical-align: top;
       text-align: left;
       letter-spacing: 1.5px;
+      &:not(.sale) a {
+        color: #000;
+      }
       & > a {
         padding: 8px 0 10px;
-        color: #000;
         display: block;
         border-top: 3px solid transparent;
         transition: .4s ease-in-out;
