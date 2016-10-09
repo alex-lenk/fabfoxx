@@ -90,33 +90,6 @@
   textarea.form-control {
     min-height: 92px;
   }
-  .social {
-    width: auto;
-    li {
-    }
-    svg {
-      fill: #000;
-      transition: .4s ease-in-out;
-      &:hover {
-        fill: #ababab;
-      }
-    }
-    .pr svg {
-      width: 21px;
-    }
-    .fb svg {
-      width: 20px;
-    }
-    .tw svg {
-      width: 22px;
-    }
-    .instagram svg {
-      width: 21px;
-    }
-    .yt svg {
-      width: 25px;
-    }
-  }
   &-info {
     padding-top: 50px;
     .logo-small {

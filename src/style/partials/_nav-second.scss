@@ -48,47 +48,6 @@
       transition: .4s ease-in-out;
     }
   }
-  .social {
-    padding-right: 15px;
-    z-index: 6;
-    position: relative;
-    li {
-      height: 100%;
-      line-height: 33px;
-      transition: .4s ease-in-out;
-      &:not(.social-share) {
-        visibility: hidden;
-        opacity: 0;
-      }
-      &:not(:last-child) {
-        margin-right: 24px;
-      }
-    }
-    svg {
-      width: 13px;
-      &.g-plus {
-        width: 16px;
-      }
-      &.pinterest {
-        width: 11px;
-      }
-      &.twitter {
-        width: 14px;
-      }
-      &.facebook {
-        width: 11px;
-      }
-    }
-    .text {
-      font-size: 11px;
-      color: #838383;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-    }
-    .social-share svg {
-      fill: #000;
-    }
-  }
   &:after {
     width: 0;
     height: 100%;
