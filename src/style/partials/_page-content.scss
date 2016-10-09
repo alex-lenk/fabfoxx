@@ -1,0 +1,68 @@
+.product-page {
+  display: flex;
+  .main-catalog-content {
+    padding-top: 10px;
+  }
+}
+
+.left-column {
+  .header-page-title {
+    min-width: 320px;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 25px;
+    text-align: right;
+    span {
+      padding: 19px 22px 14px 0;
+    }
+  }
+}
+
+.search-title {
+  margin: 3px 0 0 -39px;
+  font-size: 24px;
+  letter-spacing: 2.5px;
+  & + .sorting-goods {
+    margin-top: 8px;
+  }
+}
+
+.page-content {
+  .content {
+    width: 921px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 42px;
+    background-color: #fff;
+    font-weight: 300;
+    font-family: $RobotoCondensed;
+    p {
+      line-height: 23px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.contacts-block {
+  @include clearfix;
+  &-info {
+    padding-top: 50px;
+    .logo-small {
+      width: 75px;
+      display: block;
+      margin: 0 auto 35px;
+      transition: .4s ease-in-out;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .requisites {
+      line-height: 26px;
+      font-style: italic;
+      font-weight: 400;
+      color: #565656;
+      font-family: $RobotoCondensed;
+    }
+  }
+}

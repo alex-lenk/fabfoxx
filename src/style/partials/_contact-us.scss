@@ -1,0 +1,25 @@
+.contact-us {
+  .header-page-title {
+    margin-bottom: 28px;
+    font-size: 25px;
+    letter-spacing: 0;
+    span {
+      padding: 18px 22px 14px 0;
+      transform: translateX(-50%);
+    }
+
+  }
+  p {
+    margin-bottom: 21px;
+    letter-spacing: -0.18px;
+  }
+  .form-group {
+    margin-bottom: 17px;
+  }
+  .feedback-form-bottom {
+    margin-top: -6px;
+    .jq-selectbox__select {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,13 +1,29 @@
 .main-catalog {
-  display: flex;
+  padding-top: 58px;
+  position: relative;
+  background: url("../img/example/bg-header.jpg") no-repeat top center;
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header-page-catalog {
+    margin-bottom: 52px;
+    .header-page-title {
+      min-width: 320px;
+      text-align: right;
+      span {
+        transform: translateX(0);
+      }
+    }
+  }
   .filter-group {
-    margin-top: -145px;
     align-self: flex-start;
   }
   &-content {
     margin-bottom: 33px;
     flex-basis: calc(100% - 320px);
-    padding: 0 57px;
+    padding: 145px 57px 0;
   }
 }
 

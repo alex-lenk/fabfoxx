@@ -19,40 +19,58 @@
 
     //= templates/nav-second.html
 
-    //= templates/header-page-catalog.html
 
-    <div class="main-catalog container-fluid">
+    <div class="main-catalog">
 
-        //= templates/filter.html
+        <ul class="catalog-list-sections">
+            <li><a href="#">Hoodies/Sweaters</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Jumpsuits / Playsuits</a></li>
+            <li><a href="#">Jackets / Coats</a></li>
+            <li><a href="#">Cardigans</a></li>
+            <li><a href="#">Sets</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Swimwear / Beachwear</a></li>
+            <li><a href="#">Tees / Jersey Tops</a></li>
+        </ul>
 
-        <div class="main-catalog-content">
-            <div class="sorting-goods">
-                <ul class="sort-views">
-                    <li class="grid-big">
-                        <svg class="icon-sort-big" viewBox="0 0 92 86">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-big"></use>
-                        </svg>
-                    </li>
-                    <li class="grid active">
-                        <svg class="icon-sort-small" viewBox="0 0 92 85">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-small"></use>
-                        </svg>
-                    </li>
-                </ul>
-                <select class="sorting currency-select">
-                    <option value="">SORT BY</option>
-                    <option value="eur">€ eur</option>
-                </select>
+        <div class="container-fluid">
+            <header class="header-page-catalog">
+                <h1 class="header-page-title"><span>CLOTHES</span></h1>
+            </header>
+
+            //= templates/filter.html
+
+            <div class="main-catalog-content">
+                <div class="sorting-goods">
+                    <ul class="sort-views">
+                        <li class="grid-big">
+                            <svg class="icon-sort-big" viewBox="0 0 92 86">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-big"></use>
+                            </svg>
+                        </li>
+                        <li class="grid active">
+                            <svg class="icon-sort-small" viewBox="0 0 92 85">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-small"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <select class="sorting currency-select">
+                        <option value="">SORT BY</option>
+                        <option value="eur">€ eur</option>
+                    </select>
+                </div>
+
+                //= templates/catalog.html
+
+                <div class="text-center catalog-show-more">
+                    <button class="button show-more">show more</button>
+                </div>
+
             </div>
-
-            //= templates/catalog.html
-
-            <div class="text-center catalog-show-more">
-                <button class="button show-more">show more</button>
-            </div>
-
         </div>
-
     </div>
 
     //= templates/footer.html

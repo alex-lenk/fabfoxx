@@ -92,7 +92,7 @@ img {
     color: #f00;
   }
   &-product-page {
-    .header-page-title,
+    .header-page-title span,
     .catalog-item-img .quick-view {
       background-color: #f00;
     }
@@ -103,7 +103,7 @@ img {
       margin-left: 10px;
       color: #f00;
     }
-    .header-page-title:after {
+    .header-page-title span:after {
       background-color: #f00;
     }
   }

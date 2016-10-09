@@ -1,0 +1,22 @@
+.catalog-list-sections {
+  width: 228px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 21px;
+  right: 7px;
+  li {
+    margin-bottom: 1px;
+  }
+  a {
+    padding: 3px 0 2px 4px;
+    letter-spacing: .8px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    @include BebasNeueRegular;
+  }
+}
