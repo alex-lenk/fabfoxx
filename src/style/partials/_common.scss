@@ -87,8 +87,23 @@ img {
   @include color-block(#38ebff);
 }
 
-.sale a {
-  color: #f00
+.sale {
+  a {
+    color: #f00;
+  }
+  &-product-page {
+    .header-page-title,
+    .catalog-item-img .quick-view {
+      background-color: #f00;
+    }
+    .catalog-item:hover .catalog-item-img {
+      border-color: #f00;
+    }
+    s {
+      margin-left: 10px;
+      color: #f00;
+    }
+  }
 }
 
 .wrapper {
@@ -124,61 +139,6 @@ img {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    vertical-align: top;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  svg {
-    width: 18px;
-    fill: #fff;
-    transition: .3s ease;
-  }
-  .fb svg {
-    width: 15px;
-  }
-  .yt {
-    svg {
-      width: 18px;
-    }
-  }
-  .tumblr {
-    svg {
-      width: 14px;
-    }
-  }
-  .gp {
-    svg {
-      width: 21px;
-    }
-  }
-}
-
-.favorite {
-  position: absolute;
-  cursor: pointer;
-  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .03);
-  transition: .4s ease-in-out;
-  svg {
-    width: 20px;
-  }
-  &:hover {
-    opacity: .9;
-  }
-  &-mini {
-    padding: 0 4px 0 5px;
-    svg {
-      width: 13px;
-    }
   }
 }
 
@@ -226,4 +186,12 @@ img {
       border-color: #000;
     }
   }
+}
+
+.first-letter {
+  line-height: .7;
+  float: left;
+  padding: 16px 54px 30px 33px;
+  font-size: 110px;
+  @include BebasNeueRegular;
 }

@@ -8,6 +8,10 @@
 @import "partials/buttons";
 @import "partials/form";
 // Blocks
+@import "partials/social";
+@import "partials/instagram-block";
+@import "partials/stay-connected";
+@import "partials/favorite";
 @import "partials/top-panel";
 @import "partials/nav-area";
 @import "partials/search-area";
@@ -18,7 +22,7 @@
 @import "partials/footer";
 @import "partials/nav-second";
 @import "partials/filter-group";
-@import "partials/header-page-catalog";
+@import "partials/header-page";
 @import "partials/catalog";
 @import "partials/main-catalog";
 
@@ -35,25 +39,101 @@
   }
 }
 
-.sale-product-page {
-  .header-page-title,
-  .catalog-item-img .quick-view {
-    background-color: #f00;
-  }
-  .catalog-item:hover .catalog-item-img {
-    border-color: #f00;
-  }
-  s {
-    margin-left: 10px;
-    color: #f00;
-  }
-}
-
 .search-title {
   margin: 13px 0 0 -39px;
   font-size: 24px;
   letter-spacing: 2.5px;
   & + .sorting-goods {
     margin-top: 8px;
+  }
+}
+
+.page-content {
+  .container {
+  }
+}
+
+.page-about {
+  padding-top: 448px;
+  background: url("../img/example/img-page.jpg") no-repeat top center;
+  .content-fluid {
+    max-width: 1305px;
+    margin-top: -258px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    width: 921px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 42px;
+    background-color: #fff;
+    border-top: 1px solid;
+    font-weight: 300;
+    font-family: $RobotoCondensed;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
+    p {
+      line-height: 23px;
+      margin-bottom: 24px;
+    }
+  }
+  .header-page-title {
+    top: -116px;
+    padding: 12px 15px 3px 0;
+  }
+}
+
+.contacts-block {
+  padding-top: 55px;
+  @include clearfix;
+  textarea.form-control {
+    min-height: 92px;
+  }
+  .social {
+    width: auto;
+    li {
+    }
+    svg {
+      fill: #000;
+      transition: .4s ease-in-out;
+      &:hover {
+        fill: #ababab;
+      }
+    }
+    .pr svg {
+      width: 21px;
+    }
+    .fb svg {
+      width: 20px;
+    }
+    .tw svg {
+      width: 22px;
+    }
+    .instagram svg {
+      width: 21px;
+    }
+    .yt svg {
+      width: 25px;
+    }
+  }
+  &-info {
+    padding-top: 50px;
+    .logo-small {
+      width: 75px;
+      display: block;
+      margin: 0 auto 35px;
+      transition: .4s ease-in-out;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .requisites {
+      line-height: 26px;
+      font-style: italic;
+      font-weight: 400;
+      color: #565656;
+      font-family: $RobotoCondensed;
+    }
   }
 }

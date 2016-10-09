@@ -1,0 +1,13 @@
+.stay-connected {
+  .title {
+    margin-bottom: 20px;
+    line-height: 1;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1.3px;
+    @include MinionProRegular;
+  }
+  .social {
+    width: 225px;
+  }
+}

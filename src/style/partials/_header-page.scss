@@ -1,7 +1,6 @@
 .header-page {
   &-title {
     max-width: 320px;
-    top: 58px;
     margin: 0;
     line-height: 1;
     padding: 13px 15px 5px 0;
@@ -27,6 +26,9 @@
   &-catalog {
     position: relative;
     background: url("../img/example/bg-header.jpg") no-repeat center;
+    .header-page-title {
+      top: 58px;
+    }
     .container-fluid {
       height: 313px;
     }
