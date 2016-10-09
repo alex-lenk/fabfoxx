@@ -1,26 +1,30 @@
 .header-page {
   &-title {
-    max-width: 320px;
     margin: 0;
+    display: inline-block;
     line-height: 1;
-    padding: 13px 15px 5px 0;
     letter-spacing: 1px;
     font-size: 40px;
-    font-weight: normal;
-    background-color: #000;
     color: #fff;
-    position: relative;
-    text-align: right;
+    font-weight: normal;
     text-transform: uppercase;
     @include MinionProRegular;
-    &:after {
-      height: 100%;
-      width: 2000px;
-      left: -2000px;
-      top: 0;
-      position: absolute;
-      background-color: #000;
-      content: '';
+    span {
+      padding: 13px 15px 5px 0;
+      display: block;
+      transform: translateX(-50%);
+      z-index: 5;
+      background: #000;
+      position: relative;
+      &:after {
+        height: 100%;
+        width: 2000px;
+        left: -2000px;
+        top: 0;
+        position: absolute;
+        background-color: #000;
+        content: '';
+      }
     }
   }
   &-catalog {

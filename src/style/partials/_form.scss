@@ -92,17 +92,16 @@ textarea.form-control {
 
 .feedback {
   &-form {
-    float: left;
-    width: 570px;
-    margin-right: 45px;
     .no-robot {
       width: 302px;
       text-align: center;
       .button {
-        margin-top: 11px;
+        margin-top: 9px;
         width: 100%;
-        font-size: 13px;
-        letter-spacing: 2px;
+        letter-spacing: 7px;
+        padding: 9px 0;
+        font-size: 16px;
+        @include BebasNeueRegular;
       }
     }
     .form-control {
@@ -173,13 +172,15 @@ textarea.form-control {
       margin-top: 10px;
       display: flex;
       justify-content: space-between;
-      .title {
+      .stay-connected-title {
         margin-bottom: 14px;
         letter-spacing: 1px;
         font-size: 10px;
         color: #ababab;
-        @include MinionProRegular;
       }
+    }
+    textarea.form-control {
+      min-height: 92px;
     }
   }
   &-select {

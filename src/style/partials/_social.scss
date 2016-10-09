@@ -87,6 +87,8 @@
 
 .contacts-block-social {
   width: auto;
+  display: flex;
+  justify-content: space-between;
   svg {
     fill: #000;
     &:hover {
