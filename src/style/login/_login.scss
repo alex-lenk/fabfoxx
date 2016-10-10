@@ -166,3 +166,159 @@
     }
   }
 }
+
+.long-registration {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  .quick-text {
+    margin-top: 52px;
+  }
+  .general-form {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 55px;
+    background-color: #fafafa;
+    .form-control {
+      color: #000;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $RobotoCondensed;
+    }
+  }
+  .password {
+    .form-control:focus + label {
+      top: -13px;
+      font-size: 12px;
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+      right: auto;
+    }
+    .form-label {
+      top: 13px;
+      left: auto;
+      right: 40px;
+      color: #b6b6b6;
+      font-style: italic;
+      font-size: 11px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .returns-form-group {
+    legend {
+      font-size: 17px;
+      text-align: center;
+      letter-spacing: 3.5px;
+      background-color: transparent;
+      @include BebasNeueRegular;
+    }
+  }
+  .date-area {
+    margin: 25px 0 18px;
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      input:not(.month) {
+        width: 123px;
+      }
+      .month {
+        flex-basis: calc(100% - 272px);
+      }
+    }
+    p {
+      margin: 15px 0 0;
+      flex-basis: 100%;
+      color: #8c8c8c;
+      font-style: italic;
+      font-size: 14px;
+      font-family: $RobotoCondensed;
+    }
+  }
+  .gender {
+    margin-bottom: 25px;
+    @include clearfix;
+    .label-block {
+      width: 50%;
+      float: left;
+    }
+    .checkbox-custom-view {
+      padding-left: 18px;
+      color: #000;
+      width: 100%;
+      text-align: left;
+      letter-spacing: 3px;
+      font-size: 17px;
+      text-transform: uppercase;
+      background-color: #fff;
+      @include BebasNeueRegular;
+    }
+    .checkbox-custom {
+      + .checkbox-custom-view::before {
+        margin: 1px 0 0 0;
+        background-color: #fff;
+        right: 0;
+      }
+      &:checked + .checkbox-custom-view {
+        background-color: #000;
+        color: #fff;
+        &::before {
+          background-color: #000;
+        }
+        &::after {
+          left: auto;
+          top: 11px;
+          right: 12px;
+          border-color: #fff;
+        }
+      }
+    }
+  }
+  .checkbox-group-bottom {
+    margin-bottom: 58px;
+    text-align: left;
+    .checkbox-custom-view {
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 300;
+      font-family: $RobotoCondensed;
+      a {
+        font-weight: 700;
+        white-space: nowrap;
+      }
+    }
+    .checkbox-custom + .checkbox-custom-view::before {
+      border: 1px solid #e4e4e4;
+    }
+    .privacy {
+      .checkbox-custom-view {
+        padding-top: 5px;
+        line-height: 18px;
+      }
+      .checkbox-custom + .checkbox-custom-view::before {
+        margin-top: -4px;
+      }
+    }
+  }
+  .button {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    @include BebasNeueRegular;
+  }
+}
+
+
+
+
+
+
+
+
+
+
