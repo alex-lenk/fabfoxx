@@ -95,6 +95,54 @@
       }
     }
   }
+  .general-form {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 55px;
+    background-color: #fafafa;
+    .form-control {
+      color: #000;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $RobotoCondensed;
+    }
+  }
+
+  .button {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    padding: 4px 15px 4px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    @include BebasNeueRegular;
+  }
+  .forgot {
+    margin: 20px 0;
+    letter-spacing: 3px;
+    font-size: 13px;
+    a {
+      border-bottom: 1px solid;
+      transition: .4s ease-in-out;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+    @include BebasNeueRegular;
+  }
+}
+
+.forgot-block {
+  .form-group {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-control {
+    font-size: 12px;
+    font-style: italic;
+  }
 }
 
 .nav-tabs {
@@ -172,19 +220,6 @@
   margin-bottom: 30px;
   .quick-text {
     margin-top: 52px;
-  }
-  .general-form {
-    width: 100%;
-    margin-top: 40px;
-    padding: 40px 55px;
-    background-color: #fafafa;
-    .form-control {
-      color: #000;
-      background-color: #fff;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: $RobotoCondensed;
-    }
   }
   .password {
     .form-control:focus + label {
@@ -303,13 +338,8 @@
     }
   }
   .button {
-    width: 350px;
-    margin: 0 auto;
-    display: block;
     padding: 10px 15px;
-    letter-spacing: 2px;
     font-size: 20px;
-    @include BebasNeueRegular;
   }
 }
 
