@@ -1,0 +1,168 @@
+.login-body {
+  background-color: #f5f5f5;
+  &:after, &:before {
+    display: none;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-block {
+  width: 723px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    .logo {
+      img {
+        height: 53px;
+      }
+    }
+    .back-to-shop {
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      @include BebasNeueRegular;
+    }
+  }
+  &-body {
+    background-color: #fff;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
+    .quick-text {
+      margin-top: 125px;
+      margin-bottom: 30px;
+      padding: 0;
+      letter-spacing: 1px;
+      line-height: 1;
+      list-style: none;
+      li {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 36px;
+      height: 36px;
+      transition: .4s ease-in-out;
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .fb {
+      background-color: #3a5898;
+      svg {
+        background-color: #fff;
+        outline: 1px solid #3a5898;
+        outline-offset: -1px;
+        margin: 8px 3px 0 0;
+        width: 19px;
+        fill: #3a5898;
+      }
+    }
+    .gp {
+      background-color: #de4b37;
+      svg {
+        background-color: #de4b37;
+        margin: 10px 0 0 3px;
+        width: 20px;
+        fill: #fff;
+      }
+    }
+    .tw {
+      background-color: #54aced;
+      svg {
+        background-color: #54aced;
+        margin: 10px 0 0 3px;
+        width: 20px;
+        fill: #fff;
+      }
+    }
+    .letter {
+      background-color: #000;
+      svg {
+        background-color: #000;
+        margin: 12px 0 0 0px;
+        width: 19px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    width: 50%;
+    line-height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    @include BebasNeueRegular;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.active {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    min-height: 445px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.login-footer {
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  .stay-connected {
+    width: 230px;
+    margin: 0 auto;
+    &-title {
+      margin-bottom: 17px;
+      color: #000;
+      font-size: 13px;
+    }
+    .footer-social {
+    }
+    .copyright {
+      margin-bottom: 20px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #a0a0a0;
+    }
+  }
+  .social {
+    margin-bottom: 17px;
+    svg {
+      fill: #000;
+    }
+  }
+}
