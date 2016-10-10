@@ -33,3 +33,69 @@
 @import "partials/terms-condition";
 @import "partials/returns-exchanges";
 @import "partials/gift-voucher";
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  &-dialog {
+    margin-top: 124px;
+  }
+  &-content {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
+    .close-box {
+      width: 32px;
+      height: 32px;
+      top: -43px;
+      text-align: center;
+      svg {
+        width: 18px;
+        margin-top: 7px;
+      }
+    }
+  }
+  &-header {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    .bag-icon {
+      width: 70px;
+    }
+    .button-group {
+      width: 133px;
+      margin: 10px 48px 0;
+      .button {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 3px 15px 5px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        @include BebasNeueRegular;
+      }
+    }
+    .total {
+      font-size: 23px;
+      letter-spacing: 1.5px;
+      @include BebasNeueRegular;
+      span {
+        margin-right: 7px;
+      }
+    }
+  }
+  &-body {
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      font-family: $RobotoCondensed;
+    }
+    .catalog {
+      justify-content: flex-start;
+      margin-top: 25px;
+    }
+    .catalog-item {
+      max-width: 138px;
+      margin-right: 10px;
+    }
+  }
+}
