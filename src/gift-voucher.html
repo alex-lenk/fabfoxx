@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body>
+
+//= templates/svg.html
+
+<div class="wrapper" id="to-top">
+
+    //= templates/top-panel.html
+
+    <div class="fixed-block-top">
+        //= templates/search-area.html
+
+        //= templates/nav-area.html
+    </div>
+
+    //= templates/nav-second.html
+
+    <div class="gift-voucher page-content">
+        <article class="content">
+            <div class="head-block">
+                <h1 class="header-page-title"><span>gift-voucher</span></h1>
+                <p>Nam id vestibulum lacus. Maecenas ac turpis a magna tincidunt molestie. Fusce eleifend nibh tellus,
+                    id
+                    placerat nisi facilisis sit amet. Nullam consequat dui non tincidunt blandit. Integer molestie
+                    maximus
+                    augue sit amet elementum. Aenean eu mauris non ligula pellentesque consectetur. Vestibulum in
+                    pellentesque orci, eget dignissim risus. Fusce vel convallis nisl, quis tempor quam. Morbi id arcu
+                    scelerisque, elementum orci sed, ornare nisl. Nunc augue libero, placerat et lacus id, sodales
+                    dapibus
+                    elit.</p>
+            </div>
+
+            <form action="/" class="general-form">
+
+                <div class="form-group necessarily">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Your name">
+                    <label class="form-label">Your name</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input type="email" class="form-control hide-placeholder" placeholder="Your email">
+                    <label class="form-label">Your email</label>
+                </div>
+
+
+                <fieldset class="form-amount">
+                    <div class="line">
+                        <label class="name">Your amount:
+                            <select class="currency-select">
+                                <option value="">$ usd</option>
+                                <option value="">€ eur</option>
+                            </select>
+                        </label>
+                        <div class="form-group necessarily">
+                            <input type="text" class="form-control bold-input" value="$ 350">
+                        </div>
+                    </div>
+                    <div class="line">
+                        <label class="name">Shipping method</label>
+                        <div class="form-group">
+                            <select class="select-method form-control">
+                                <option value="usd">Please choose a shipping method it will be included in the value of
+                                    the gift voucher
+                                </option>
+                                <option value="">method 1</option>
+                                <option value="">method 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <label class="name">Delivery country</label>
+                        <div class="form-group">
+                            <select class="select-method form-control">
+                                <option value="usd">Select delivery country
+                                </option>
+                                <option value="">country 1</option>
+                                <option value="">country 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="form-group necessarily">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Recipient name:">
+                    <label class="form-label">Recipient name:</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Recipient`s email address:">
+                    <label class="form-label">Recipient`s email address:</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="Confirm recipient`s email address:">
+                    <label class="form-label">Confirm recipient`s email address:</label>
+                </div>
+                <div class="form-group necessarily">
+                    <textarea class="form-control hide-placeholder" placeholder="Gift message ( optional ) "></textarea>
+                    <label class="form-label">Gift message ( optional ) </label>
+                </div>
+
+                <div class="total">
+                    <div class="total-box">
+                        <ul>
+                            <li>Subtotal before Delivery Charges: <span>£ 350</span></li>
+                            <li>Delivery Charges: <span>£ 0</span></li>
+                        </ul>
+                        <div class="currency"> £ 350</div>
+                    </div>
+                    <button class="button button-black">Add to bag</button>
+                </div>
+
+            </form>
+        </article>
+    </div>
+
+    //= templates/footer.html
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

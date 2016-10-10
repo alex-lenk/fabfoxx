@@ -1,0 +1,162 @@
+.gift-voucher {
+  padding-top: 170px;
+  background: url(../img/example/bg-gift-voucher.jpg) center top no-repeat;
+  .content {
+    width: 735px;
+    padding: 35px 38px;
+    position: relative;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
+  }
+  .head-block {
+    width: 100%;
+    top: -143px;
+    left: 0;
+    position: absolute;
+    h1 {
+      margin: 28px -119px 20px 0;
+      transform: translateX(-82%);
+      float: left;
+      display: inline-block;
+      letter-spacing: 0;
+      font-size: 25px;
+      span {
+        padding: 18px 20px 14px 0;
+      }
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      font-family: $RobotoCondensed;
+    }
+  }
+  .form-amount {
+    .line {
+      padding-left: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .wrap {
+    }
+    .name {
+      padding-top: 6px;
+      vertical-align: top;
+      letter-spacing: 1.7px;
+      font-size: 17px;
+      @include BebasNeueBold;
+    }
+    .form-group {
+      flex-basis: calc(100% - 180px);
+    }
+    .bold-input {
+      font-size: 19px;
+      font-weight: 400;
+      font-family: $RobotoCondensed;
+    }
+    .select-method {
+      padding: 0;
+      .jq-selectbox {
+        &__select {
+          &-text {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 35px;
+            padding-left: 9px;
+            letter-spacing: -0.2px;
+            font-family: $RobotoCondensed;
+          }
+        }
+        &__trigger-arrow {
+          top: 15px;
+          right: 11px;
+        }
+        &__dropdown {
+          width: 100% !important;
+        }
+        li {
+          font-size: 13px;
+        }
+      }
+    }
+    .currency-select {
+      margin: 0;
+      .jq-selectbox {
+        &__select {
+          padding-top: 0;
+          &-text {
+            font-size: 17px;
+            line-height: 1;
+            letter-spacing: 2px;
+            @include BebasNeueBold;
+          }
+        }
+      }
+    }
+    .jq-selectbox {
+      &__select {
+        &-text {
+        }
+      }
+      &__trigger {
+        border: 0;
+        &-arrow {
+          top: 5px;
+          right: -5px;
+          border-top: 9px solid #000;
+          border-right-width: 5px;
+          border-left-width: 5px;
+        }
+      }
+    }
+
+  }
+  .total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: url("../img/gift.png") no-repeat 4% 0;
+    .button {
+      padding: 6px 48px 4px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      @include BebasNeueRegular
+    }
+  }
+  .total-box {
+    margin-bottom: 30px;
+    display: flex;
+    ul {
+      padding: 0 30px 0 0;
+      margin: 0 30px 0 0;
+      border-right: 1px solid;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      list-style: none;
+    }
+    li {
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-align: right;
+      @include BebasNeueBold;
+      &:first-of-type {
+        margin-bottom: 8px;
+      }
+      span {
+        width: 38px;
+        display: inline-block;
+        margin-left: 7px;
+        font-size: 19px;
+        letter-spacing: 0;
+        text-align: left;
+      }
+    }
+    .currency {
+      padding-right: 12px;
+      margin-top: 5px;
+      font-size: 29px;
+      line-height: 1;
+      @include BebasNeueRegular;
+    }
+  }
+}
