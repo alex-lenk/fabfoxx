@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body>
+
+//= templates/svg.html
+
+<div class="wrapper" id="to-top">
+
+    //= templates/top-panel.html
+
+    <div class="fixed-block-top">
+        //= templates/search-area.html
+
+        //= templates/nav-area.html
+    </div>
+
+    //= templates/nav-second.html
+
+    <article class="returns-exchanges shipping-page page-content">
+        <div class="content">
+            <h1 class="header-page-title"><span>Returns & Exchanges</span></h1>
+
+            <h2>USA Shipping</h2>
+
+            <p>You have 14 days to return the item to us .
+                We guarantee to refund any item you send back . Make sure the item is in the original condition with all
+                the tags and the original packaging , the refund will be credited to the card you used to place your
+                order .
+            </p>
+            <p>We do not offer exchange from outside the Canada , return items will be refunded and you’ll need to place
+                a new order .</p>
+
+            <p>We are not responsible for any item sent back to us until it reaches our warehouse .<br>
+                For hygiene reasons , we do not offer refunds or exchanges on underwear , swimwear or pierced jewellery.
+            </p>
+            <form action="/" class="returns-form">
+                <fieldset class="returns-form-group">
+                    <legend><span>Product Returns</span></legend>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="First name">
+                        <label class="form-label">First name</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Last name">
+                        <label class="form-label">Last name</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="E-mail">
+                        <label class="form-label">E-mail</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Mobile phone">
+                        <label class="form-label">Mobile phone</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Order №">
+                        <label class="form-label">Order №</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Order date">
+                        <label class="form-label">Order date</label>
+                    </div>
+                </fieldset>
+                <fieldset class="returns-form-group">
+                    <legend><span>Product Information & Reason for Return</span></legend>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Product name">
+                        <label class="form-label">Product name</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Product code">
+                        <label class="form-label">Product code</label>
+                    </div>
+                    <div class="form-group necessarily">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Quantily">
+                        <label class="form-label">Quantily</label>
+                    </div>
+                </fieldset>
+
+                <div class="wrap-fieldset">
+                    <fieldset class="returns-form-group">
+                        <legend><span>Reason for Return</span></legend>
+
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Dead On Arrival</span>
+                        </label>
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Faulty, please supply details</span>
+                        </label>
+
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Order Error</span>
+                        </label>
+
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Other, please supply details</span>
+                        </label>
+
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Received Wrong Item</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="returns-form-group">
+                        <legend><span>Product is opened</span></legend>
+
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">Yes</span>
+                        </label>
+                        <label class="label-block">
+                            <input type="checkbox" name="" class="checkbox-custom">
+                            <span class="checkbox-custom-view label">No</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="form-group necessarily">
+                    <textarea class="form-control hide-placeholder" placeholder="Faulty or other details"></textarea>
+                    <label class="form-label">Faulty or other details</label>
+                </div>
+                <div class="no-robot text-center">
+                    <img src="img/example/no-robot.jpg" alt="">
+                    <button class="button button-black">send a request</button>
+                </div>
+
+            </form>
+        </div>
+    </article>
+
+    //= templates/footer.html
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
