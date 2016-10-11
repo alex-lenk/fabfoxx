@@ -5,6 +5,7 @@
   text-align: center;
   transition: .4s ease-in-out;
   cursor: pointer;
+  line-height: 1;
   &-default {
     font-size: 13px;
     background-color: #fff;
@@ -24,5 +25,57 @@
       outline: 1px solid;
       background-color: #fff;
     }
+  }
+  &-forgot {
+    padding: 10px 13px 9px;
+    font-size: 15px;
+    width: 340px;
+    letter-spacing: 3px;
+  }
+  &-join {
+    width: 346px;
+    padding: 13px 15px 12px;
+    letter-spacing: 4px;
+    font-size: 20px;
+  }
+  &-delivery {
+    font-size: 13px;
+    width: 147px;
+    padding: 10px 15px;
+    letter-spacing: 2.5px;
+  }
+  &-address {
+    font-size: 11px;
+    width: 113px;
+    padding: 8px 15px;
+    letter-spacing: 2.5px;
+  }
+  &-sign-in {
+    width: 266px;
+    padding: 10px 15px 9px;
+    letter-spacing: 2.5px;
+  }
+  &-save {
+    padding: 10px 15px 9px;
+    width: 239px;
+    letter-spacing: 2.5px;
+  }
+  &-edit {
+    font-size: 11px;
+    padding: 9px 15px 8px;
+    width: 61px;
+    letter-spacing: 2px;
+  }
+  &-send {
+    font-size: 17px;
+    padding: 9px 15px 8px;
+    width: 133px;
+    letter-spacing: 1.5px;
+  }
+  &-checkout, &-pay {
+    padding: 10px 0 10px;
+    font-size: 30px;
+    width: 228px;
+    letter-spacing: 3px;
   }
 }

@@ -9,8 +9,92 @@
   align-items: center;
 }
 
+.forgot-block {
+  .form-group {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-control {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+.nav-tabs {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    width: 50%;
+    line-height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    @include BebasNeueRegular;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.active {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: flex;
+    min-height: 445px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.login-footer {
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  .stay-connected {
+    width: 230px;
+    margin: 0 auto;
+    &-title {
+      margin-bottom: 17px;
+      color: #000;
+      font-size: 13px;
+    }
+    .footer-social {
+    }
+    .copyright {
+      margin-bottom: 20px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #a0a0a0;
+    }
+  }
+  .social {
+    margin-bottom: 17px;
+    svg {
+      fill: #000;
+    }
+  }
+}
+
 .login-block {
   width: 723px;
+  margin-top: 25px;
+  margin-bottom: 30px;
   &-header {
     display: flex;
     justify-content: space-between;
@@ -31,9 +115,8 @@
     background-color: #fff;
     box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
     .quick-text {
-      margin-top: 125px;
       margin-bottom: 30px;
-      padding: 0;
+      padding: 125px 0 0;
       letter-spacing: 1px;
       line-height: 1;
       list-style: none;
@@ -99,10 +182,8 @@
     width: 100%;
     margin-top: 40px;
     padding: 40px 55px;
-    background-color: #fafafa;
     .form-control {
       color: #000;
-      background-color: #fff;
       font-size: 14px;
       font-weight: 400;
       font-family: $RobotoCondensed;
@@ -110,12 +191,11 @@
   }
 
   .button {
-    width: 350px;
     margin: 0 auto;
     display: block;
-    padding: 4px 15px 4px;
-    letter-spacing: 2px;
-    font-size: 15px;
+    //width: 350px;
+    //padding: 4px 15px 4px;
+    //font-size: 15px;
     @include BebasNeueRegular;
   }
   .forgot {
@@ -130,96 +210,6 @@
       }
     }
     @include BebasNeueRegular;
-  }
-}
-
-.forgot-block {
-  .form-group {
-    width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .form-control {
-    font-size: 12px;
-    font-style: italic;
-  }
-}
-
-.nav-tabs {
-  width: 100%;
-  height: 42px;
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  li {
-    width: 50%;
-    line-height: 40px;
-    background-color: #000;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 3px;
-    text-align: center;
-    cursor: pointer;
-    transition: .4s ease-in-out;
-    @include BebasNeueRegular;
-    &:hover {
-      opacity: 0.9;
-    }
-    &.active {
-      color: #000;
-      background-color: #fff;
-    }
-  }
-}
-
-.tab-content {
-  > .tab-pane {
-    display: none;
-  }
-  > .active {
-    min-height: 445px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.login-footer {
-  width: 100%;
-  align-self: flex-end;
-  text-align: center;
-  .stay-connected {
-    width: 230px;
-    margin: 0 auto;
-    &-title {
-      margin-bottom: 17px;
-      color: #000;
-      font-size: 13px;
-    }
-    .footer-social {
-    }
-    .copyright {
-      margin-bottom: 20px;
-      font-size: 11px;
-      letter-spacing: 2px;
-      color: #a0a0a0;
-    }
-  }
-  .social {
-    margin-bottom: 17px;
-    svg {
-      fill: #000;
-    }
-  }
-}
-
-.long-registration {
-  margin-top: 25px;
-  margin-bottom: 30px;
-  .quick-text {
-    margin-top: 52px;
   }
   .password {
     .form-control:focus + label {
@@ -287,13 +277,11 @@
       letter-spacing: 3px;
       font-size: 17px;
       text-transform: uppercase;
-      background-color: #fff;
       @include BebasNeueRegular;
     }
     .checkbox-custom {
       + .checkbox-custom-view::before {
         margin: 1px 0 0 0;
-        background-color: #fff;
         right: 0;
       }
       &:checked + .checkbox-custom-view {
@@ -306,7 +294,6 @@
           left: auto;
           top: 11px;
           right: 12px;
-          border-color: #fff;
         }
       }
     }
@@ -337,18 +324,44 @@
       }
     }
   }
+}
+
+.wrap-content {
+  display: flex;
+  min-height: 445px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.long-registration {
+  .quick-text {
+    padding-top: 52px;
+  }
+  .general-form {
+    background-color: #fafafa;
+    .form-control {
+      background-color: #fff;
+    }
+  }
+  .gender {
+    .checkbox-custom-view {
+      background-color: #fff;
+    }
+    .checkbox-custom {
+      + .checkbox-custom-view::before {
+        background-color: #fff;
+      }
+      &:checked + .checkbox-custom-view {
+        &::after {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
   .button {
     padding: 10px 15px;
     font-size: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
