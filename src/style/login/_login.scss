@@ -102,7 +102,7 @@
     border-bottom: 2px solid;
     .logo {
       img {
-        height: 53px;
+        height: 51px;
       }
     }
     .back-to-shop {
@@ -189,13 +189,9 @@
       font-family: $RobotoCondensed;
     }
   }
-
   .button {
     margin: 0 auto;
     display: block;
-    //width: 350px;
-    //padding: 4px 15px 4px;
-    //font-size: 15px;
     @include BebasNeueRegular;
   }
   .forgot {
@@ -263,11 +259,15 @@
     }
   }
   .gender {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
     @include clearfix;
     .label-block {
-      width: 50%;
+      width: 298px;
       float: left;
+      background-color: #f9f9f9;
+      &:first-of-type {
+        margin-right: 14px;
+      }
     }
     .checkbox-custom-view {
       padding-left: 18px;
@@ -294,6 +294,7 @@
           left: auto;
           top: 11px;
           right: 12px;
+          border-color: #fff;
         }
       }
     }
@@ -316,13 +317,19 @@
     }
     .privacy {
       .checkbox-custom-view {
-        padding-top: 5px;
+        padding-top: 9px;
         line-height: 18px;
       }
       .checkbox-custom + .checkbox-custom-view::before {
-        margin-top: -4px;
+        margin-top: -7px;
       }
     }
+  }
+  .checkbox-custom-view {
+    padding-left: 52px;
+  }
+  .checkbox-custom+.checkbox-custom-view::before {
+    margin-left: -52px;
   }
 }
 
@@ -345,23 +352,109 @@
     }
   }
   .gender {
+    .label-block {
+      background-color: #fff;
+    }
     .checkbox-custom-view {
       background-color: #fff;
     }
-    .checkbox-custom {
-      + .checkbox-custom-view::before {
-        background-color: #fff;
-      }
-      &:checked + .checkbox-custom-view {
-        &::after {
-          border-color: #fff;
-        }
-      }
+    .checkbox-custom + .checkbox-custom-view::before {
+      background-color: #fff;
     }
   }
+}
 
-  .button {
-    padding: 10px 15px;
-    font-size: 20px;
+.login-title {
+  width: 100%;
+  margin: 43px 0 0;
+  letter-spacing: 2.5px;
+  line-height: 15px;
+  background-color: #000;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: left;
+  @include BebasNeueRegular;
+  span {
+    padding: 3px 9px 0 57px;
+    background-color: #fff;
+    display: inline-block;
   }
+}
+
+.login-step {
+  width: 425px;
+  margin: 36px 0;
+  padding: 0 14px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: li;
+  position: relative;
+  &:after {
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    content: '';
+  }
+  li {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+    @include BebasNeueRegular;
+    &:before {
+      content: counter(li);
+      counter-increment: li;
+      padding-top: 10px;
+      margin: 0 auto 8px;
+      display: block;
+      height: 35px;
+      width: 35px;
+      font-size: 17px;
+      line-height: 1;
+      position: relative;
+      z-index: 5;
+      color: #fff;
+      background-color: #000;
+    }
+    &:after {
+      height: 1px;
+      position: absolute;
+      top: 17px;
+      content: '';
+    }
+    &:first-of-type {
+      margin-left: -16px;
+    }
+    &:last-of-type {
+      margin-right: -28px;
+    }
+    span {
+      letter-spacing: 1px;
+    }
+  }
+  .current {
+    ~ li {
+      color: #b4b4b4;
+      &:before {
+        background-color: #e4e4e4;
+        color: #000;
+      }
+    }
+    &:after {
+      background-color: #000;
+      width: 274px;
+      left: -133px;
+    }
+    &:first-of-type:after {
+      width: 110px;
+      left: 2px;
+    }
+  }
+}
+
+.register {
 }

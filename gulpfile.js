@@ -19,7 +19,6 @@ var gulp = require('gulp'),
     create = browserSync.create(),
     reload = browserSync.reload;
 
-
 var path = {
         build: { //Тут мы укажем куда складывать готовые после сборки файлы
             html: './build/',
