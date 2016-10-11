@@ -101,3 +101,60 @@
     }
   }
 }
+
+.select-country {
+  width: 100%;
+  padding: 0 10px;
+  &:focus {
+    outline: 0;
+  }
+  .jq-selectbox {
+    &__select {
+      height: 33px;
+      padding-left: 15px;
+      line-height: 33px;
+      background-color: #f9f9f9;
+      width: 100%;
+      &:focus {
+        outline: 0;
+      }
+    }
+    &__select-text {
+      font-size: 14px;
+      font-family: $RobotoCondensed;
+      font-weight: 400;
+      &:focus {
+        outline: 0;
+      }
+    }
+    &__trigger {
+      border-left: 0;
+      &:focus {
+        outline: 0;
+      }
+      &-arrow {
+        top: 12px;
+        right: 22px;
+        border-top: 7px solid #000;
+        border-right-width: 4px;
+        border-left-width: 4px;
+      }
+    }
+    &__dropdown {
+      width: 100%;
+      left: 0;
+      padding: 0 10px;
+      li {
+        font-size: 14px;
+        font-family: $RobotoCondensed;
+        font-weight: 400;
+        &:hover {
+          background-color: #000;
+        }
+        &.selected {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}

@@ -328,7 +328,7 @@
   .checkbox-custom-view {
     padding-left: 52px;
   }
-  .checkbox-custom+.checkbox-custom-view::before {
+  .checkbox-custom + .checkbox-custom-view::before {
     margin-left: -52px;
   }
 }
@@ -457,4 +457,16 @@
 }
 
 .register {
+  .select-country {
+    padding: 0;
+    text-align: left;
+    .jq-selectbox__trigger-arrow {
+      top: 15px;
+    }
+  }
+  .select-area.necessarily:after {
+    top: 10px;
+    right: 47px;
+    z-index: 101;
+  }
 }
