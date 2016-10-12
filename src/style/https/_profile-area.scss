@@ -159,7 +159,52 @@
       }
 
     }
-
   }
 }
-
+.history-open-details {
+  .close-box {
+    width: 32px;
+    height: 32px;
+    top: -43px;
+    text-align: center;
+    svg {
+      width: 18px;
+      margin-top: 7px;
+    }
+  }
+  .bag-icon {
+    width: 48px;
+    margin-right: 32px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 32px;
+    letter-spacing: 2px;
+    span {
+      color: #f00;
+    }
+  }
+  .catalog-item {
+      width: 200px;
+  }
+  .modal {
+    background-color: rgba(255, 255, 255, .93);
+    &-dialog {
+      width: 1215px;
+      padding: 40px 47px 0;
+      background-color: #fff;
+      box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
+    }
+    &-header {
+      margin-bottom: 34px;
+    }
+    &-content {
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}

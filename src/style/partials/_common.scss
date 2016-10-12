@@ -151,24 +151,36 @@ img {
   display: inline;
 }
 
-.close-box {
-  width: 22px;
-  height: 22px;
+.close {
   position: absolute;
-  top: -7px;
-  right: -5px;
-  background-color: #000;
   cursor: pointer;
   transition: .4s ease-in-out;
   svg {
-    width: 12px;
     vertical-align: middle;
-    fill: #fff;
     transition: .4s ease-in-out;
   }
-  &:hover {
-    background-color: #efefef;
+  &-box {
+    width: 22px;
+    height: 22px;
+    top: -7px;
+    right: -5px;
+    background-color: #000;
     svg {
+      width: 12px;
+      fill: #fff;
+    }
+    &:hover {
+      background-color: #efefef;
+      svg {
+        fill: #000;
+      }
+    }
+  }
+  &-default {
+    top: 9px;
+    right: -30px;
+    svg {
+      width: 27px;
       fill: #000;
     }
   }
