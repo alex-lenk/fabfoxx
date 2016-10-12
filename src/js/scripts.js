@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Initializing plugin  http://dimox.name/jquery-form-styler/
     (function ($) {
         $(function () {
-            $('.currency-select,.feedback-select, .select-country, .select-method').styler({
+            $('.currency-select,.feedback-select,.select-country,.select-method').styler({
                 selectSmartPositioning: false
             });
         });

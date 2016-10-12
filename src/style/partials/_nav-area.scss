@@ -18,60 +18,60 @@
     padding: 0;
     list-style: none;
   }
-  .main-menu {
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 15px;
-    @include MinionProRegular;
-    & > li {
-      margin: 0 12px;
-      display: inline-block;
-      vertical-align: top;
-      text-align: left;
-      letter-spacing: 1.5px;
-      &:not(.sale) a {
-        color: #000;
-      }
-      & > a {
-        padding: 8px 0 10px;
-        display: block;
-        border-top: 3px solid transparent;
-        transition: .4s ease-in-out;
-      }
-      &.active > a, > a:hover {
-        border-top-color: #000;
-      }
+}
+
+.main-menu {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  @include MinionProRegular;
+  & > li {
+    margin: 0 12px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: 1.5px;
+    &:not(.sale) a {
+      color: #000;
     }
-    .parent {
-      position: relative;
+    & > a {
+      padding: 8px 0 10px;
+      display: block;
+      border-top: 3px solid transparent;
+      transition: .4s ease-in-out;
+    }
+    &.active > a, > a:hover {
+      border-top-color: #000;
+    }
+  }
+  &-parent {
+    position: relative;
+    &:after {
+      content: '';
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-bottom: 0 solid #fff;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+      transition: .4s ease-in-out;
+    }
+    &:hover {
       &:after {
-        content: '';
-        border-left: 11px solid transparent;
-        border-right: 11px solid transparent;
-        border-bottom: 0 solid #fff;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -5px;
-        transition: .4s ease-in-out;
+        border-bottom-width: 7px;
       }
-      &:hover {
-        &:after {
-          border-bottom-width: 7px;
-        }
-        .child {
-          @include visible-display;
-          width: 213px;
-        }
+      .child {
+        @include visible-display;
+        width: 213px;
       }
     }
   }
   .child {
-    padding: 0 0 26px;
+    padding: 26px 0;
     top: 41px;
     left: 0;
-    padding-top: 26px;
     background-color: #fff;
     @include hide-display;
     li {

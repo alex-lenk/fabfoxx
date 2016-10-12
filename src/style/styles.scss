@@ -34,7 +34,8 @@
 @import "partials/returns-exchanges";
 @import "partials/gift-voucher";
 //Login
-@import "login/login";
+@import "https/login";
+@import "https/profile-area";
 
 .modal {
   background-color: rgba(255, 255, 255, 0.9);
