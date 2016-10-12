@@ -2,21 +2,7 @@
   &-area {
     width: 1055px;
     margin: 0 auto;
-    padding-top:35px;
-  }
-  &-favorites {
-    margin-top: 35px;
-    background-color: #fff;
-    .filter-group {
-      float: left;
-      margin-right: 40px;
-    }
-    .catalog {
-      padding-top: 25px;
-    }
-    .catalog-item {
-      width: 203px;
-    }
+    padding-top: 35px;
   }
   &-menu {
     display: flex;
@@ -82,4 +68,98 @@
       }
     }
   }
+  &-favorites {
+    margin-top: 35px;
+    background-color: #fff;
+    .filter-group {
+      float: left;
+      margin-right: 40px;
+    }
+    .catalog {
+      padding-top: 25px;
+    }
+    .catalog-item {
+      width: 203px;
+    }
+  }
+  &-history {
+    margin: 36px 0;
+    padding: 16px 28px;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    &-line {
+      ul {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #e3e3e3;
+        }
+        li {
+          &:not(:last-of-type) {
+            border-right: 1px solid #e3e3e3;
+          }
+          &:first-of-type {
+            flex-basis: 104px;
+          }
+          &:nth-child(2) {
+            flex-basis: 142px;
+          }
+          &:nth-child(3) {
+            flex-basis: 112px;
+          }
+          &:nth-child(4) {
+            flex-basis: 134px;
+            span {
+              border-bottom: 1px solid;
+            }
+          }
+          &:last-child {
+            flex-basis: 513px;
+          }
+        }
+      }
+      .head {
+        padding: 0 0 4px;
+        letter-spacing: 2px;
+        font-size: 10px;
+        @include BebasNeueRegular;
+        li {
+          height: 19px;
+          line-height: 19px;
+        }
+      }
+      .info {
+        padding: 8px 0 8px;
+        height: 100%;
+        font-size: 9px;
+        font-weight: 300;
+        font-family: $RobotoCondensed;
+        li {
+          height: 100%;
+          &:not(:last-of-type) {
+            height: 55px;
+            line-height: 54px;
+            margin-top: 5px;
+          }
+          &:first-of-type {
+            text-align: left;
+            padding-left: 10px;
+          }
+          &:last-child {
+            flex-basis: 513px;
+            text-align: left;
+            img {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
 }
+
