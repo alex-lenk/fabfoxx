@@ -1,0 +1,92 @@
+.terms-condition {
+  width: 1080px;
+  margin: 0 auto;
+  color: #000;
+  display: flex;
+  .title {
+    margin: 0;
+    display: inline-block;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include MinionProRegular;
+    span {
+      padding: 13px 15px 5px 0;
+      display: block;
+      z-index: 5;
+      background: #000;
+      position: relative;
+      transform: translateX(-60%);
+    }
+  }
+  .sidebar {
+    width: 220px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      padding: 6px 8px;
+      font-size: 13px;
+      color: #000;
+      background-color: transparent;
+      line-height: 1;
+      letter-spacing: 1.4px;
+      cursor: pointer;
+      @include BebasNeueRegular;
+      span {
+        margin-right: 5px;
+      }
+    }
+    .active {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  .content {
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-basis: calc(100% - 220px);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: $RobotoCondensed;
+    .bold {
+      font-weight: 400;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    @include BebasNeueRegular;
+  }
+  .table {
+    padding-top: 15px;
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .td {
+      padding: 20px 15px 15px 25px;
+      margin-bottom: 1px;
+      width: 163px;
+      background-color: #f7f7f7;
+    }
+    .cont {
+      padding: 16px 25px 15px 17px;
+      margin-left: 1px;
+      flex-basis: calc(100% - 164px);
+    }
+  }
+  .panel {
+    &-group {
+      padding-top: 15px;
+    }
+    &-heading {
+      margin: 0 0 15px;
+    }
+  }
+}
