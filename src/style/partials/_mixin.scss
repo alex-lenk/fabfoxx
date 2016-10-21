@@ -15,6 +15,10 @@
   font-family: 'BebasNeueBook', sans-serif;
 }
 
+$RobotoCondensed: 'Roboto Condensed', sans-serif;
+
+$Roboto: 'Roboto', sans-serif;
+
 @function calculateRem($size) {
   $remSize: $size / 13px;
   @return $remSize * 1rem;
