@@ -1,3 +1,45 @@
+.checkbox {
+  &[type="checkbox"] {
+    display: none;
+    + .checkbox-label {
+      &::before {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        content: "";
+      }
+    }
+    &:checked + .checkbox-label::before {
+      background: url(../img/svg/check.svg) 0 0 no-repeat #f9f9f9;
+    }
+  }
+}
+
+.radio {
+  &[type="radio"] {
+    display: none;
+    + label {
+      &::before {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background: url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -38px top no-repeat;
+        cursor: pointer;
+        content: "";
+      }
+    }
+    &:checked + label::before {
+      background: url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -57px top no-repeat;
+    }
+  }
+}
+
 .checkbox-custom {
   display: none;
   + .checkbox-custom-view::before {
@@ -5,7 +47,6 @@
     height: 35px;
     margin: 2px 0 0 -47px;
     background-color: #f9f9f9;
-    border: 0;
     content: '';
     position: absolute;
     line-height: normal;

@@ -75,9 +75,10 @@
         &:after {
           content: '';
           width: 1px;
-          height: 50px;
+          height: 100%;
           position: absolute;
-          top: 5px;
+          top: 10px;
+          margin-top: -10px;
           right: 0;
           background-color: #ededed;
         }
@@ -168,6 +169,24 @@
         letter-spacing: 1px;
         font-family: $RobotoCondensed;
       }
+    }
+  }
+  .select-delivery {
+    .item {
+      text-align: center;
+      flex-basis: 153px;
+    }
+    .options {
+      padding-left: 50px;
+      flex-basis: 375px;
+    }
+    .price {
+      text-align: center;
+      flex-basis: 90px;
+    }
+    .edit {
+      text-align: center;
+      flex-basis: 75px;
     }
   }
 }
