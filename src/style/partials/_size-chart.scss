@@ -1,0 +1,240 @@
+.size_chart {
+  height: 56px;
+  line-height: 56px;
+  display: flex;
+  .size_chart_title {
+    min-width: 320px;
+    width: 320px;
+    padding-right: 22px;
+    background: #000;
+    text-align: right;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'MinionPro-Regular';
+  }
+  .size_conversion {
+    padding-left: 20px;
+    font-size: 24px;
+    color: #101010;
+  }
+}
+
+.size_chart_wrap {
+  max-width: 926px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  table {
+    tr {
+      th {
+        letter-spacing: 0.75px;
+      }
+    }
+  }
+  .main_table {
+    table {
+      width: 100%;
+      text-align: center;
+      border-spacing: 1px;
+      border-collapse: separate;
+      tr {
+        &:hover {
+          td {
+            background: #E6E6E6 !important;
+          }
+        }
+        th {
+          background: #D2D2D2;
+          text-align: center;
+          height: 45px;
+          color: #fff;
+          font-size: 15px;
+          font-family: 'BebasNeueBold';
+          &:first-child {
+            background: #fff !important;
+            font-size: 20px;
+            color: #000;
+          }
+        }
+        td {
+          border: 1px solid #EEEEEE;
+          height: 45px;
+          width: 61px;
+          font-size: 14px;
+          color: #101010;
+          &:first-child {
+            color: #fff;
+            background: #000 !important;
+            border: 0;
+          }
+          &:hover {
+            background: #000 !important;
+            color: #fff;
+            cursor: pointer
+          }
+        }
+      }
+    }
+  }
+}
+
+.size_chart_tabs {
+  margin-top: 25px;
+  position: relative;
+  .size_chart_count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    ul {
+      width: 234px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+      padding-left: 0;
+      li {
+        list-style: none;
+        a {
+          width: 34px;
+          height: 34px;
+          display: block;
+          line-height: 34px;
+          background: #F1F1F1;
+          outline: 1px solid #9A9A9A;
+          text-align: center;
+        }
+        .size_chart_count_active {
+          outline: 0;
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .tabs {
+    position: relative;
+    .tabs_bg {
+      background: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 34px;
+      width: 672px;
+      display: block !important;
+    }
+    .tabs_wrap {
+      .clothes_item {
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid #D2D2D2;
+        &:last-child {
+          border-bottom: 0;
+        }
+        .item_img {
+          max-width: 497px;
+          width: 100%;
+          text-align: center;
+          .item_img_title {
+            font-size: 18px;
+            letter-spacing: 1.8px;
+            margin-bottom: 20px;
+          }
+        }
+        .item_table {
+          max-width: 430px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .item_table_title {
+            text-align: right;
+            font-size: 15px;
+            color: #ababab;
+            line-height: 18px;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+          }
+          table {
+            border-spacing: 1px;
+            border-collapse: separate;
+            width: 100%;
+            tr {
+              width: 100%;
+              &:hover {
+                td {
+                  background: #E6E6E6 !important;
+                }
+              }
+              th {
+                text-align: center;
+                background: #D2D2D2;
+                color: #fff;
+                height: 32px;
+              }
+              .top_left_td {
+                color: #000;
+                background: #fff;
+                border: 0;
+                font-size: 25px;
+                position: relative;
+                span {
+                  font-size: 14px;
+                  bottom: 5px;
+                  left: 0;
+                  position: absolute;
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+              td {
+                border: 1px solid #EEEEEE;
+                width: 63px;
+                height: 45px;
+                text-align: center;
+                font-size: 14px;
+                color: #101010;
+                &:hover {
+                  background: #000 !important;
+                  color: #fff;
+                  cursor: pointer;
+                }
+                &:first-child {
+                  width: 44px;
+                  bottom: 0;
+                  background: #000 !important;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tabs > div, .tabs > input {
+    display: none;
+  }
+
+  .tabs label {
+    border: 1px solid #000;
+    line-height: 32px;
+    cursor: pointer;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 0 19px;
+    margin-bottom: 0;
+    font-size: 21px;
+  }
+  .tabs input[type="radio"]:checked + label {
+    background: #fff;
+    color: #000;
+  }
+
+  .tabs > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+  .tabs > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+  .tabs > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+  .tabs > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
+    display: block;
+  }
+}
