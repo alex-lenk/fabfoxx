@@ -1,0 +1,211 @@
+.show_card_popup {
+  overflow: hidden;
+}
+
+.size_chart_bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-y: scroll;
+  .size_chart_popup {
+    width: 894px;
+    padding-left: 20px;
+    position: relative;
+    top: 135px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    background: #fff;
+    &:after {
+      content: "";
+      width: 11px;
+      height: 100%;
+      background: #F7F7F7;
+      position: absolute;
+      top: 11px;
+      right: -11px;
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      height: 11px;
+      background: #F7F7F7;
+      position: absolute;
+      bottom: -11px;
+      left: 10px;
+    }
+    .size_chart_popup_bottom {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      background: #D2D2D2;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 35px;
+    }
+    .size_chart_title {
+      height: 31px;
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+      padding-left: 10px;
+      line-height: 31px;
+      font-size: 15px;
+      font-family: 'MinionPro-Regular';
+      margin-left: -20px;
+      .size_chart_popup_close {
+        float: right;
+        width: 31px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .2s;
+        svg {
+          width: 16px;
+          fill: #fff;
+          transition: all .2s;
+        }
+        &:hover {
+          background: #fff;
+          transition: all .2s;
+          svg {
+            fill: #000;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+    .size_chart_count {
+      position: relative;
+      margin-top: 28px;
+      margin-bottom: 18px;
+      margin-left: 10px;
+    }
+    .clothes_item {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: row-reverse;
+      width: 100%;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .item_img {
+        max-width: 497px;
+        width: 100%;
+        text-align: center;
+        .item_img_title {
+          font-size: 18px;
+          letter-spacing: 1.8px;
+          margin-bottom: 20px;
+        }
+        img {
+          width: 90%;
+        }
+      }
+      .item_table {
+        max-width: 430px;
+        width: 100%;
+        .item_table_title {
+          text-align: right;
+          font-size: 15px;
+          color: #ababab;
+          line-height: 18px;
+          letter-spacing: 1.5px;
+          margin-bottom: 20px;
+        }
+        table {
+          border-spacing: 1px;
+          border-collapse: separate;
+          width: 100%;
+          tr {
+            width: 100%;
+            &:hover {
+              td {
+                background: #E6E6E6 !important;
+              }
+            }
+            th {
+              text-align: center;
+              background: #D2D2D2;
+              color: #fff;
+              height: 32px;
+            }
+            .top_left_td {
+              color: #000;
+              background: #fff;
+              border: 0;
+              font-size: 25px;
+              position: relative;
+              span {
+                font-size: 14px;
+                bottom: 5px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+              }
+            }
+            td {
+              border: 1px solid #EEEEEE;
+              width: 63px;
+              height: 45px;
+              text-align: center;
+              font-size: 14px;
+              color: #101010;
+              &:hover {
+                background: #000 !important;
+                color: #fff;
+                cursor: pointer;
+              }
+              &:first-child {
+                width: 44px;
+                bottom: 0;
+                background: #000 !important;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .table_info {
+          margin-top: 30px;
+          span {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'MinionPro-Regular';
+          }
+          .table_info_button {
+            float: right;
+            margin-top: 32px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            button {
+              width: 239px;
+              height: 34px;
+              background: #EFEFEF;
+              color: #000;
+              margin-bottom: 10px;
+              border: 0;
+              outline: none;
+              cursor: pointer;
+            }
+            .sign_in {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
