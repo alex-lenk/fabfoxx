@@ -1,0 +1,31 @@
+.confirm_pay_title {
+  display: flex;
+  span {
+    &:after {
+      background: #000 !important;
+    }
+  }
+}
+
+.pay-confirm {
+  .login-title {
+    span {
+      padding-left: 0;
+    }
+  }
+}
+
+.guest_checkout_text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #090909;
+  font-family: "Roboto Condensed";
+}
+
+.general-form {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+}

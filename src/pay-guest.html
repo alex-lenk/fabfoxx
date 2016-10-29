@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body class="login-body">
+
+//= templates/svg.html
+
+<div class="wrapping">
+    <div class="register login-area pay-confirm">
+
+        <header class="login-area-header">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="#" class="back-to-shop">BACK TO SHOPPING</a>
+        </header>
+        <div class="wrap">
+            <h1 class="login-title"><span>Guest checkout</span></h1>
+            <div class="confirm_pay_wrap">
+                <div class="select_payment">
+                    <div class="select_payment_item">
+                        <div class="select_payment_img"><img src="img/pay-visa.png" alt=""></div>
+                        <div class="select_payment_name">Visa</div>
+                        <div class="select_payment_radio">
+                            <input hidden id="spr1" name="spr" type="radio">
+                            <label for="spr1"></label>
+                        </div>
+                    </div>
+                    <div class="select_payment_item">
+                        <div class="select_payment_img"><img src="img/pay-mcard.png" alt=""></div>
+                        <div class="select_payment_name">Master card</div>
+                        <div class="select_payment_radio">
+                            <input hidden id="spr2" name="spr" type="radio">
+                            <label for="spr2"></label>
+                        </div>
+                    </div>
+                    <div class="select_payment_item">
+                        <div class="select_payment_img"><img src="img/pay-maestro.png" alt=""></div>
+                        <div class="select_payment_name">Maestro</div>
+                        <div class="select_payment_radio">
+                            <input hidden id="spr3" name="spr" type="radio">
+                            <label for="spr3"></label>
+                        </div>
+                    </div>
+                    <div class="select_payment_item">
+                        <div class="select_payment_img"><img src="img/pay-jcb.png" alt=""></div>
+                        <div class="select_payment_name">JCB</div>
+                        <div class="select_payment_radio">
+                            <input hidden id="spr4" name="spr" type="radio">
+                            <label for="spr4"></label>
+                        </div>
+                    </div>
+                    <div class="select_payment_item">
+                        <div class="select_payment_img"><img src="img/pay-pal.png" alt=""></div>
+                        <div class="select_payment_name">JCB</div>
+                        <div class="select_payment_radio">
+                            <input hidden id="spr5" name="spr" type="radio">
+                            <label for="spr5"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pay_securely_wrap">
+                    <span class="button_info">To pay for you order click on the Pay Securly button below.<br>Clicking will take you directly to the site where you can to pay:</span>
+                    <button>PAY SECURELY</button>
+                    <span class="button_info">You can pay order or track the status of your order on your profile page<br>Access to profile page has been sent to you by mail.</span>
+                    <div class="pay_securely_img">
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                        <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>
+                    </div>
+                    <div class="total_cost_wrap">
+                        <ul>
+                            <li>Subtotal before Delivery Charges:<span>$ 159.9</span></li>
+                            <li>Delivery Charges:<span>$ 79.80</span></li>
+                            <li>GIFT VOUCHER:<span>$ 0</span></li>
+                            <li>DISCOUNT CODE:<span class="disc_code">$ 0</span></li>
+                        </ul>
+                        <div class="total_cost">
+                            Total Cost: <span>$ 159.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    //= templates/login-footer.html
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
