@@ -84,7 +84,7 @@ $black: #000;
 }
 
 .delivery_info {
-  margin-bottom: 35px;
+  //margin-bottom: 35px;
   span {
     letter-spacing: 1.3px
   }
@@ -96,8 +96,8 @@ $black: #000;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: 'BebasNeueRegular';
     padding-left: 10px;
+    @include BebasNeueRegular;
   }
   .aside_box_head {
     display: block;

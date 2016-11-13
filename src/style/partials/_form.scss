@@ -47,7 +47,7 @@
     width: 100%;
     height: 40px;
     line-height: 40px;
-    padding: 0 15px;
+    padding: 0 15px 0 18px;
     font-size: 14px;
     background-color: #fff;
     background-image: none;
@@ -234,8 +234,8 @@ textarea.form-control {
   .necessarily {
     &:after {
       position: absolute;
-      top: 12px;
-      right: 16px;
+      top: 11px;
+      right: 13px;
       font-size: 14px;
       color: #767676;
       content: '✳';

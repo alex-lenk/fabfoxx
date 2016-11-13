@@ -1,6 +1,7 @@
 .login-body {
   background-color: #f5f5f5;
 }
+
 .wrapping {
   width: 100%;
   height: 100%;
@@ -68,7 +69,7 @@
 
 .login-footer {
   width: 100%;
-  margin-top: 36px;
+  margin-top: 65px;
   align-self: flex-end;
   text-align: center;
 }
@@ -196,8 +197,6 @@
     }
   }
   .button {
-    margin: 0 auto;
-    display: block;
     @include BebasNeueRegular;
   }
   .forgot {
@@ -265,7 +264,7 @@
     }
   }
   .gender {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     @include clearfix;
     .label-block {
       width: 298px;
@@ -339,7 +338,7 @@
   }
 }
 
-.tab-pane .general-form, .register .general-form {
+.tab-pane .general-form {
   margin-top: 40px;
   padding: 40px 55px;
 }
@@ -355,7 +354,6 @@
   min-height: 445px;
   align-items: center;
   flex-direction: column;
-  text-align: center;
 }
 
 .long-registration {
@@ -389,7 +387,7 @@
   text-align: left;
   @include BebasNeueRegular;
   span {
-    padding: 3px 9px 0 57px;
+    padding: 3px 9px 0 10px;
     background-color: #fff;
     display: inline-block;
   }
@@ -398,7 +396,7 @@
 .login-step {
   width: 425px;
   margin: 0 auto 33px;
-  padding: 0 14px;
+  padding: 0 15px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -476,6 +474,16 @@
 }
 
 .register {
+  margin-top: 45px;
+  .general-form {
+    padding: 0 55px 40px;
+    .form-group {
+      margin-bottom: 17px;
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+  }
   .select-country {
     padding: 0;
     text-align: left;

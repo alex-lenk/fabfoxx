@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body class="login-body">
+
+//= templates/svg.html
+
+<div class="pay-confirm register login-area">
+    <header class="login-area-header">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <a href="#" class="back-to-shop">BACK TO SHOPPING</a>
+    </header>
+    <div class="login-area-body wrap-content">
+        <h1 class="login-title">
+            <span>CONFIRM & PAY</span>
+        </h1>
+
+        <ol class="login-step">
+            <li><span>ABOUT US</span></li>
+            <li><span>DELIVERY ADDRESS</span></li>
+            <li class="current"><span>CONFIRM & PAY</span></li>
+        </ol>
+
+
+        <div class="pay-confirm_wrap">
+
+            <div class="pay-confirm-order_summary">
+                <div class="pay-confirm_title"><span>Order summary</span></div>
+
+                <!-- order_summary_header -->
+                <div class="order_summary_h">
+                    <div class="order_summary_item">ITEM</div>
+                    <div class="order_summary_option">YOUR OPTIONS</div>
+                    <div class="order_summary_price">PRICE</div>
+                    <div class="order_summary_edit">Edit</div>
+                </div>
+                <!-- end order_summary_header -->
+
+                <div class="order_summary_items">
+                    <div class="order_summary_item">
+                        <div class="order_summary_img">
+                            <img src="img/example/shopping_bag_photo1.jpg" alt="">
+                        </div>
+                        <span class="order_summary_name">BACK FOR MORE<br>MIDI DRESS - MARSALA</span>
+                    </div>
+                    <div class="order_summary_option">
+                        <div class="order_summary_row"><span>Color:</span>
+                            <div class="color_box" style="background: #000;"></div>
+                            Black
+                        </div>
+                        <div class="order_summary_row"><span>Size:</span>L</div>
+                        <div class="order_summary_row"><span>Qnt:</span>1</div>
+                    </div>
+                    <div class="order_summary_price">$159.9</div>
+                    <div class="order_summary_edit">
+                        <input hidden checked id="osp1" type="checkbox">
+                        <label for="osp1"></label>
+                    </div>
+                </div>
+                <div class="order_summary_items">
+                    <div class="order_summary_item">
+                        <div class="order_summary_img">
+                            <img src="img/example/shopping_bag_photo1.jpg" alt="">
+                        </div>
+                        <span class="order_summary_name">BACK FOR MORE<br>MIDI DRESS - MARSALA</span>
+                    </div>
+                    <div class="order_summary_option">
+                        <div class="order_summary_row"><span>Color:</span>
+                            <div class="color_box" style="background: #000;"></div>
+                            Black
+                        </div>
+                        <div class="order_summary_row"><span>Size:</span>L</div>
+                        <div class="order_summary_row"><span>Qnt:</span>1</div>
+                    </div>
+                    <div class="order_summary_price">$159.9</div>
+                    <div class="order_summary_edit">
+                        <input checked hidden id="osp2" type="checkbox">
+                        <label for="osp2"></label>
+                    </div>
+                </div>
+                <div class="order_summary_total">
+                    <span class="total_item">1 item</span>
+                    <div class="subtotal_charges">
+                        <div>Subtotal before Delivery Charges:</div>
+                        <span>$159.9</span></div>
+                </div>
+            </div>
+
+            <div class="select_address">
+                <div class="pay-confirm_title"><span>Select delivery address</span></div>
+                <div class="select_address_h">
+                    <div class="select_address_rname">Recevier Name</div>
+                    <div class="select_address_edit">Edit</div>
+                </div>
+                <div class="select_address_item">
+                    <div class="select_address_rname">Palm Jumeirah 5, 4, Dubai / United Arab Emirates</div>
+                    <div class="select_address_edit">
+                        <input hidden checked id="sae" type="checkbox">
+                        <label for="sae"></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="select_type">
+                <div class="pay-confirm_title"><span>Select delivery type</span></div>
+                <div class="select_type_item">
+                    <div class="select_type">Standart shipping</div>
+                    <div class="select_type_date">Delivered on or before 16 June 2016</div>
+                    <div class="select_type_price">$ 10</div>
+                    <div class="select_type_radio">
+                        <input hidden name="str" id="str" type="radio">
+                        <label for="str"></label>
+                    </div>
+                </div>
+                <div class="select_type_item">
+                    <div class="select_type">EXPRESS shipping</div>
+                    <div class="select_type_date">Delivered on or before 16 June 2016</div>
+                    <div class="select_type_price">$ 30</div>
+                    <div class="select_type_radio">
+                        <input checked hidden name="str" id="str1" type="radio">
+                        <label for="str1"></label>
+                    </div>
+                </div>
+                <div class="select_type_total">
+                    <a href="#" class="button button-black button-delivery">DELIVERY INFO</a>
+                    <div class="delivery_charges">Delivery Charges: <span>$ 30</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="confirm_pay_wrap">
+            <div class="discount">
+                <div class="pay-confirm_title"><span>Discount</span></div>
+                <div class="discount_item">
+                    <div class="discount_code">
+                        <div class="discount_code_img">
+                            <img src="img/discount.png" alt="">
+                            <span>Discount<br>code</span>
+                        </div>
+                        <input type="text" placeholder="Enter your discount code here">
+                    </div>
+                    <div class="discount_price">$159.9</div>
+                    <div class="discount_check">
+                        <input checked hidden id="dc" type="checkbox">
+                        <label for="dc"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="select_payment">
+                <div class="pay-confirm_title"><span>Select payment method</span></div>
+                <div class="select_payment_item">
+                    <div class="select_payment_img"><img src="img/pay-visa.png" alt=""></div>
+                    <div class="select_payment_name">Visa</div>
+                    <div class="select_payment_radio">
+                        <input hidden id="spr1" name="spr" type="radio">
+                        <label for="spr1"></label>
+                    </div>
+                </div>
+                <div class="select_payment_item">
+                    <div class="select_payment_img"><img src="img/pay-mcard.png" alt=""></div>
+                    <div class="select_payment_name">Master card</div>
+                    <div class="select_payment_radio">
+                        <input hidden id="spr2" name="spr" type="radio">
+                        <label for="spr2"></label>
+                    </div>
+                </div>
+                <div class="select_payment_item">
+                    <div class="select_payment_img"><img src="img/pay-maestro.png" alt=""></div>
+                    <div class="select_payment_name">Maestro</div>
+                    <div class="select_payment_radio">
+                        <input hidden id="spr3" name="spr" type="radio">
+                        <label for="spr3"></label>
+                    </div>
+                </div>
+                <div class="select_payment_item">
+                    <div class="select_payment_img"><img src="img/pay-jcb.png" alt=""></div>
+                    <div class="select_payment_name">JCB</div>
+                    <div class="select_payment_radio">
+                        <input hidden id="spr4" name="spr" type="radio">
+                        <label for="spr4"></label>
+                    </div>
+                </div>
+                <div class="select_payment_item">
+                    <div class="select_payment_img"><img src="img/pay-pal.png" alt=""></div>
+                    <div class="select_payment_name">JCB</div>
+                    <div class="select_payment_radio">
+                        <input hidden id="spr5" name="spr" type="radio">
+                        <label for="spr5"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="pay_securely_wrap">
+                <div class="total_cost_wrap">
+                    <ul>
+                        <li>Subtotal before Delivery Charges:<span>$ 159.9</span></li>
+                        <li>Delivery Charges:<span>$ 79.80</span></li>
+                        <li>GIFT VOUCHER:<span>$ 0</span></li>
+                        <li>DISCOUNT CODE:<span class="disc_code">$ 0</span></li>
+                    </ul>
+                    <div class="total_cost">
+                        Total Cost: <span>$ 159.9</span>
+                    </div>
+                </div>
+                <button class="button button-black button-pay">PAY SECURELY</button>
+                <span class="pay_securely">By clicking PAY SECURELY you confirm that you have read, understood and accept our user police </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+//= templates/login-footer.html
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
