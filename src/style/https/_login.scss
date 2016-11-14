@@ -449,6 +449,7 @@
     }
   }
   .current {
+    z-index: 5;
     ~ li {
       color: #b4b4b4;
       &:before {

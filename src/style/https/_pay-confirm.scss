@@ -7,8 +7,8 @@
 
   &_title {
     margin-right: -14px;
-    line-height: .7;
-    margin-bottom: 13px;
+    line-height: .9;
+    margin-bottom: 10px;
     background: #F8F8F8;
     span {
       padding: 0 10px 0 5px;
@@ -175,47 +175,20 @@
       }
     }
   }
-}
 
-.confirm_pay_wrap {
-
-  .pay_securely_wrap {
-    padding-top: 20px;
-    button {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    .pay_securely_img {
-      max-width: 465px;
-      width: 100%;
-      display: flex;
-      margin: 25px auto;
-    }
-  }
-
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
-    width: 28px;
-    height: 28px;
-    margin-bottom: 0;
-    background: #F9F9F9;
-    display: block;
-    cursor: pointer;
-  }
-  input[type="checkbox"]:checked + label,
-  input[type="radio"]:checked + label {
-    background: #F9F9F9 url("../img/osp_checked.png") no-repeat center
-  }
   .select_address {
+    margin-bottom: 22px;
     .select_address_rname {
       max-width: 618px;
       width: 100%;
       text-align: left;
       padding-left: 140px;
+      letter-spacing: 1px;
     }
     .select_address_edit {
       max-width: 75px;
       width: 100%;
+      letter-spacing: 1px;
     }
     .select_address_h {
       height: 24px;
@@ -229,7 +202,6 @@
       text-align: center;
     }
     .select_address_item {
-      margin-bottom: 25px;
       height: 74px;
       display: flex;
       border-bottom: 1px solid #EDEDED;
@@ -253,7 +225,7 @@
       }
       .select_address_rname {
         text-align: left;
-        padding-left: 0;
+        padding-left: 22px;
         font-size: 11px;
         letter-spacing: 1.1px;
       }
@@ -263,9 +235,9 @@
       }
     }
   }
-  .select_type {
+
+  &_select_type {
     margin-bottom: 25px;
-    overflow: hidden;
 
     .select_type_item {
       height: 50px;
@@ -302,16 +274,16 @@
         width: 100%;
         padding-left: 50px;
         font-size: 10px;
+        letter-spacing: 1px;
         font-family: $RobotoCondensed;
-        letter-spacing: normal;
       }
       .select_type_price {
         max-width: 91px;
         width: 100%;
         display: flex;
         justify-content: center;
-        font-family: $RobotoCondensed;
         font-size: 13px;
+        font-family: $RobotoCondensed;
       }
       .select_type_radio {
         max-width: 75px;
@@ -348,6 +320,7 @@
         display: flex;
         align-items: center;
         line-height: 19px;
+        letter-spacing: 2px;
         span {
           min-width: 57px;
           padding-left: 23px;
@@ -360,7 +333,7 @@
       }
     }
   }
-  .discount {
+  &_discount {
     margin-bottom: 30px;
     .discount_item {
       height: 76px;
@@ -441,7 +414,7 @@
       }
     }
   }
-  .select_payment {
+  &_select_payment {
     .select_payment_item {
       height: 52px;
       border-bottom: 1px solid #EDEDED;
@@ -495,6 +468,21 @@
       }
     }
   }
+
+  .pay_securely_wrap {
+    padding-top: 20px;
+    .button {
+      margin: 15px auto;
+      display: block;
+    }
+    .pay_securely_img {
+      max-width: 465px;
+      width: 100%;
+      display: flex;
+      margin: 25px auto;
+    }
+  }
+
   .pay_securely_wrap {
     padding-top: 42px;
     overflow: hidden;
@@ -553,19 +541,7 @@
         }
       }
     }
-    /*    button {
-          display: block;
-          width: 228px;
-          height: 51px;
-          font-size: 30px;
-          color: #fff;
-          text-transform: uppercase;
-          margin: 0 auto;
-          background: #000;
-          border: 0;
-          cursor: pointer;
-          outline: none;
-        }*/
+
     .pay_securely {
       text-align: center;
       display: block;
