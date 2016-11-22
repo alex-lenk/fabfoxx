@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= templates/head.html
+</head>
+<body>
+
+//= templates/svg.html
+<div class="wrapping">
+    <div class="login-area">
+        <header class="login-area-header">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="#" class="back-to-shop">
+                BACK TO SHOPPING
+            </a>
+        </header>
+        <div class="login-area-body">
+
+            <div class="guest-checkout">
+
+            </div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active" data-target="#signing-up" aria-controls="signing-up" role="tab" data-toggle="tab">
+                    Signing up
+                </li>
+                <li data-target="#sign-in" aria-controls="sign-in" role="tab" data-toggle="tab">Sign in</li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="signing-up">
+                    <ul class="quick-text single-quick">
+                        <li><a href="#">Signing up (quick registration)</a></li>
+                        <li><a href="#">or Sign in (quick login) with social network</a></li>
+                        <li><a href="#">or use your email address</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li class="fb"><a href="#">
+                            <svg class="facebook icon" viewBox="0 0 91.98 89.95">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="gp"><a href="#">
+                            <svg class="g-plus icon" viewBox="0 0 89.99 63.08">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#g-plus"></use>
+                            </svg>
+                        </a></li>
+                        <li class="tw"><a href="#">
+                            <svg class="twitter icon" viewBox="0 0 90.93 73.02">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li class="letter"><a href="#">
+                            <svg class="letter-email icon" viewBox="0 0 90.01 64.04">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#letter-email"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="wrap-content tab-pane" id="sign-in">
+                    <ul class="quick-text">
+                        <li><a href="#">Signing up (quick registration)</a></li>
+                        <li><a href="#">or Sign in (quick login) with social network</a></li>
+                        <li><a href="#">or use your email address</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li class="fb"><a href="#">
+                            <svg class="facebook icon" viewBox="0 0 91.98 89.95">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="gp"><a href="#">
+                            <svg class="g-plus icon" viewBox="0 0 89.99 63.08">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#g-plus"></use>
+                            </svg>
+                        </a></li>
+                        <li class="tw"><a href="#">
+                            <svg class="twitter icon" viewBox="0 0 90.93 73.02">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li class="letter"><a href="#">
+                            <svg class="letter-email icon" viewBox="0 0 90.01 64.04">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#letter-email"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+
+                    <form action="/" class="general-form sign-in">
+                        <div class="form-group necessarily">
+                            <input type="text" class="form-control hide-placeholder" placeholder="Email address">
+                            <label class="form-label">Email address</label>
+                        </div>
+                        <div class="form-group necessarily">
+                            <input type="password" class="form-control hide-placeholder" placeholder="Password">
+                            <label class="form-label">Password</label>
+                        </div>
+
+                        <div class="forgot"><a href="#">Forgot your password?</a></div>
+                        <button class="button button-black button-sign-in">SIGN IN</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    //= templates/login-footer.html
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

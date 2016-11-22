@@ -81,7 +81,6 @@ gulp.task('img:build', function (cb) {
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(uglify()) //Сожмем наш js
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
@@ -93,16 +92,10 @@ gulp.task('style:build', function () {
             outputStyle: 'expanded'
         }).on('error', sass.logError)) //Скомпилируем
         .pipe(gulp.dest(path.build.css)) //И в build
-        .pipe(rename({
-            prefix: "",
-            suffix: ".min",
-            extname: ".css"
-        }))
-        .pipe(autoprefixer()) //Добавим вендорные префиксы
-        .pipe(cleanCSS({debug: true}, function (details) {//Сожмем
-            console.log(details.name + ': ' + details.stats.originalSize);
-            console.log(details.name + ': ' + details.stats.minifiedSize);
-        }))
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        })) //Добавим вендорные префиксы
         .pipe(sourcemaps.write(path.build.maps, {
             addComment: true
         }))
