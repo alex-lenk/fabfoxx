@@ -165,7 +165,7 @@
     .param_select_size {
       overflow: hidden;
       margin-bottom: -12px;
-      span {
+      &__title{
         font-size: 18px;
         color: #c5c5c5;
         letter-spacing: .5px;
@@ -173,57 +173,43 @@
       ul {
         padding-left: 0;
         margin-top: 5px;
-        .no_active {
-          border-color: #CDCDCD;
-          a {
-            color: #CDCDCD;
-          }
-        }
-        li {
-          list-style: none;
-          float: left;
-          height: 31px;
-          min-width: 31px;
-          margin-right: 9px;
-          margin-bottom: 10px;
-          overflow: hidden;
-          &:not(:first-of-type) {
-            outline: 1px solid #000;
-            outline-offset: -1px;
-          }
-          a {
-            display: block;
-            font-size: 18px;
-            color: #000;
-            line-height: 31px;
-            text-align: center;
-            padding: 0 9px;
-            @include BebasNeueBook;
-          }
-          .size_chart {
-            font-size: 13px;
-            padding: 0 20px;
-            letter-spacing: 1px;
-            background: #000;
-            color: #fff;
-            @include BebasNeueRegular;
-          }
-          .selected_size {
-            background: #000;
-            color: #fff;
-            position: relative;
-            box-sizing: border-box;
-            &:after {
-              content: "";
-              width: calc(100% - 2px);
-              height: calc(100% - 3px);
-              border: 1px solid #fff;
-              position: absolute;
-              top: 1px;
-              left: 1px;
-            }
-          }
-        }
+        list-style: none;
+      }
+      li {
+        margin-right: 9px;
+        text-align: center;
+        vertical-align: top;
+        display: inline-flex;
+        align-items: center;
+        @include BebasNeueBook;
+      }
+      .size {
+        height: 31px;
+        padding: 0 12px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #000;
+        cursor: pointer;
+        border: 1px solid;
+      }
+      .no-active {
+        border-color: #CDCDCD;
+        color: #CDCDCD;
+        cursor: default;
+      }
+      .selected {
+        outline: 1px solid #fff;
+        outline-offset: -3px;
+        background-color: #000;
+        color: #fff;
+      }
+      .size-chart {
+        font-size: 13px;
+        padding: 7px 20px;
+        letter-spacing: 1px;
+        background: #000;
+        color: #fff;
+        @include BebasNeueRegular;
       }
     }
     .add_to_wrap {

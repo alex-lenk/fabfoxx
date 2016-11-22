@@ -16,7 +16,7 @@ $black: #000;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: 'BebasNeueRegular';
+  @include BebasNeueRegular;
   padding-left: 10px;
 }
 
@@ -56,7 +56,7 @@ $black: #000;
     background: #000;
     font-size: 25px;
     text-align: right;
-    font-family: 'MinionPro-Regular';
+    @include MinionProRegular;
     position: relative;
     margin-bottom: 20px;
     &:after {
@@ -118,14 +118,14 @@ $black: #000;
   }
   .shipping_row_wrap {
     .shipping_row {
-      display: -webkit-flex;
+
       display: flex;
       justify-content: space-between;
       margin-bottom: 5px;
       span {
         font-size: 13px;
         color: #868686;
-        font-family: 'BebasNeueRegular';
+        @include BebasNeueRegular;
       }
       .shipping_price {
         font-size: 15px;
@@ -144,43 +144,44 @@ $black: #000;
 .select_shipping {
   max-width: 238px;
   width: 100%;
-  margin-bottom: 34px;
+  padding: 30px 0;
   ul {
     padding-left: 0;
     margin-bottom: 0;
-    li {
-      list-style: none;
-      margin-bottom: 17px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      input[type="radio"] + label {
-        padding-left: 50px;
-        position: relative;
-        line-height: 35px;
-        font-size: 13px;
-        color: #b6b6b6;
-        cursor: pointer;
-        margin-bottom: 0;
-        letter-spacing: 1.3px;
-      }
-      input[type="radio"] + label:after {
-        content: "";
-        width: 35px;
-        height: 35px;
-        background: #fff;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-      }
-      input[type="radio"]:checked + label {
-        color: #000;
-      }
-      input[type="radio"]:checked + label:after {
-        background: url("../img/select_shipping.png") no-repeat;
-      }
+  }
+  li {
+    list-style: none;
+    margin-bottom: 17px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    input[type="radio"] + label {
+      padding-left: 50px;
+      position: relative;
+      line-height: 35px;
+      font-size: 13px;
+      color: #b6b6b6;
+      cursor: pointer;
+      margin-bottom: 0;
+      letter-spacing: 1.3px;
+      white-space: nowrap;
+    }
+    input[type="radio"] + label:after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      background: #fff;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+    input[type="radio"]:checked + label {
+      color: #000;
+    }
+    input[type="radio"]:checked + label:after {
+      background: url("../img/select_shipping.png") no-repeat;
     }
   }
 }
@@ -193,7 +194,7 @@ $black: #000;
     line-height: 18px;
     padding-top: 8px;
     text-transform: none;
-    font-family: 'Roboto Condensed';
+    font-family: $RobotoCondensed;
     font-weight: 400;
     .return_buuton {
       max-width: 131px;
@@ -206,7 +207,7 @@ $black: #000;
       font-size: 13px;
       display: block;
       margin: 23px auto 0;
-      font-family: 'BebasNeueRegular';
+      @include BebasNeueRegular;
       box-shadow: 0 1px 4px rgba(0, 0, 0, .2)
     }
   }
@@ -322,7 +323,7 @@ $black: #000;
       margin-top: 26px;
       .item_param_row {
         margin-bottom: 10px;
-        display: -webkit-flex;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -377,7 +378,7 @@ $black: #000;
       max-width: 251px;
       width: 100%;
       height: calc(100% - 37px);
-      display: -webkit-flex;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -392,7 +393,7 @@ $black: #000;
         color: #fff;
         font-size: 14px;
         letter-spacing: 3.64px;
-        font-family: 'BebasNeueBold';
+        @include BebasNeueBold;
         text-align: center;
         line-height: 38px;
         position: relative;
@@ -439,7 +440,7 @@ $black: #000;
       height: 80px;
       background: #fff;
       margin-bottom: 2px;
-      display: -webkit-flex;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -448,7 +449,7 @@ $black: #000;
       }
       .d_v_row_img {
         margin-left: 17px;
-        display: -webkit-flex;
+
         display: flex;
         align-items: center;
         img {
@@ -461,7 +462,7 @@ $black: #000;
           float: left;
           font-size: 14px;
           line-height: 17px;
-          font-family: 'MinionPro-Regular';
+          @include MinionProRegular;
           text-transform: uppercase;
         }
         .gift_voucher {
@@ -479,7 +480,7 @@ $black: #000;
         }
       }
       .select_d_v {
-        margin-right: 22px;
+        //margin-right: 22px;
         float: right;
         span {
           display: inline-block;
@@ -488,7 +489,7 @@ $black: #000;
           color: #767676;
           font-size: 13px;
           line-height: 17px;
-          font-family: 'Roboto Condensed';
+          font-family: $RobotoCondensed;
         }
         input[type="text"] {
           float: left;
@@ -500,7 +501,7 @@ $black: #000;
           outline: none;
           font-size: 13px;
           color: #767676;
-          font-family: 'Roboto Condensed';
+          font-family: $RobotoCondensed;
         }
         input[type="radio"] + label {
           width: 35px;
@@ -532,7 +533,7 @@ $black: #000;
         display: inline-block;
         font-size: 19px;
         color: #000;
-        font-family: 'MinionPro-Regular';
+        @include MinionProRegular;
         letter-spacing: normal;
       }
       .disc {

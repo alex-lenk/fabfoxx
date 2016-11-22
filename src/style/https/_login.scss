@@ -72,28 +72,28 @@
   margin-top: 65px;
   align-self: flex-end;
   text-align: center;
-}
 
-.stay-connected {
-  width: 230px;
-  margin: 0 auto;
-  &-title {
-    margin-bottom: 17px;
-    color: #000;
-    font-size: 13px;
-  }
-  .footer-social {
-  }
-  .copyright {
-    margin-bottom: 20px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: #a0a0a0;
-  }
-  .social {
-    margin-bottom: 17px;
-    svg {
-      fill: #000;
+  .stay-connected {
+    width: 230px;
+    margin: 0 auto;
+    &-title {
+      margin-bottom: 17px;
+      color: #000;
+      font-size: 13px;
+    }
+    .footer-social {
+    }
+    .copyright {
+      margin-bottom: 20px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #a0a0a0;
+    }
+    .social {
+      margin-bottom: 17px;
+      svg {
+        fill: #000;
+      }
     }
   }
 }
