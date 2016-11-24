@@ -58,6 +58,30 @@
     z-index: 5;
     transition: .4s ease-in-out;
   }
+  .social-nav {
+    li {
+      line-height: 40px;
+      .icon:hover {
+        color: #838383;
+      }
+    }
+    .icon {
+      font-size: 12px;
+      color: #fff;
+      transition: .4s ease-in-out;
+    }
+  }
+  .social-share {
+    cursor: pointer;
+    .icon-share {
+      color: #000;
+      font-size: 15px;
+      transition: .4s ease-in-out;
+      &:hover {
+        color: #838383;
+      }
+    }
+  }
   &.share-open {
     &:after {
       width: 100%;
@@ -66,8 +90,8 @@
       visibility: visible;
       opacity: 1;
     }
-    .social-share svg {
-      fill: #838383;
+    .social-share .icon-share {
+      color: #838383;
     }
   }
 }

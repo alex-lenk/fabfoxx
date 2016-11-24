@@ -20,8 +20,8 @@ $(document).ready(function () {
         autoWidth: true,
         nav: true,
         navContainerClass: "slider-loop-nav",
-        navText: ['<svg class="left-arrow" viewBox="0 0 46.02 92.06"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#left-arrow"></use></svg>',
-            '<svg class="right-arrow" viewBox="0 0 45.98 91.99"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow"></use></svg>']
+        navText: ['<span class="icon-left"></span>',
+            '<span class="icon-right"></span>']
     });
 
     // Different events
@@ -47,8 +47,8 @@ $(document).ready(function () {
         nav: true,
         pagination: false,
         navContainerClass: "slider-loop-nav",
-        navText: ['<svg class="left-arrow" viewBox="0 0 46.02 92.06"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#left-arrow"></use></svg>',
-            '<svg class="right-arrow" viewBox="0 0 45.98 91.99"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow"></use></svg>']
+        navText: ['<span class="icon-left"></span>',
+            '<span class="icon-right"></span>']
     });
 
     // Fixed tag to scroll up

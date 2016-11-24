@@ -15,11 +15,9 @@
     }
   }
   &-black {
-    padding: 10px 15px;
     background-color: #000;
     color: #fff;
     font-size: 15px;
-    @include MinionProRegular;
     &:hover {
       color: #000;
       outline: 1px solid;

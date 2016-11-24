@@ -18,20 +18,15 @@
   width: 220px;
   display: flex;
   justify-content: space-between;
-  .pr svg {
-    width: 19px;
-  }
-  .fb svg {
-    width: 16px;
-  }
-  .tw svg {
-    width: 18px;
-  }
-  .instagram svg {
-    width: 16px;
-  }
-  .yt svg {
-    width: 18px;
+  .icon {
+    font-size: 14px;
+    color: #fff;
+    &-pinterest {
+      font-size: 18px;
+    }
+    &-facebook {
+      font-size: 15px;
+    }
   }
 }
 

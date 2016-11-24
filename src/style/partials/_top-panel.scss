@@ -53,9 +53,13 @@
     padding-right: 10px;
   }
   .favorite {
-    padding: 0 5px 6px 0;
+    padding: 9px 8px 3px 10px;
     top: 44px;
     left: 381px;
+    margin: -10px 0 0 -10px;
+    .icon-favorites {
+      font-size: 17px;
+    }
   }
 }
 
@@ -73,9 +77,10 @@
     letter-spacing: 5.5px;
     @include BebasNeueBold;
   }
-  .bag-icon {
+  .icon-bag {
+    font-size: 68px;
     height: 71px;
-    margin: 0 17px 0 25px;
+    margin: 0 19px 0 25px;
     display: inline-block;
     vertical-align: middle;
   }
