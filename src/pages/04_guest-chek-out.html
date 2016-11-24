@@ -7,27 +7,91 @@
 
 //= templates/svg.html
 
-<div class="pay-confirm register login-area">
-    <header class="login-area-header">
-        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-        <a href="#" class="back-to-shop">BACK TO SHOPPING</a>
-    </header>
-    <div class="login-area-body wrap-content">
-        <h1 class="login-title">
-            <span>CONFIRM & PAY</span>
-        </h1>
+<div class="wrapping">
+    <div class="login-area">
 
-        <ol class="login-step">
-            <li><span>ABOUT US</span></li>
-            <li><span>DELIVERY ADDRESS</span></li>
-            <li class="current"><span>CONFIRM & PAY</span></li>
-        </ol>
+        <header class="login-area-header">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="#" class="back-to-shop">BACK TO SHOPPING</a>
+        </header>
 
+        <div class="guest-checkout pay-confirm_wrap">
 
-        <div class="pay-confirm_wrap">
+            <h1 class="login-title"><span>Guest checkout</span></h1>
+
+            <div class="guest_checkout_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at dictum
+                urna. Morbi eu consequat elit, a fermentum tortor. Nam bibendum ex ut risus faucibus, eget dictum
+                ante viverra. Duis ac sapien commodo, suscipit mi sed, posuere nibh. Vivamus quis lacinia ipsum.
+                Etiam varius nulla vel odio dictum luctus. Donec felis metus, molestie sit amet fermentum eu, porta
+                ac libero. Sed sodales faucibus cursus. Sed mollis molestie urna ac suscipit. Nam pretium, nulla a
+                posuere consectetur, tortor metus imperdiet dolor, cursus scelerisque erat augue in justo.
+                Suspendisse potenti.
+            </div>
+
+            <div class="pay-confirm_title background-black"><span>ABOUT YOU</span></div>
+
+            <form action="/" class="general-form">
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Email address"
+                           type="text"> <label class="form-label">Email address</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="First name" type=
+                            "text"> <label class="form-label">First name</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Last name" type=
+                            "text"> <label class="form-label">Last name</label>
+                </div>
+                <fieldset class="gender returns-form-group">
+                    <legend>Gender</legend>
+                    <label class="label-block"><input class=
+                                                              "checkbox-custom" name="" type="checkbox"> <span
+                            class=
+                                    "checkbox-custom-view label">Guy</span></label> <label class=
+                                                                                                   "label-block"><input
+                        class="checkbox-custom" name="" type="checkbox">
+                    <span class="checkbox-custom-view label">Girl</span></label>
+                </fieldset>
+            </form>
+            <div class="pay-confirm_title background-black"><span>DELIVERY ADDRESS</span></div>
+            <form action="/" class="general-form">
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Recevier Name" type="text"> <label
+                        class="form-label">Recevier Name</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Telephone Daytime" type="text"> <label
+                        class="form-label">Telephone Daytime</label>
+                </div>
+                <div class="form-group necessarily select-area">
+                    <select class="guest-checkout_country select-country">
+                        <option value="">
+                            Select country
+                        </option>
+                        <option value="">
+                            USA
+                        </option>
+                        <option value="">
+                            France
+                        </option>
+                        <option value="">
+                            GB
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Address" type="text"> <label
+                        class="form-label">Address</label>
+                </div>
+                <div class="form-group necessarily">
+                    <input class="form-control hide-placeholder" placeholder="Postcode" type="password"> <label
+                        class="form-label">Postcode</label>
+                </div>
+            </form>
 
             <div class="pay-confirm-order_summary">
-                <div class="pay-confirm_title"><span>Order summary</span></div>
+                <div class="pay-confirm_title background-black"><span>Order summary</span></div>
 
                 <!-- order_summary_header -->
                 <div class="order_summary_h">
@@ -89,7 +153,7 @@
             </div>
 
             <div class="select_address">
-                <div class="pay-confirm_title"><span>Select delivery address</span></div>
+                <div class="pay-confirm_title background-black"><span>Select delivery address</span></div>
                 <div class="select_address_h">
                     <div class="select_address_rname">Recevier Name</div>
                     <div class="select_address_edit">Edit</div>
@@ -103,9 +167,8 @@
                 </div>
             </div>
 
-
             <div class="pay-confirm_select_type">
-                <div class="pay-confirm_title"><span>Select delivery type</span></div>
+                <div class="pay-confirm_title background-black"><span>Select delivery type</span></div>
                 <div class="select_type_item">
                     <div class="select_type">Standart shipping</div>
                     <div class="select_type_date">Delivered on or before 16 June 2016</div>
@@ -131,7 +194,7 @@
             </div>
 
             <div class="pay-confirm_discount">
-                <div class="pay-confirm_title"><span>Discount</span></div>
+                <div class="pay-confirm_title background-black"><span>Discount</span></div>
                 <div class="discount_item">
                     <div class="discount_code">
                         <div class="discount_code_img">
@@ -149,7 +212,7 @@
             </div>
 
             <div class="pay-confirm_select_payment">
-                <div class="pay-confirm_title"><span>Select payment method</span></div>
+                <div class="pay-confirm_title background-black"><span>Select payment method</span></div>
                 <div class="select_payment_item">
                     <div class="select_payment_img"><img src="img/pay-visa.png" alt=""></div>
                     <div class="select_payment_name">Visa</div>
@@ -207,14 +270,15 @@
                 <button class="button button-black button-pay">PAY SECURELY</button>
                 <span class="pay_securely">By clicking PAY SECURELY you confirm that you have read, understood and accept our user police </span>
             </div>
+
         </div>
-
-
     </div>
+
+
+    //= templates/login-footer.html
+
 </div>
 
-
-//= templates/login-footer.html
 
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>

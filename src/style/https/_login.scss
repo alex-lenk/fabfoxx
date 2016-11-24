@@ -304,37 +304,35 @@
       }
     }
   }
-  .checkbox-group-bottom {
-    margin-bottom: 58px;
-    text-align: left;
-    .checkbox-custom-view {
-      font-size: 14px;
-      font-style: italic;
-      font-weight: 300;
-      font-family: $RobotoCondensed;
-      a {
-        font-weight: 700;
-        white-space: nowrap;
-      }
-    }
-    .checkbox-custom + .checkbox-custom-view::before {
-      border: 1px solid #e4e4e4;
-    }
-    .privacy {
-      .checkbox-custom-view {
-        padding-top: 9px;
-        line-height: 18px;
-      }
-      .checkbox-custom + .checkbox-custom-view::before {
-        margin-top: -7px;
-      }
-    }
-  }
+}
+
+.checkbox-group-bottom {
+  margin-bottom: 58px;
+  text-align: left;
   .checkbox-custom-view {
     padding-left: 52px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: $RobotoCondensed;
+
+    a {
+      font-weight: 700;
+      white-space: nowrap;
+    }
   }
   .checkbox-custom + .checkbox-custom-view::before {
+    border: 1px solid #e4e4e4;
     margin-left: -52px;
+  }
+  .privacy {
+    .checkbox-custom-view {
+      padding-top: 9px;
+      line-height: 18px;
+    }
+    .checkbox-custom + .checkbox-custom-view::before {
+      margin-top: -7px;
+    }
   }
 }
 
@@ -491,10 +489,5 @@
     .jq-selectbox__trigger-arrow {
       top: 15px;
     }
-  }
-  .select-area.necessarily:after {
-    top: 10px;
-    right: 47px;
-    z-index: 101;
   }
 }

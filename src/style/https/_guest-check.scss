@@ -1,6 +1,43 @@
+.guest-checkout {
+  padding: 1px 0 70px 15px;
+  background-color: #fff;
+  .background-black {
+    background-color: #000;
+  }
+  &_info-user {
+    top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: $RobotoCondensed;
+  }
+  .login-title span {
+    padding-left: 0;
+  }
+  .pay-confirm_title {
+    margin-right: 0;
+    span {
+      padding-left: 0;
+    }
+  }
+  .general-form {
+    padding: 0 55px 0 40px;
+    .form-control {
+      color: #000;
+    }
+  }
+  .checkbox-single_label {
+    margin: 0 auto;
+  }
+}
+
 .guest_checkout_text {
+  margin-bottom: 35px;
   font-size: 13px;
   line-height: 19px;
   color: #090909;
+  font-weight: 300;
   font-family: $RobotoCondensed;
 }

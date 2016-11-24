@@ -45,7 +45,6 @@
 @import "https/history-open-details";
 @import "https/pay-confirm";
 @import "https/profile-main";
-@import "https/confirm-pay-new-user";
 @import "https/guest-check";
 
 .preview-bag {
@@ -118,15 +117,14 @@
 
 .select-country {
   width: 100%;
-  padding: 0 10px;
   &:focus {
     outline: 0;
   }
   .jq-selectbox {
     &__select {
-      height: 33px;
+      height: 37px;
       padding-left: 15px;
-      line-height: 33px;
+      line-height: 37px;
       background-color: #f9f9f9;
       width: 100%;
       &:focus {
@@ -147,7 +145,7 @@
         outline: 0;
       }
       &-arrow {
-        top: 12px;
+        top: 15px;
         right: 22px;
         border-top: 7px solid #000;
         border-right-width: 4px;
@@ -157,7 +155,6 @@
     &__dropdown {
       width: 100%;
       left: 0;
-      padding: 0 10px;
       li {
         font-size: 14px;
         font-family: $RobotoCondensed;

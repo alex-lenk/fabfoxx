@@ -231,17 +231,23 @@ textarea.form-control {
     border: 0;
     font-family: $RobotoCondensed;
   }
-  .necessarily {
-    &:after {
+
+  .necessarily:after,
+  .necessarily.select-area .jq-selectbox:after {
       position: absolute;
       top: 11px;
       right: 13px;
       font-size: 14px;
       color: #767676;
       content: '✳';
-      z-index: 101;
-    }
   }
+
+  .necessarily.select-area .jq-selectbox:after {
+      top: 10px;
+      right: 47px;
+      z-index: 101;
+  }
+
   .label-block {
     margin-bottom: 10px;
     display: block;
@@ -267,4 +273,3 @@ textarea.form-control {
     }
   }
 }
-

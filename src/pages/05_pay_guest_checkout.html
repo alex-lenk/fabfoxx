@@ -8,60 +8,65 @@
 //= templates/svg.html
 
 <div class="wrapping">
-    <div class="register login-area pay-confirm">
+    <div class="login-area pay-confirm">
 
         <header class="login-area-header">
             <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
             <a href="#" class="back-to-shop">BACK TO SHOPPING</a>
         </header>
-        <div class="wrap">
+        <div class="guest-checkout pay-confirm_wrap">
             <h1 class="login-title"><span>Guest checkout</span></h1>
             <div class="confirm_pay_wrap">
-                <div class="select_payment">
+
+                <div class="guest-checkout_info-user">You order has been received.</div>
+
+                <div class="pay-confirm_select_payment">
+                    <div class="pay-confirm_title"><span>Select payment method</span></div>
                     <div class="select_payment_item">
                         <div class="select_payment_img"><img src="img/pay-visa.png" alt=""></div>
                         <div class="select_payment_name">Visa</div>
-                        <div class="select_payment_radio">
-                            <input hidden id="spr1" name="spr" type="radio">
-                            <label for="spr1"></label>
-                        </div>
+                        <label class="select_payment_radio checkbox-single">
+                            <input type="checkbox" name="" class="checkbox-single_custom">
+                            <div class="checkbox-single_label"></div>
+                        </label>
                     </div>
                     <div class="select_payment_item">
                         <div class="select_payment_img"><img src="img/pay-mcard.png" alt=""></div>
                         <div class="select_payment_name">Master card</div>
-                        <div class="select_payment_radio">
-                            <input hidden id="spr2" name="spr" type="radio">
-                            <label for="spr2"></label>
-                        </div>
+                        <label class="select_payment_radio checkbox-single">
+                            <input type="checkbox" name="" class="checkbox-single_custom">
+                            <div class="checkbox-single_label"></div>
+                        </label>
                     </div>
                     <div class="select_payment_item">
                         <div class="select_payment_img"><img src="img/pay-maestro.png" alt=""></div>
                         <div class="select_payment_name">Maestro</div>
-                        <div class="select_payment_radio">
-                            <input hidden id="spr3" name="spr" type="radio">
-                            <label for="spr3"></label>
-                        </div>
+                        <label class="select_payment_radio checkbox-single">
+                            <input type="checkbox" name="" class="checkbox-single_custom">
+                            <div class="checkbox-single_label"></div>
+                        </label>
                     </div>
                     <div class="select_payment_item">
                         <div class="select_payment_img"><img src="img/pay-jcb.png" alt=""></div>
                         <div class="select_payment_name">JCB</div>
-                        <div class="select_payment_radio">
-                            <input hidden id="spr4" name="spr" type="radio">
-                            <label for="spr4"></label>
-                        </div>
+                        <label class="select_payment_radio checkbox-single">
+                            <input type="checkbox" name="" class="checkbox-single_custom">
+                            <div class="checkbox-single_label"></div>
+                        </label>
                     </div>
                     <div class="select_payment_item">
                         <div class="select_payment_img"><img src="img/pay-pal.png" alt=""></div>
                         <div class="select_payment_name">JCB</div>
-                        <div class="select_payment_radio">
-                            <input hidden id="spr5" name="spr" type="radio">
-                            <label for="spr5"></label>
-                        </div>
+                        <label class="select_payment_radio checkbox-single">
+                            <input type="checkbox" name="" class="checkbox-single_custom">
+                            <div class="checkbox-single_label"></div>
+                        </label>
                     </div>
                 </div>
+
                 <div class="pay_securely_wrap">
                     <span class="button_info">To pay for you order click on the Pay Securly button below.<br>Clicking will take you directly to the site where you can to pay:</span>
-                    <button>PAY SECURELY</button>
+                    <button class="button button-black button-pay">PAY SECURELY</button>
                     <span class="button_info">You can pay order or track the status of your order on your profile page<br>Access to profile page has been sent to you by mail.</span>
                     <div class="pay_securely_img">
                         <div class="pay_securely_item"><img src="img/example/next_card.jpg" alt=""></div>

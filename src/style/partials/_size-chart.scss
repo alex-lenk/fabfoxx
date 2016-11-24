@@ -10,12 +10,13 @@
     text-align: right;
     color: #fff;
     font-size: 25px;
-    font-family: 'MinionPro-Regular';
+    @include MinionProRegular;;
   }
   .size_conversion {
     padding-left: 20px;
     font-size: 24px;
     color: #101010;
+    letter-spacing: 2px;
   }
 }
 
@@ -24,6 +25,12 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
+  .info-text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: right;
+    @include BebasNeueRegular;
+  }
   table {
     tr {
       th {
@@ -49,7 +56,7 @@
           height: 45px;
           color: #fff;
           font-size: 15px;
-          font-family: 'BebasNeueBold';
+          @include BebasNeueBold;
           &:first-child {
             background: #fff !important;
             font-size: 20px;
