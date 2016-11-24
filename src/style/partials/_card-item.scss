@@ -275,17 +275,20 @@
 }
 
 .soc_icon_wrap {
+  padding: 0;
   overflow: hidden;
   max-width: 400px;
   width: 100%;
   margin: 65px auto 30px;
   display: flex;
   justify-content: space-between;
-  a {
-    display: block;
-    height: 18px;
-    svg {
-      height: 18px;
+  list-style: none;
+  li {
+    .icon {
+      font-size: 18px;
+      &:hover {
+        color: #bdbdbd;
+      }
     }
   }
 }

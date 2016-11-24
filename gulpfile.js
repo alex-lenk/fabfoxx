@@ -6,8 +6,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    //rigger = require('gulp-rigger'),
-    pagebuilder = require('gulp-pagebuilder'),
+    rigger = require('gulp-rigger'),
+    includer = require("gulp-x-includer"),
     browserSync = require('browser-sync'),
     cleanCSS = require('gulp-clean-css'),
     watch = require('gulp-watch'),
@@ -66,7 +66,7 @@ gulp.task('clean', function (cb) {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(pagebuilder()) //Прогоним через rigger
+        .pipe(includer()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений*/
 });
@@ -81,7 +81,7 @@ gulp.task('img:build', function (cb) {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(pagebuilder()) //Прогоним через rigger
+        .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });

@@ -27,7 +27,7 @@
   }
   &.fix {
     position: absolute;
-    bottom: 123px;
+    bottom: 119px;
   }
 }
 
@@ -121,6 +121,7 @@
   }
 
   &-bottom {
+    height: 119px;
     padding-top: 30px;
     padding-bottom: 35px;
     display: flex;
