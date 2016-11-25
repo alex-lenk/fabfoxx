@@ -41,18 +41,18 @@
       vertical-align: top;
       cursor: pointer;
       transition: .3s ease-in-out;
+      font-size: 12px;
       &:not(.active):hover {
-        opacity: .8;
+        color: #b4b4b4;
       }
     }
-    svg {
-      width: 13px;
-      fill: #000;
+    .icon-sort_small {
+      color: #000;
     }
     .active {
       cursor: default;
-      svg {
-        fill: #b4b4b4;
+      .icon-sort_small {
+        color: #b4b4b4;
       }
     }
   }

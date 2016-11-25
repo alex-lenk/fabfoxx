@@ -84,10 +84,11 @@
   width: auto;
   display: flex;
   justify-content: space-between;
-  svg {
-    fill: #000;
+  .icon {
+    color: #000;
+    font-size: 18px;
     &:hover {
-      fill: #ababab;
+      color: #ababab;
     }
   }
   .pr svg {

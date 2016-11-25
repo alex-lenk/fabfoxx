@@ -14,24 +14,25 @@
   }
   &-heading {
     height: 18px;
-    font-size: 25px;
     line-height: 1;
     background-color: #efefef;
     cursor: pointer;
     position: relative;
     @include BebasNeueBook;
-    span {
+    .title {
       top: -3px;
       position: relative;
       padding-right: 5px;
       background-color: #fff;
+      font-size: 25px;
     }
-    svg {
+    .icon {
       position: absolute;
-      top: 7px;
+      top: 5px;
       right: 9px;
       width: 9px;
-      fill: #6a6a6a;
+      color: #6a6a6a;
+      font-size: 7px;
     }
     .icon-down {
       visibility: hidden;
@@ -81,16 +82,17 @@
     text-align: center;
     transition: .4s ease-in-out;
     cursor: pointer;
-    svg {
+    .icon-down {
+      font-size: 7px;
       width: 10px;
-      fill: #fff;
+      color: #fff;
       vertical-align: middle;
       transition: .4s ease-in-out;
     }
     &:hover {
       background-color: #efefef;
-      svg {
-        fill: #000;
+      .icon-down {
+        color: #000;
       }
     }
   }

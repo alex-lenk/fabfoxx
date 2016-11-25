@@ -15,9 +15,9 @@
       height: 20px;
       background: #000;
       text-align: center;
-      svg {
-        width: 6px;
-        fill: #fff;
+      .icon {
+        font-size: 10px;
+        color: #fff;
       }
     }
     .next_card_img {
@@ -33,9 +33,9 @@
     height: 20px;
     background: #000;
     text-align: center;
-    svg {
-      width: 6px;
-      fill: #fff;
+    .icon {
+        font-size: 10px;
+      color: #fff;
     }
   }
 }

@@ -64,9 +64,9 @@
         position: relative;
         border: none;
         transition: all .2s;
-        svg {
-          fill: #fff;
-          width: 16px;
+        .icon-close {
+          color: #fff;
+          font-size: 14px;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -75,8 +75,8 @@
         &:hover {
           background: #fff;
           transition: all .2s;
-          svg {
-            fill: #000
+          .icon-close {
+            color: #000
           }
         }
       }

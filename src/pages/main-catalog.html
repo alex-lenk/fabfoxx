@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    //= templates/head.html
+    <!-- include "templates/head.html" -->
 </head>
 <body class="page">
 
-//= templates/svg.html
+<!-- include "templates/svg.html" -->
 
 <div class="wrapper" id="to-top">
 
-    //= templates/top-panel.html
+    <!-- include "templates/top-panel.html" -->
 
     <div class="fixed-block-top">
-        //= templates/search-area.html
 
-        //= templates/nav-area.html
+        <!-- include "templates/search-area.html" -->
+
+        <!-- include "templates/nav-area.html" -->
+
     </div>
 
-    //= templates/nav-second.html
+    <!-- include "templates/nav-second.html" -->
 
     <div class="main-catalog">
 
@@ -40,20 +42,16 @@
                 <h1 class="header-page-title"><span>CLOTHES</span></h1>
             </header>
 
-            //= templates/filter.html
+            <!-- include "templates/filter.html" -->
 
             <div class="main-catalog-content">
                 <div class="sorting-goods">
                     <ul class="sort-views">
                         <li class="grid-big">
-                            <svg class="icon-sort-big" viewBox="0 0 92 86">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-big"></use>
-                            </svg>
+                            <span class="icon-sort_big"></span>
                         </li>
                         <li class="grid active">
-                            <svg class="icon-sort-small" viewBox="0 0 92 85">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort-small"></use>
-                            </svg>
+                            <span class="icon-sort_small"></span>
                         </li>
                     </ul>
                     <select class="sorting currency-select">
@@ -62,7 +60,7 @@
                     </select>
                 </div>
 
-                //= templates/catalog.html
+                <!-- include "templates/catalog.html" -->
 
                 <div class="text-center catalog-show-more">
                     <button class="button show-more">show more</button>
@@ -72,9 +70,12 @@
         </div>
     </div>
 
-    //= templates/footer.html
-    //= templates/preview-bag.html
+    <!-- include "templates/footer.html" -->
+
+    <!-- include "templates/preview-bag.html" -->
+
 </div>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>

@@ -180,24 +180,21 @@ img {
   position: absolute;
   cursor: pointer;
   transition: .4s ease-in-out;
-  svg {
-    vertical-align: middle;
-    transition: .4s ease-in-out;
-  }
   &-box {
+    padding-top: 2px;
     width: 22px;
     height: 22px;
-    top: -7px;
-    right: -5px;
+    top: -9px;
+    right: -9px;
     background-color: #000;
-    svg {
-      width: 12px;
-      fill: #fff;
+    .icon-close {
+      font-size: 12px;
+      color: #fff;
     }
     &:hover {
       background-color: #efefef;
-      svg {
-        fill: #000;
+      .icon-close {
+        color: #000;
       }
     }
   }
@@ -251,9 +248,9 @@ img {
         height: 32px;
         top: -43px;
         text-align: center;
-        svg {
-          width: 18px;
-          margin-top: 7px;
+        .icon-close {
+          font-size: 16px;
+          color: #fff;
         }
       }
     }
@@ -356,5 +353,11 @@ img {
         }
       }
     }
+  }
+}
+
+.returns-exchanges {
+  .content {
+    width: 820px;
   }
 }

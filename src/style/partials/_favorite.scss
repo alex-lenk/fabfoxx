@@ -3,16 +3,16 @@
   cursor: pointer;
   box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .03);
   transition: .4s ease-in-out;
-  svg {
-    width: 20px;
+  .icon-favorites {
+    font-size: 20px;
   }
   &:hover {
     opacity: .9;
   }
   &-mini {
     padding: 0 4px 0 5px;
-    svg {
-      width: 13px;
+    .icon-favorites {
+      font-size: 12px;
     }
   }
 }

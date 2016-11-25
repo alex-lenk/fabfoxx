@@ -12,13 +12,9 @@
       }
     }
   }
-  svg {
-    width: 17px;
-    fill: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -9px 0 0 -8px;
+  .icon-instagram {
+    font-size: 22px;
+    color: #fff;
   }
   .overflow {
     width: 100%;
@@ -30,5 +26,8 @@
     opacity: 0;
     background-color: rgba(0, 0, 0, .5);
     transition: .4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

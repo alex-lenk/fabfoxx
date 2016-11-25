@@ -89,8 +89,8 @@
     }
     .social {
       margin-bottom: 17px;
-      svg {
-        fill: #000;
+      .icon {
+        color: #000;
       }
     }
   }
@@ -148,6 +148,9 @@
       width: 36px;
       height: 36px;
       transition: .4s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:not(:last-child) {
         margin-right: 40px;
       }
@@ -155,42 +158,41 @@
         opacity: .8;
       }
     }
+    .icon {
+      color: #fff;
+      font-size: 16px;
+      display: block;
+    }
     .fb {
       background-color: #3a5898;
-      svg {
+      .icon {
         background-color: #fff;
         outline: 1px solid #3a5898;
         outline-offset: -1px;
-        margin: 8px 3px 0 0;
-        width: 19px;
-        fill: #3a5898;
+        color: #3a5898;
+        font-size: 22px;
+        margin-right: 2px;
       }
     }
     .gp {
       background-color: #de4b37;
-      svg {
+      .icon {
         background-color: #de4b37;
-        margin: 10px 0 0 3px;
-        width: 20px;
-        fill: #fff;
+        color: #fff;
       }
     }
     .tw {
       background-color: #54aced;
-      svg {
+      .icon {
         background-color: #54aced;
-        margin: 10px 0 0 3px;
-        width: 20px;
-        fill: #fff;
+        color: #fff;
       }
     }
     .letter {
       background-color: #000;
-      svg {
+      .icon {
         background-color: #000;
-        margin: 12px 0 0 0px;
-        width: 19px;
-        fill: #fff;
+        color: #fff;
       }
     }
   }
