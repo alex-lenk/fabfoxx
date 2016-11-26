@@ -189,38 +189,30 @@ $black: #000;
 .return_box {
   padding-bottom: 27px;
   margin-bottom: 20px;
+  text-align: center;
   .aside_box_wrap {
     font-size: 12px;
     line-height: 18px;
     padding-top: 8px;
+    text-align: left;
     text-transform: none;
-    font-family: $RobotoCondensed;
     font-weight: 400;
-    .return_buuton {
-      max-width: 131px;
-      width: 100%;
-      height: 34px;
-      background: #000;
-      text-align: center;
-      line-height: 34px;
-      color: #fff;
-      font-size: 13px;
-      display: block;
-      margin: 23px auto 0;
-      @include BebasNeueRegular;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, .2)
-    }
+    font-family: $RobotoCondensed;
+  }
+  .button-read_more {
+    color: #fff;
+    display: inline-block;
+    margin-top: 23px;
+    @include BebasNeueRegular;
   }
 }
 
 .aside_bag {
   width: 100%;
   background: transparent;
-  a {
-    width: 62px;
-    height: 94px;
-    display: block;
-    margin: 0 auto;
+  text-align: center;
+  .icon-bag {
+    font-size: 95px;
   }
 }
 
@@ -263,15 +255,14 @@ $black: #000;
   .shopping_bag_item {
     height: 190px;
     background: #fff;
+    transition: .4s ease-in-out;
     &:hover {
       background: #F9F9F9;
       .item_topline {
         background: #000;
         color: #fff;
-        .delele_item {
-          svg {
-            fill: #fff;
-          }
+        .icon-close {
+          color: #fff;
         }
       }
       .item_photo {
@@ -291,19 +282,15 @@ $black: #000;
       padding-left: 142px;
       letter-spacing: 0.76px;
       font-size: 19px;
-      .delele_item {
+      transition: .4s ease-in-out;
+      .icon-close {
         width: 18px;
         height: 18px;
         float: right;
-        margin-top: 6px;
+        margin-top: 12px;
         margin-right: 6px;
+        font-size: 14px;
         cursor: pointer;
-        position: relative;
-        svg {
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
       }
     }
     .item_photo {

@@ -47,6 +47,7 @@
       color: #fff;
       font-size: 14px;
       margin-top: 35px;
+      letter-spacing: 2px;
     }
     .size_chart_title {
       height: 31px;
@@ -56,8 +57,8 @@
       padding-left: 10px;
       line-height: 31px;
       font-size: 15px;
-      font-family: 'MinionPro-Regular';
       margin-left: -20px;
+      @include MinionProRegular;
       .size_chart_popup_close {
         float: right;
         width: 31px;
@@ -67,17 +68,15 @@
         align-items: center;
         cursor: pointer;
         transition: all .2s;
-        svg {
-          width: 16px;
-          fill: #fff;
+        .icon-close {
+          font-size: 12px;
+          color: #fff;
           transition: all .2s;
         }
         &:hover {
           background: #fff;
-          transition: all .2s;
-          svg {
-            fill: #000;
-            transition: all .2s;
+          .icon-close {
+            color: #000;
           }
         }
       }
@@ -87,6 +86,28 @@
       margin-top: 28px;
       margin-bottom: 18px;
       margin-left: 10px;
+      ul {
+        width: 234px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+      }
+      a {
+        width: 34px;
+        height: 34px;
+        display: block;
+        line-height: 34px;
+        background: #F1F1F1;
+        outline: 1px solid #9A9A9A;
+        text-align: center;
+      }
+      .size_chart_count_active {
+        outline: 0;
+        background: #000;
+        color: #fff;
+      }
     }
     .clothes_item {
       display: flex;
@@ -124,6 +145,7 @@
           border-spacing: 1px;
           border-collapse: separate;
           width: 100%;
+          letter-spacing: 1px;
           tr {
             width: 100%;
             &:hover {
@@ -189,19 +211,25 @@
             justify-content: flex-end;
             flex-direction: column;
             align-items: flex-end;
-            button {
+            .button {
               width: 239px;
               height: 34px;
-              background: #EFEFEF;
-              color: #000;
               margin-bottom: 10px;
-              border: 0;
-              outline: none;
               cursor: pointer;
+              font-size: 15px;
+              letter-spacing: 2px;
+              @include BebasNeueBold;
+              &:hover {
+                opacity: .8;
+              }
             }
-            .sign_in {
+            .sign-in {
               background: #000;
               color: #fff;
+            }
+            .open-full {
+              background: #EFEFEF;
+              color: #000;
             }
           }
         }
