@@ -7,7 +7,7 @@
 </head>
 <body class="page">
 
-<!-- include "templates/svg.html" -->
+
 
 <div class="wrapper" id="to-top">
 
@@ -17,9 +17,7 @@
         </div>
 
         <div class="favorite">
-            <svg class="icon-favorite" viewBox="0 0 91.97 79.99">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-favorite"></use>
-            </svg>
+            <span class="icon-favorites"></span>
         </div>
 
         <div class="top-panel-info">
@@ -39,9 +37,7 @@
                     <a href="#" class="checkout">CHECKOUT</a>
                 </li>
                 <li class="basket-count" data-count="5">
-                    <svg class="bag-icon" viewBox="0 0 60.4 92">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bag-icon"></use>
-                    </svg>
+                    <span class="icon-bag"></span>
                 </li>
             </ul>
         </div>
@@ -77,9 +73,7 @@
             </div>
 
             <div class="favorite favorite-mini">
-                <svg class="icon-favorite" viewBox="0 0 91.97 79.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-favorite"></use>
-                </svg>
+                <span class="icon-favorites"></span>
             </div>
 
             <ul class="main-menu">
@@ -209,9 +203,7 @@
                     <li><a href="#">MY PROFILE</a></li>
                 </ul>
                 <div class="basket-count" data-count="5">
-                    <svg class="bag-icon" viewBox="0 0 60.4 92">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bag-icon"></use>
-                    </svg>
+                    <span class="icon-bag"></span>
                 </div>
             </div>
         </nav>
@@ -229,7 +221,7 @@
                 </div>
             </a>
             <a href="" class="prev_card">
-                <span class="icon icon-left"></span>
+                <span class="icon-left"></span>
             </a>
         </div>
         <!-- end card_popup_arrow -->
@@ -342,18 +334,14 @@
     <div class="card_arrow">
         <a href="" class="next_card_wrap">
             <div class="next_card">
-                <svg class="right-arrow" viewBox="0 0 45.98 91.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow"></use>
-                </svg>
+                <span class="icon-right"></span>
             </div>
     <span class="next_card_img">
      <img src="img/example/next_card.jpg" alt="">
     </span>
         </a>
         <a href="" class="prev_card">
-            <svg class="left-arrow" viewBox="0 0 46.02 92.06">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#left-arrow"></use>
-            </svg>
+            <span class="icon-left"></span>
         </a>
     </div>
     <!-- end card_arrow -->
@@ -381,19 +369,12 @@
                     </div>
                     <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev">
                         <a rel="nofollow" href="#" title="Previous line">
-         <span>
-          <svg class="icon-up" viewBox="0 0 91.99 45.98">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up"></use>
-          </svg>
-         </span>
+                            <span class="icon-up"></span>
                         </a>
                     </div>
-                    <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a rel="nofollow" href="#"
-                                                                                       title="Next line"><span>
-        <svg class="icon-down" viewBox="0 0 91.99 45.98">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-down"></use>
-        </svg>
-       </span></a></div>
+                    <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next">
+                        <a rel="nofollow" href="#" title="Next line"><span class="icon-down"></span></a>
+                    </div>
                 </div>
                 <div class="sliderkit-panels">
                     <div class="sliderkit_price">$ 250</div>
@@ -492,39 +473,13 @@
 
     <!-- soc_icon -->
     <div class="soc_icon_wrap">
-        <a href="">
-            <svg class="icon-messenger" viewBox="0 0 92 93">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share_messenger"></use>
-            </svg>
-        </a>
-        <a href="">
-            <svg class="g-plus icon" viewBox="0 0 89.99 63.08">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#g-plus"></use>
-            </svg>
-        </a>
-        <a href="">
-            <svg class="pinterest icon" viewBox="0 0 88.98 91.07">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use>
-            </svg>
-        </a>
-        <a href="">
-            <span class="icon-facebook"></span>
-        </a>
-        <a href="">
-            <svg class="twitter icon" viewBox="0 0 90.93 73.02">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-            </svg>
-        </a>
-        <a href="">
-            <svg class="tumbler icon" viewBox="0 0 89.99 87.95">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tumbler"></use>
-            </svg>
-        </a>
-        <a href="">
-            <svg class="letter-email icon" viewBox="0 0 90.01 64.04">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#letter-email"></use>
-            </svg>
-        </a>
+        <a href="#" class="messenger icon icon-messenger"></a>
+        <a href="#" class="gp icon icon-google"></a>
+        <a href="#" class="pr icon icon-pinterest"></a>
+        <a href="#" class="fb icon icon-facebook"></a>
+        <a href="#" class="tw icon icon-twitter"></a>
+        <a href="#" class="tumblr icon icon-tumbler"></a>
+        <a href="#" class="letter icon icon-email"></a>
     </div>
     <!-- end soc_icon -->
 
@@ -537,7 +492,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/card.js"></script>
-
 
 <script src="js/lib.js"></script>
 <script src="js/scripts.js"></script>
