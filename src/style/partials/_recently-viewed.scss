@@ -40,6 +40,9 @@
       div {
         bottom: 50%;
         margin-bottom: -14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .owl-prev {
         left: -49px;
@@ -49,7 +52,7 @@
       }
     }
     .icon-right,.icon-left {
-      font-size: 11px;
+      font-size: 10px;
       color: #fff;
     }
   }

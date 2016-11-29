@@ -1,22 +1,48 @@
 .top-panel {
-  height: 115px;
-  padding: 0 20px;
-  overflow: hidden;
   position: relative;
   z-index: 10;
-  border-bottom: 3px solid;
-  border-top: 7px solid;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
+  @include from('s') {
+    height: 115px;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 3px solid;
+    border-top: 7px solid;
+  }
+  @include to('xs') {
+    height: 47px;
+    background-color: #000;
+  }
   .logo {
-    padding-top: 15px;
     transition: .4s ease-in-out;
+    @include from('s') {
+      padding-top: 15px;
+    }
     &:hover {
       opacity: .9;
     }
+    .icon-short_logo {
+      display: none;
+      font-size: 23px;
+      color: #fff;
+      padding: 11px 0 0 41px;
+    }
+    @include to('xs') {
+      img {
+        display: none;
+      }
+      .icon-short_logo {
+        display: block;
+      }
+    }
   }
   &-info {
+    @include to('xs') {
+      display: flex;
+      align-items: center;
+    }
     ul {
       margin: 0;
       padding: 0;
@@ -29,19 +55,29 @@
       }
     }
     .top {
-      margin-bottom: 20px;
       display: flex;
       justify-content: flex-end;
+      @include from('s') {
+        margin-bottom: 20px;
+        font-size: 14px;
+        @include BebasNeueBold;
+      }
+      @include to('xs') {
+        font-size: 10px;
+        @include BebasNeueRegular;
+      }
       .user {
         padding: 0 5px 5px;
+        margin: 0;
         background-color: #000;
+        @include to('xs') {
+          padding-bottom: 0;
+        }
         li {
           display: inline-block;
           padding: 0 8px;
-          font-size: 14px;
           line-height: 1;
           letter-spacing: 1px;
-          @include BebasNeueBold;
           a {
             color: #fff;
           }
@@ -51,8 +87,14 @@
   }
   .basket-count {
     padding-right: 10px;
+    @include to('xs') {
+      &:after {
+        padding: 0 9px 0 10px;
+      }
+    }
   }
   .favorite {
+    display: none; //@todo удалить!
     padding: 9px 8px 3px 10px;
     top: 44px;
     left: 381px;
@@ -66,6 +108,12 @@
 .top-basket {
   display: flex;
   justify-content: flex-end;
+  @include to('xs') {
+    color: #fff;
+    li:first-child {
+      display: none;
+    }
+  }
   .amount {
     margin: 3px 0 1px;
     color: #a2a1a1;
@@ -78,16 +126,25 @@
     @include BebasNeueBold;
   }
   .icon-bag {
-    font-size: 68px;
-    height: 71px;
-    margin: 0 19px 0 25px;
-    display: inline-block;
-    vertical-align: middle;
+    @include from('s') {
+      font-size: 68px;
+      height: 71px;
+      margin: 0 19px 0 25px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @include to('xs') {
+      font-size: 25px;
+      vertical-align: middle;
+    }
   }
 }
 
 .currency-select {
   margin-left: 10px;
+  @include to('xs') {
+    display: none !important;
+  }
   .jq-selectbox {
     &__select {
       height: auto;

@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    // Different events
+    $('.start-shopping').on('click', function () {
+        $('.first-screen').hide();
+        $('.wrapper').css(over);
+    });
+
 
     // Initializing plugin  http://dimox.name/jquery-form-styler/
     (function ($) {
