@@ -15,6 +15,37 @@
     height: 47px;
     background-color: #000;
   }
+
+  .top-icon-menu {
+    @include from('s') {
+      display: none;
+    }
+    @include to('xs') {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .icon-left {
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    padding: 14px 13px 3px 16px;
+  }
+  .burger-menu {
+    height: 100%;
+    @include to('xs') {
+      &::after {
+        background: #fff;
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin: 23px 12px 0 7px;
+        box-shadow: 0 6px 0 0 #fff, 0 -6px 0 0 #fff;
+        content: '';
+      }
+    }
+  }
+
   .logo {
     transition: .4s ease-in-out;
     @include from('s') {
@@ -27,14 +58,14 @@
       display: none;
       font-size: 23px;
       color: #fff;
-      padding: 11px 0 0 41px;
     }
     @include to('xs') {
       img {
         display: none;
       }
       .icon-short_logo {
-        display: block;
+        display: inline-block;
+        vertical-align: middle;
       }
     }
   }
@@ -142,8 +173,10 @@
 
 .currency-select {
   margin-left: 10px;
-  @include to('xs') {
-    display: none !important;
+  @include to('s') {
+    position: absolute !important;
+    top: 59px;
+    right: 28px;
   }
   .jq-selectbox {
     &__select {

@@ -1,10 +1,4 @@
 $(document).ready(function () {
-    // Different events
-    $('.start-shopping').on('click', function () {
-        $('.first-screen').hide();
-        $('.wrapper').css(over);
-    });
-
 
     // Initializing plugin  http://dimox.name/jquery-form-styler/
     (function ($) {
@@ -28,21 +22,6 @@ $(document).ready(function () {
         navContainerClass: "slider-loop-nav",
         navText: ['<span class="icon-left"></span>',
             '<span class="icon-right"></span>']
-    });
-
-    // Different events
-    $('.nav-area-search,.search-area-close').on('click', function () {
-        $('.search-area,.search-area-input').toggleClass("search-area-open").focus();
-        $('.nav-area-search').toggleClass("active");
-        $('.nav-area-search').removeClass("search-results-show");
-    });
-
-    $('.search-area-input').keyup(function () {
-        $('.search-results').addClass('search-results-show');
-    });
-
-    $(".catalog-show-more").hover(function () {
-        $('.home-catalog-image').toggleClass("home-catalog-image-zoom");
     });
 
     // owl-carousel - initializing plugin owlCarousel
@@ -99,7 +78,35 @@ $(document).ready(function () {
         })
     });
 
+
     // Different events
+    const mainMenuSearch = $('.main-menu-search');
+    $('.main-menu-search,.search-area-close').on('click', function () {
+        $('.search-area,.search-area-input').toggleClass("search-area-open").focus();
+        mainMenuSearch.toggleClass("active");
+        mainMenuSearch.removeClass("search-results-show");
+    });
+
+    $('.search-area-input').keyup(function () {
+        $('.search-results').addClass('search-results-show');
+    });
+
+    $(".catalog-show-more").hover(function () {
+        $('.home-catalog-image').toggleClass("home-catalog-image-zoom");
+    });
+
+    $('.start-shopping').on('click', function () {
+        $('.first-screen').hide();
+        $('.wrapper').css(over);
+    });
+
+    const topiconMenu = $('.top-icon-menu');
+    topiconMenu.on('click', function () {
+        $('.top-panel').toggleClass("top-panel-open");
+        $('.nav-area').toggleClass("nav-area-open");
+        topiconMenu.toggleClass("icon-left burger-menu");
+    });
+
     $('.social-share').on('click', function () {
         $('.nav-second').toggleClass("share-open");
     });

@@ -1,48 +1,48 @@
-.nav-area {
-  background-color: #efefef;
-  position: relative;
-  z-index: 9;
-  &-search a {
-    &:before {
-      width: 18px;
-      height: 18px;
-      margin-right: 5px;
-      display: inline-block;
-      vertical-align: middle;
-      content: '';
-      background: url(../img/icon-search.png) no-repeat;
-    }
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
 .main-menu {
-  text-align: center;
-  letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   @include MinionProRegular;
+  @include to('s') {
+    width: 100%;
+    padding: 0 5px;
+    background-color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    transform: translateX(-103%);
+    will-change: transform;
+    position: absolute;
+    transition: all 330ms ease-out;
+  }
   & > li {
-    margin: 0 12px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
     letter-spacing: 1.5px;
-    &:not(.sale) a {
-      color: #000;
+    @include from('m') {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    &:not(.main-menu-search) > a {
+      padding-top: 8px;
+      padding-bottom: 10px;
+      @include to('s') {
+        padding: 7px 0 7px 22px;
+        font-size: 19px;
+        border: 0;
+      }
     }
     & > a {
-      padding: 8px 0 10px;
       display: block;
       border-top: 3px solid transparent;
       transition: .4s ease-in-out;
     }
-    &.active > a, > a:hover {
-      border-top-color: #000;
+    @include from('m') {
+      &.active > a, > a:hover {
+        border-top-color: #000;
+      }
     }
   }
   &-parent {
@@ -58,25 +58,42 @@
       margin-left: -5px;
       transition: .4s ease-in-out;
     }
-    &:hover {
-      &:after {
-        border-bottom-width: 7px;
-      }
-      .child {
-        @include visible-display;
-        width: 213px;
+    @include from('m') {
+      &:hover {
+        &:after {
+          border-bottom-width: 7px;
+        }
+        .child {
+          width: 213px;
+          @include visible-display;
+        }
       }
     }
   }
   .child {
-    padding: 26px 0;
-    top: 41px;
-    left: 0;
-    background-color: #fff;
-    @include hide-display;
+    list-style: none;
+    @include from('m') {
+      padding: 26px 0;
+      top: 41px;
+      left: 0;
+      background-color: #fff;
+      @include hide-display;
+    }
+    @include to('s') {
+      padding: 15px 0 0 23px;
+      background-color: #000;
+      &:after {
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        content: '';
+      }
+    }
     li {
       font-size: 11px;
-      margin-bottom: 2px;
+      @include from('m') {
+        margin-bottom: 2px;
+      }
       &:hover .category-img {
         opacity: 1;
         height: 100%;
@@ -84,16 +101,26 @@
     }
     a {
       padding: 6px 5px 3px;
-      transition: .4s ease-in-out;
-      color: #000;
-      background-color: transparent;
       display: block;
       white-space: nowrap;
       letter-spacing: 1.1px;
       line-height: 1;
-      &:hover {
+      transition: .4s ease-in-out;
+      @include from('m') {
+        background-color: transparent;
+        color: #000;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+      @include to('s') {
+        padding: 5px 0 6px;
+        letter-spacing: 3.2px;
         background-color: #000;
         color: #fff;
+        font-size: 16px;
+        @include BebasNeueRegular;
       }
     }
     &:before {
@@ -114,6 +141,23 @@
       left: -305px;
       overflow: hidden;
       transition: .4s ease-in-out;
+    }
+  }
+  &-search {
+    @include from('m') {
+      order: 7;
+    }
+    @include to('s') {
+      margin: 0 12px 13px;
+      border-bottom: 1px solid;
+    }
+    a {
+      padding: 8px 0 10px 23px;
+      background: url(../img/icon-search.png) no-repeat 0 8px;
+      @include to('s') {
+        padding: 11px 0 8px 43px;
+        background-position: 8px 11px;
+      }
     }
   }
 }
@@ -189,5 +233,16 @@
   .logo, .favorite, .info-panel {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.nav-area {
+  background-color: #efefef;
+  position: relative;
+  z-index: 9;
+  &-open {
+    .main-menu {
+      transform: none;
+    }
   }
 }

@@ -7,11 +7,6 @@
       margin-right: 30px;
     }
   }
-  svg {
-    width: 18px;
-    fill: #fff;
-    transition: .4s ease-in-out;
-  }
 }
 
 .footer-social {
@@ -48,35 +43,11 @@
       margin-right: 26px;
     }
   }
-  svg {
-    width: 13px;
-    &:hover {
-      fill: #ababab;
-    }
-  }
-  .gp svg {
-    width: 16px;
-  }
-  .pr svg {
-    width: 11px;
-  }
-  .fb svg {
-    width: 11px;
-  }
-  .tw svg {
-    width: 14px;
-  }
-  .tumblr svg {
-    width: 11px;
-  }
   .text {
     font-size: 11px;
     color: #838383;
     text-transform: uppercase;
     letter-spacing: 3px;
-  }
-  .social-share svg {
-    fill: #000;
   }
 }
 
@@ -90,20 +61,5 @@
     &:hover {
       color: #ababab;
     }
-  }
-  .pr svg {
-    width: 21px;
-  }
-  .fb svg {
-    width: 20px;
-  }
-  .tw svg {
-    width: 22px;
-  }
-  .instagram svg {
-    width: 21px;
-  }
-  .yt svg {
-    width: 25px;
   }
 }

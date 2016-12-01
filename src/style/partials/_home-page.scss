@@ -185,11 +185,11 @@
 
 @include to('xs') {
   .slider-loop {
-    display: none;
+    display: none !important;
   }
   .main-index {
     .wrapper {
-      overflow: hidden;
+      //overflow: hidden; //@todo deleted
     }
   }
   .first-screen {
