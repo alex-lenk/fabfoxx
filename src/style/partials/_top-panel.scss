@@ -11,16 +11,27 @@
     border-bottom: 3px solid;
     border-top: 7px solid;
   }
-  @include to('xs') {
+  @include to('s') {
     height: 47px;
     background-color: #000;
   }
-
+  &-open {
+    .currency-select {
+      position: absolute !important;
+      top: 59px;
+      right: 28px;
+    }
+  }
+  .left-join {
+    @include from('m') {
+      display: flex;
+    }
+  }
   .top-icon-menu {
     @include from('s') {
       display: none;
     }
-    @include to('xs') {
+    @include to('s') {
       display: inline-block;
       vertical-align: middle;
     }
@@ -33,7 +44,7 @@
   }
   .burger-menu {
     height: 100%;
-    @include to('xs') {
+    @include to('s') {
       &::after {
         background: #fff;
         width: 20px;
@@ -59,7 +70,7 @@
       font-size: 23px;
       color: #fff;
     }
-    @include to('xs') {
+    @include to('s') {
       img {
         display: none;
       }
@@ -70,7 +81,7 @@
     }
   }
   &-info {
-    @include to('xs') {
+    @include to('s') {
       display: flex;
       align-items: center;
     }
@@ -93,7 +104,8 @@
         font-size: 14px;
         @include BebasNeueBold;
       }
-      @include to('xs') {
+      @include to('s') {
+        align-items: center;
         font-size: 10px;
         @include BebasNeueRegular;
       }
@@ -101,7 +113,7 @@
         padding: 0 5px 5px;
         margin: 0;
         background-color: #000;
-        @include to('xs') {
+        @include to('s') {
           padding-bottom: 0;
         }
         li {
@@ -118,7 +130,7 @@
   }
   .basket-count {
     padding-right: 10px;
-    @include to('xs') {
+    @include to('s') {
       &:after {
         padding: 0 9px 0 10px;
       }
@@ -139,7 +151,7 @@
 .top-basket {
   display: flex;
   justify-content: flex-end;
-  @include to('xs') {
+  @include to('s') {
     color: #fff;
     li:first-child {
       display: none;
@@ -164,7 +176,7 @@
       display: inline-block;
       vertical-align: middle;
     }
-    @include to('xs') {
+    @include to('s') {
       font-size: 25px;
       vertical-align: middle;
     }
@@ -173,11 +185,6 @@
 
 .currency-select {
   margin-left: 10px;
-  @include to('s') {
-    position: absolute !important;
-    top: 59px;
-    right: 28px;
-  }
   .jq-selectbox {
     &__select {
       height: auto;

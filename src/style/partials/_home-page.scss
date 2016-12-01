@@ -1,13 +1,15 @@
-@include from('s') {
-  .delivery-panel {
+.delivery-panel {
+  display: none;
+  @include from('m') {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 10px;
-    font-weight: 300;
-    font-family: $Roboto;
     display: flex;
     justify-content: space-between;
+    font-weight: 300;
+    font-family: $Roboto;
+
     li {
       width: calc(100% / 3);
       &:nth-child(2) {
@@ -28,159 +30,190 @@
       }
     }
   }
+}
 
-  .home-catalog {
-    &-image {
-      overflow: hidden;
+.home-catalog {
+  @include from('m') {
+
+  }
+  &-image {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    @include from('m') {
       flex-basis: calc(100% - 366px);
+    }
+    img {
+      transition: transform 1s;
+      backface-visibility: hidden;
       position: relative;
-      z-index: 3;
-      img {
-        height: 390px;
-        transition: transform 1s;
-        backface-visibility: hidden;
-        position: relative;
-        display: block;
+      display: block;
+      @include from('m') {
         min-height: 100%;
-      }
-    }
-    &-image-zoom {
-      img {
-        transform: scale3d(1.1, 1.1, 1);
-      }
-    }
-    &-big {
-      display: flex;
-      .description {
-        width: 366px;
-        padding: 33px 35px 25px 38px;
-        position: relative;
-        z-index: 4;
-        &:after {
-          position: absolute;
-          top: 33px;
-          left: -15px;
-          width: 0;
-          height: 0;
-          border-right: 15px solid;
-          border-top: 16px solid transparent;
-          border-bottom: 16px solid transparent;
-          content: '';
-        }
-      }
-      .title {
-        margin: 0 0 19px;
-        font-size: 24px;
-        line-height: 1;
-        font-weight: normal;
-        text-transform: uppercase;
-        @include MinionProRegular;
-      }
-      .text {
-        margin-bottom: 55px;
-        line-height: 21px;
-        font-size: 12px;
-        color: #696969;
-        font-weight: 300;
-        font-style: italic;
-        font-family: $Roboto;
-      }
-      .catalog-show-more {
-        display: block;
-        font-size: 13px;
-        width: 108px;
-        margin: 0 auto;
-        color: #dbdbdb;
-        padding: 7px 0;
-        letter-spacing: 1px;
-        transition: .4s ease-in-out;
-        &:hover {
-          color: #fff;
-          background-color: transparent;
-          outline: 1px solid;
-        }
-      }
-    }
-    .columns {
-      display: flex;
-      &-img {
-        flex-basis: calc(100% - 513px);
-        .home-catalog-image {
-          flex-basis: calc(100% - 272px);
-          img {
-            height: 365px;
-          }
-        }
-        .description {
-          width: 272px;
-          padding: 29px 28px 0;
-          &:after {
-            top: auto;
-            left: auto;
-            right: -15px;
-            bottom: 20px;
-            border-right: 0;
-            border-left: 15px solid;
-          }
-        }
-        .home-catalog-big {
-          .title {
-            color: #fff;
-          }
-          .text {
-            color: #fff;
-            margin-bottom: 28px;
-          }
-          .catalog-show-more {
-            color: #a45449;
-          }
-          .catalog-show-more:hover {
-            color: #fff;
-            background-color: #a45449;
-            outline-color: #fff;
-          }
-        }
-      }
-      &-single {
-        width: 513px;
-        margin: 0;
-        img {
-        }
-        figcaption {
-          padding: 45px 0 35px;
-          color: #fff;
-          background-color: #000;
-          letter-spacing: 1px;
-          font-size: 46px;
-          line-height: 1;
-          text-align: center;
-          text-transform: uppercase;
-          @include MinionProRegular;
-        }
-      }
-    }
-    .light-cyan-color {
-      .title {
-        color: #fff;
-      }
-      .text {
-        color: #000;
-      }
-      .catalog-show-more {
-        color: #38ebff;
-        &:hover {
-          background-color: #fff;
-        }
-      }
-      &:after {
-        right: -15px;
-        left: auto;
-        border-right: 0;
-        border-left: 15px solid;
+        height: 390px;
       }
     }
   }
-
+  &-image-zoom {
+    img {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+  &-big {
+    display: flex;
+    @include to('s') {
+      flex-wrap: wrap;
+    }
+    .description {
+      position: relative;
+      z-index: 4;
+      @include from('m') {
+        width: 366px;
+        padding: 33px 35px 25px 38px;
+      }
+      @include to('s') {
+        background-color: #fff;
+        padding: 0 17px;
+      }
+      &:after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        content: '';
+        @include from('m') {
+          top: 33px;
+          left: -15px;
+          border-right: 15px solid;
+          border-top: 16px solid transparent;
+          border-bottom: 16px solid transparent;
+        }
+        @include to('s') {
+          top: -10px;
+          left: 35px;
+          border-right: 9px solid transparent;
+          border-bottom: 10px solid;
+          border-left: 9px solid transparent;
+          color: #fff;
+        }
+      }
+    }
+    .title {
+      margin: 0 0 19px;
+      font-size: 24px;
+      font-weight: normal;
+      text-transform: uppercase;
+      @include MinionProRegular;
+      @include from('m') {
+        line-height: 1;
+      }
+      @include to('s') {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+    .text {
+      margin-bottom: 55px;
+      line-height: 21px;
+      font-size: 12px;
+      color: #696969;
+      font-weight: 300;
+      font-style: italic;
+      font-family: $Roboto;
+    }
+    .catalog-show-more {
+      display: block;
+      font-size: 13px;
+      width: 108px;
+      margin: 0 auto;
+      color: #dbdbdb;
+      padding: 7px 0;
+      letter-spacing: 1px;
+      transition: .4s ease-in-out;
+      &:hover {
+        color: #fff;
+        background-color: transparent;
+        outline: 1px solid;
+      }
+    }
+  }
+  .columns {
+    display: flex;
+    &-img {
+      flex-basis: calc(100% - 513px);
+      .home-catalog-image {
+        flex-basis: calc(100% - 272px);
+        img {
+          height: 365px;
+        }
+      }
+      .description {
+        width: 272px;
+        padding: 29px 28px 0;
+        &:after {
+          top: auto;
+          left: auto;
+          right: -15px;
+          bottom: 20px;
+          border-right: 0;
+          border-left: 15px solid;
+        }
+      }
+      .home-catalog-big {
+        .title {
+          color: #fff;
+        }
+        .text {
+          color: #fff;
+          margin-bottom: 28px;
+        }
+        .catalog-show-more {
+          color: #a45449;
+        }
+        .catalog-show-more:hover {
+          color: #fff;
+          background-color: #a45449;
+          outline-color: #fff;
+        }
+      }
+    }
+    &-single {
+      width: 513px;
+      margin: 0;
+      img {
+      }
+      figcaption {
+        padding: 45px 0 35px;
+        color: #fff;
+        background-color: #000;
+        letter-spacing: 1px;
+        font-size: 46px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        @include MinionProRegular;
+      }
+    }
+  }
+  .light-cyan-color {
+    .title {
+      color: #fff;
+    }
+    .text {
+      color: #000;
+    }
+    .catalog-show-more {
+      color: #38ebff;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+    &:after {
+      right: -15px;
+      left: auto;
+      border-right: 0;
+      border-left: 15px solid;
+    }
+  }
 }
 
 @include to('xs') {
