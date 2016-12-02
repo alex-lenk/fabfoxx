@@ -1,4 +1,7 @@
 .slider-loop {
+  @include to('s') {
+    display: none !important;
+  }
   &-title {
     opacity: 0;
     visibility: hidden;

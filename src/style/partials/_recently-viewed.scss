@@ -26,6 +26,9 @@
     }
   }
   .owl-carousel {
+    @include to('xs') {
+      overflow: hidden;
+    }
     img {
       border: 1px solid #ededed;
       transition: .4s ease-in-out;

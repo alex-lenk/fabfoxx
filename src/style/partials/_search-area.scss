@@ -54,8 +54,10 @@
     }
   }
   .wrap {
-    padding: 0 0 0 192px;
-    position: relative
+    position: relative;
+    @include from('m') {
+      padding: 0 0 0 192px;
+    }
   }
 }
 

@@ -3,7 +3,7 @@
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  @include from('s') {
+  @include from('m') {
     height: 115px;
     padding: 0 20px;
     overflow: hidden;
@@ -27,7 +27,7 @@
     }
   }
   .top-icon-menu {
-    @include from('s') {
+    @include from('m') {
       display: none;
     }
     @include to('s') {
@@ -58,7 +58,7 @@
 
   .logo {
     transition: .4s ease-in-out;
-    @include from('s') {
+    @include from('m') {
       padding-top: 15px;
     }
     &:hover {
@@ -98,7 +98,7 @@
     .top {
       display: flex;
       justify-content: flex-end;
-      @include from('s') {
+      @include from('m') {
         margin-bottom: 20px;
         font-size: 14px;
         @include BebasNeueBold;
@@ -177,7 +177,7 @@
     @include BebasNeueBold;
   }
   .icon-bag {
-    @include from('s') {
+    @include from('m') {
       font-size: 68px;
       height: 71px;
       margin: 0 19px 0 25px;
@@ -195,6 +195,7 @@
   margin-left: 10px;
   @include to('s') {
     position: absolute !important;
+    top: -50px;
   }
   .jq-selectbox {
     &__select {
