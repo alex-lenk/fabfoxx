@@ -53,6 +53,9 @@
       font-size: 13px;
       text-transform: uppercase;
       @include MinionProRegular;
+      @include to('s') {
+        display: none;
+      }
       &:not(:first-of-type) {
         padding-left: 25px;
       }
@@ -65,9 +68,12 @@
       }
     }
     .logo {
-      margin-top: 53px;
-      float: left;
-      flex-basis: 70px;
+      text-align: center;
+      @include from('m') {
+        margin-top: 53px;
+        flex-basis: 70px;
+        float: left;
+      }
       .icon-logo_bottom {
         font-size: 84px;
       }
@@ -87,6 +93,9 @@
       float: left;
       width: 332px;
       padding-left: 30px;
+      @include to('s') {
+        display: none;
+      }
       .form-group {
         margin-bottom: 7px;
       }
@@ -125,14 +134,20 @@
     padding-top: 30px;
     padding-bottom: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    @include from('m') {
+      justify-content: space-between;
+    }
     .copy, .developer {
       font-size: 12px;
       color: #777;
       letter-spacing: 2px;
+      @include to('s') {
+        display: none;
+      }
     }
   }
 }

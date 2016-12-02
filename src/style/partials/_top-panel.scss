@@ -17,7 +17,6 @@
   }
   &-open {
     .currency-select {
-      position: absolute !important;
       top: 59px;
       right: 28px;
     }
@@ -137,13 +136,22 @@
     }
   }
   .favorite {
-    display: none; //@todo удалить!
     padding: 9px 8px 3px 10px;
-    top: 44px;
-    left: 381px;
-    margin: -10px 0 0 -10px;
+    @include from('m') {
+      top: 44px;
+      left: 381px;
+      margin: -10px 0 0 -10px;
+    }
+    @include to('s') {
+      position: relative;
+      display: inline-block;
+    }
     .icon-favorites {
       font-size: 17px;
+      @include to('s') {
+        font-size: 12px;
+        color: #fff;
+      }
     }
   }
 }
@@ -185,6 +193,9 @@
 
 .currency-select {
   margin-left: 10px;
+  @include to('s') {
+    position: absolute !important;
+  }
   .jq-selectbox {
     &__select {
       height: auto;

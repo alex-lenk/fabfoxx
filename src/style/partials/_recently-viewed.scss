@@ -2,7 +2,7 @@
   margin-bottom: 50px;
   &-title {
     margin: 0;
-    padding: 95px 0 30px;
+    padding: 30px 0;
     line-height: 1;
     font-size: 15px;
     font-weight: normal;
@@ -10,22 +10,19 @@
     text-transform: uppercase;
     letter-spacing: .5px;
     @include MinionProRegular;
-    span {
+    @include from('m') {
+      padding-top: 30px;
+      &:before, &:after {
+        width: 165px;
+        height: 1px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #000;
+        content: '';
+      }
+    }
+    .text {
       padding: 0 15px;
-    }
-    &:before, &:after {
-      width: 165px;
-      height: 1px;
-      display: inline-block;
-      vertical-align: middle;
-      background-color: #000;
-      content: '';
-    }
-    &:before {
-
-    }
-    &:after {
-
     }
   }
   .owl-carousel {
@@ -51,7 +48,7 @@
         right: -53px;
       }
     }
-    .icon-right,.icon-left {
+    .icon-right, .icon-left {
       font-size: 10px;
       color: #fff;
     }

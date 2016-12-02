@@ -81,7 +81,7 @@
       @include hide-display;
     }
     @include to('s') {
-      padding: 15px 0 0 23px;
+      padding: 15px 0 15px 23px;
       background-color: #000;
       &:after {
         position: absolute;
@@ -239,6 +239,7 @@
     border-right: 7px solid;
   }
   @include to('s') {
+    display: none;
     .main-menu {
       padding: 0;
     }
