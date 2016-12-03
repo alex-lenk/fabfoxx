@@ -27,7 +27,7 @@
   }
   &.fix {
     position: absolute;
-    bottom: 119px;
+    bottom: 118px;
   }
 }
 
@@ -38,18 +38,17 @@
     position: relative;
   }
 
-  &-info {
-    padding: 73px 0 75px;
-    background-color: #efefef;
-    .container {
-      @include clearfix;
-    }
+  &-nav {
+    width: 56%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
     .column {
-      float: left;
+      width: 25%;
+      padding: 0 8% 0 0;
+      min-height: 188px;
       margin: 0;
-      padding: 0;
       list-style: none;
-      border-right: 1px solid;
       font-size: 13px;
       text-transform: uppercase;
       @include MinionProRegular;
@@ -57,7 +56,9 @@
         display: none;
       }
       &:not(:first-of-type) {
+        width: 39%;
         padding-left: 25px;
+        border-left: 1px solid;
       }
       li {
         letter-spacing: 1px;
@@ -67,32 +68,35 @@
         }
       }
     }
+  }
+
+  &-info {
+    padding: 73px 0 75px;
+    background-color: #efefef;
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      @include clearfix;
+    }
     .logo {
       text-align: center;
       @include from('m') {
+        width: 16%;
         margin-top: 53px;
-        flex-basis: 70px;
         float: left;
+        text-align: left;
       }
       .icon-logo_bottom {
         font-size: 84px;
       }
     }
-    .main-links {
-      margin-left: 158px;
-      padding-right: 54px;
-      min-height: 188px;
-    }
-    .users-links {
-      width: 274px;
-    }
-    .sale-links {
-      width: 206px;
-    }
+
     .sign-up {
       float: left;
-      width: 332px;
+      width: 28%;
       padding-left: 30px;
+      min-height: 188px;
+      border-left: 1px solid;
       @include to('s') {
         display: none;
       }

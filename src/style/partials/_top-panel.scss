@@ -10,6 +10,9 @@
     background-color: #fff;
     border-bottom: 3px solid;
     border-top: 7px solid;
+    .logo {
+      padding-top: 15px;
+    }
   }
   @include to('s') {
     height: 47px;
@@ -21,29 +24,30 @@
       right: 28px;
     }
   }
-  .left-join {
+
+  &__left-join {
     @include from('m') {
       display: flex;
     }
-  }
-  .top-icon-menu {
-    @include from('m') {
-      display: none;
+    .top-icon-menu {
+      @include from('l') {
+        display: none;
+      }
+      @include to('s') {
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
-    @include to('s') {
-      display: inline-block;
-      vertical-align: middle;
+    .icon-left {
+      height: 100%;
+      font-size: 20px;
+      color: #fff;
+      padding: 14px 13px 3px 16px;
     }
-  }
-  .icon-left {
-    height: 100%;
-    font-size: 20px;
-    color: #fff;
-    padding: 14px 13px 3px 16px;
-  }
-  .burger-menu {
-    height: 100%;
-    @include to('s') {
+
+    .burger-menu {
+      height: 100%;
+      cursor: pointer;
       &::after {
         background: #fff;
         width: 20px;
@@ -54,31 +58,50 @@
         content: '';
       }
     }
-  }
 
-  .logo {
-    transition: .4s ease-in-out;
-    @include from('m') {
-      padding-top: 15px;
-    }
-    &:hover {
-      opacity: .9;
-    }
-    .icon-short_logo {
-      display: none;
-      font-size: 23px;
-      color: #fff;
-    }
-    @include to('s') {
-      img {
-        display: none;
+    .logo {
+      transition: .4s ease-in-out;
+      &:hover {
+        opacity: .9;
       }
       .icon-short_logo {
+        @include to('m') {
+          font-size: 23px;
+          color: #fff;
+        }
+      }
+      @include to('s') {
+        img {
+          display: none;
+        }
+        .icon-short_logo {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .favorite {
+      padding: 9px 8px 3px 10px;
+      @include from('m') {
+        top: 44px;
+        left: 381px;
+        margin: -10px 0 0 -10px;
+      }
+      @include to('s') {
+        position: relative;
         display: inline-block;
-        vertical-align: middle;
+      }
+      .icon-favorites {
+        font-size: 17px;
+        @include to('s') {
+          font-size: 12px;
+          color: #fff;
+        }
       }
     }
   }
+
   &-info {
     @include to('s') {
       display: flex;
@@ -135,23 +158,10 @@
       }
     }
   }
-  .favorite {
-    padding: 9px 8px 3px 10px;
+
+  .icon-short_logo {
     @include from('m') {
-      top: 44px;
-      left: 381px;
-      margin: -10px 0 0 -10px;
-    }
-    @include to('s') {
-      position: relative;
-      display: inline-block;
-    }
-    .icon-favorites {
-      font-size: 17px;
-      @include to('s') {
-        font-size: 12px;
-        color: #fff;
-      }
+      display: none;
     }
   }
 }

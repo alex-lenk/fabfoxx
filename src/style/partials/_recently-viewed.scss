@@ -37,6 +37,9 @@
       }
     }
     .slider-loop-nav {
+      @include to('m') {
+        display: none;
+      }
       div {
         bottom: 50%;
         margin-bottom: -14px;
