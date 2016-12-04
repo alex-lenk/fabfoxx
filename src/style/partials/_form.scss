@@ -95,8 +95,10 @@ textarea.form-control {
 .feedback {
   &-form {
     .no-robot {
-      width: 302px;
       text-align: center;
+      @include from('m') {
+        width: 302px;
+      }
       .button {
         margin-top: 9px;
         width: 100%;
@@ -173,7 +175,12 @@ textarea.form-control {
     &-bottom {
       margin-top: 10px;
       display: flex;
-      justify-content: space-between;
+      @include from('m') {
+        justify-content: space-between;
+      }
+      @include to('s') {
+        flex-direction: column;
+      }
       .stay-connected-title {
         margin-bottom: 14px;
         letter-spacing: 1px;

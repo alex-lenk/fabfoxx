@@ -41,14 +41,18 @@
 
 .page-content {
   .content {
-    width: 921px;
+    width: 100%;
+    max-width: 921px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 42px;
+    padding: 0 15px;
     background-color: #fff;
     font-weight: 300;
     font-family: $RobotoCondensed;
+    @include from('l') {
+      padding: 0 42px;
+    }
     p {
       line-height: 23px;
       margin-bottom: 24px;

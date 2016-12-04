@@ -5,9 +5,10 @@
     letter-spacing: 0;
     span {
       padding: 18px 22px 14px 0;
-      transform: translateX(-50%);
+      @include from('l') {
+        transform: translateX(-50%);
+      }
     }
-
   }
   p {
     margin-bottom: 21px;
@@ -18,6 +19,16 @@
   }
   .feedback-form-bottom {
     margin-top: -6px;
+    @include to('s') {
+      flex-direction: column;
+      align-items: center;
+      .stay-connected {
+        margin-bottom: 25px;
+      }
+      .no-robot {
+        width: auto;
+      }
+    }
     .jq-selectbox__select {
       margin-bottom: 15px;
     }

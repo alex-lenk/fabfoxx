@@ -227,9 +227,13 @@ a, .as-link {
 .first-letter {
   line-height: .7;
   float: left;
-  padding: 16px 54px 30px 33px;
-  font-size: 110px;
+  padding: 21px 26px 30px 7px;
+  font-size: 93px;
   @include BebasNeueRegular;
+  @include from('m') {
+    padding: 16px 54px 30px 33px;
+    font-size: 110px;
+  }
 }
 
 .preview-bag {
