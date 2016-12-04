@@ -88,33 +88,8 @@
   }
 
   .filter-group {
-    position: absolute;
     top: -145px;
     left: 0;
-    @include to('s') {
-      width: 100%;
-      padding: 0 5px;
-      background-color: #fff;
-      z-index: 5;
-      transform: translateX(-103%);
-      will-change: transform;
-      transition: transform 330ms ease-out;
-    }
-    &.filter-group-open {
-      transform: none;
-      top: 0;
-      padding-top: 50px;
-      z-index: 101;
-      transition: all 330ms ease-out;
-      .filter-group-close {
-        position: absolute;
-        top: 12px;
-        right: 20px;
-        font-size: 20px;
-        color: #000;
-        display: block;
-      }
-    }
   }
 }
 
@@ -137,15 +112,18 @@
         &:not(.active):hover {
           color: #b4b4b4;
         }
-        .search-by-filter {
-          display: none;
-        }
       }
       @include to('s') {
         &:not(.search-by-filter) {
           display: none;
         }
-        .search-by-filter {
+      }
+      .search-by-filter {
+        cursor: pointer;
+        @include from('m') {
+          display: none;
+        }
+        @include to('s') {
           display: block;
           font-size: 15px;
           cursor: pointer;

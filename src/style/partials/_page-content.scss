@@ -1,11 +1,9 @@
 .product-page {
   display: flex;
-  .main-catalog-content {
-    padding-top: 10px;
+  position: relative;
+  @include to('s') {
+    flex-direction: column;
   }
-}
-
-.left-column {
   .header-page-title {
     min-width: 320px;
     padding: 0;
@@ -15,6 +13,20 @@
     span {
       padding: 19px 22px 14px 0;
     }
+    @include to('m') {
+      display: block;
+      font-size: 24px;
+    }
+  }
+
+  .filter-group.filter-group-open {
+    top: 55px;
+    padding-top: 50px;
+    padding-left: 25px;
+  }
+
+  .main-catalog-content {
+    padding-top: 10px;
   }
 }
 
