@@ -111,4 +111,8 @@ $(document).ready(function () {
         $('.nav-second').toggleClass("share-open");
     });
 
+    $('.search-by-filter,.filter-group-close').on('click', function () {
+        $('.filter-group').toggleClass("filter-group-open");
+    });
+
 });

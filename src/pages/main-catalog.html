@@ -6,7 +6,6 @@
 <body class="page">
 
 
-
 <div class="wrapper" id="to-top">
 
     <!-- include "templates/top-panel.html" -->
@@ -21,9 +20,12 @@
 
     <!-- include "templates/nav-second.html" -->
 
-    <div class="main-catalog">
+    <header class="main-catalog__header">
+        <div class="container-fluid">
+            <h1 class="title"><span>CLOTHES</span></h1>
+        </div>
 
-        <ul class="catalog-list-sections">
+        <ul class="main-catalog__header-menu">
             <li><a href="#">Hoodies/Sweaters</a></li>
             <li><a href="#">Dresses</a></li>
             <li><a href="#">Jeans</a></li>
@@ -36,11 +38,10 @@
             <li><a href="#">Swimwear / Beachwear</a></li>
             <li><a href="#">Tees / Jersey Tops</a></li>
         </ul>
+    </header>
 
+    <div class="main-catalog">
         <div class="container-fluid">
-            <header class="header-page-catalog">
-                <h1 class="header-page-title"><span>CLOTHES</span></h1>
-            </header>
 
             <!-- include "templates/filter.html" -->
 
@@ -53,6 +54,7 @@
                         <li class="grid active">
                             <span class="icon-sort_small"></span>
                         </li>
+                        <li class="search-by-filter">Search by</li>
                     </ul>
                     <select class="sorting currency-select">
                         <option value="">SORT BY</option>

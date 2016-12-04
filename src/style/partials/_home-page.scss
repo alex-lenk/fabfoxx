@@ -1,6 +1,6 @@
 .delivery-panel {
   display: none;
-  @include from('m') {
+  @include from('l') {
     margin: 0;
     padding: 0;
     list-style: none;

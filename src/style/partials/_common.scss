@@ -60,6 +60,7 @@ a, .as-link {
 }
 
 // @todo deleted?
+/*
 .table {
   display: table;
   &-tr {
@@ -87,6 +88,7 @@ a, .as-link {
     display: table-caption
   }
 }
+*/
 
 .sale {
   a {
@@ -132,7 +134,7 @@ a, .as-link {
   &:after {
     position: fixed;
     background-color: #000;
-    z-index: 51;
+    z-index: 105;
     content: '';
   }
 }
@@ -170,7 +172,7 @@ a, .as-link {
 .basket-count[data-count]:not([data-count='']):after {
   content: attr(data-count);
   display: inline;
-  @include from('s') {
+  @include from('m') {
     font-size: 24px;
   }
 }
@@ -356,5 +358,36 @@ a, .as-link {
 .returns-exchanges {
   .content {
     width: 820px;
+  }
+}
+
+.currency-select {
+  margin-left: 10px;
+  .jq-selectbox {
+    &__select {
+      height: auto;
+      padding: 2px 16px 0 5px;
+      border: 0;
+      background-color: transparent;
+      &-text {
+        width: auto !important;
+        font-size: 14px;
+        @include BebasNeueBold;
+      }
+    }
+    &__trigger {
+      border-left: 0;
+      &-arrow {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        border-top: 6px solid #000;
+        border-right-width: 4px;
+        border-left-width: 4px;
+      }
+    }
+  }
+  &.jq-selectbox.focused .jq-selectbox__select {
+    outline: 0;
   }
 }

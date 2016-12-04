@@ -3,14 +3,24 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  @include from('m') {
+    justify-content: space-between;
+  }
+  @include to('s') {
+    justify-content: center;
+  }
   &-item {
     width: 100%;
-    max-width: 265px;
     margin-bottom: 17px;
     text-align: center;
     position: relative;
+    @include from('s') {
+      max-width: 265px;
+    }
+    @include at('s') {
+      margin-left: 15px;
+    }
     &-img {
       border: 1px solid #ededed;
       transition: .4s ease-in-out;

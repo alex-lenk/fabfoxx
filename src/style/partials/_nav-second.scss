@@ -1,97 +1,102 @@
 .nav-second {
-  height: 35px;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  border-bottom: 1px solid #000;
-  &:hover {
-    .nav-second-menu {
-      a {
-        color: #070708;
-      }
-      li:not(:last-of-type):after {
-        border-right-color: #070708;
-        content: '';
-      }
-    }
-  }
-  &-menu {
-    height: 100%;
-    margin: 0;
-    padding-left: 20px;
-    list-style: none;
-    font-size: 15px;
-    z-index: 4;
+  display: none;
+  @include from('s') {
+    height: 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    @include BebasNeueBook;
-    li {
-      line-height: 34px;
-      display: inline-block;
-      vertical-align: top;
-      letter-spacing: 1px;
-      position: relative;
-      &:not(:last-of-type) {
-        margin-right: 10px;
-        &:after {
-          margin-left: 10px;
-          display: inline-block;
-          height: 11px;
-          border-right: 1px solid #dcdbdb;
-          transition: .4s ease-in-out;
+    border-bottom: 1px solid #000;
+    &:hover {
+      .nav-second-menu {
+        a {
+          color: #070708;
+        }
+        li:not(:last-of-type):after {
+          border-right-color: #070708;
           content: '';
         }
       }
     }
-    a {
-      color: #dcdbdb;
-      transition: .4s ease-in-out;
-    }
-  }
-  &:after {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    background-color: #000;
-    content: '';
-    z-index: 5;
-    transition: .4s ease-in-out;
-  }
-  .social-nav {
-    li {
-      line-height: 40px;
-      .icon:hover {
-        color: #838383;
-      }
-    }
-    .icon {
-      font-size: 12px;
-      color: #fff;
-      transition: .4s ease-in-out;
-    }
-  }
-  .social-share {
-    cursor: pointer;
-    .icon-share {
-      color: #000;
+    &-menu {
+      height: 100%;
+      margin: 0;
+      padding-left: 20px;
+      list-style: none;
       font-size: 15px;
-      transition: .4s ease-in-out;
-      &:hover {
-        color: #838383;
+      z-index: 4;
+      position: relative;
+      white-space: nowrap;
+      @include BebasNeueBook;
+      li {
+        line-height: 34px;
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 1px;
+        position: relative;
+        &:not(:last-of-type) {
+          margin-right: 10px;
+          &:after {
+            margin-left: 10px;
+            display: inline-block;
+            height: 11px;
+            border-right: 1px solid #dcdbdb;
+            transition: .4s ease-in-out;
+            content: '';
+          }
+        }
+      }
+      a {
+        color: #dcdbdb;
+        transition: .4s ease-in-out;
       }
     }
-  }
-  &.share-open {
     &:after {
-      width: 100%;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      background-color: #000;
+      content: '';
+      z-index: 5;
+      transition: .4s ease-in-out;
     }
-    .social li:not(.social-share) {
-      visibility: visible;
-      opacity: 1;
+    .social-nav {
+      li {
+        line-height: 40px;
+        .icon:hover {
+          color: #838383;
+        }
+      }
+      .icon {
+        font-size: 12px;
+        color: #fff;
+        transition: .4s ease-in-out;
+      }
     }
-    .social-share .icon-share {
-      color: #838383;
+    .social-share {
+      cursor: pointer;
+      .icon-share {
+        color: #000;
+        font-size: 15px;
+        transition: .4s ease-in-out;
+        &:hover {
+          color: #838383;
+        }
+      }
+    }
+    &.share-open {
+      &:after {
+        width: 100%;
+      }
+      .social li:not(.social-share) {
+        visibility: visible;
+        opacity: 1;
+        white-space: nowrap;
+      }
+      .social-share .icon-share {
+        color: #838383;
+      }
     }
   }
 }

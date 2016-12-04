@@ -1,9 +1,9 @@
 .top-panel {
   position: relative;
-  z-index: 10;
+  z-index: 23;
   display: flex;
   justify-content: space-between;
-  @include from('m') {
+  @include from('l') {
     height: 115px;
     padding: 0 20px;
     overflow: hidden;
@@ -14,26 +14,26 @@
       padding-top: 15px;
     }
   }
-  @include to('s') {
+  @include to('m') {
     height: 47px;
     background-color: #000;
   }
   &-open {
     .currency-select {
-      top: 59px;
+      top: 59px !important;
       right: 28px;
     }
   }
 
   &__left-join {
-    @include from('m') {
+    @include from('l') {
       display: flex;
     }
     .top-icon-menu {
       @include from('l') {
         display: none;
       }
-      @include to('s') {
+      @include to('m') {
         display: inline-block;
         vertical-align: middle;
       }
@@ -70,7 +70,7 @@
           color: #fff;
         }
       }
-      @include to('s') {
+      @include to('m') {
         img {
           display: none;
         }
@@ -83,18 +83,18 @@
 
     .favorite {
       padding: 9px 8px 3px 10px;
-      @include from('m') {
+      @include from('l') {
         top: 44px;
         left: 381px;
         margin: -10px 0 0 -10px;
       }
-      @include to('s') {
+      @include to('m') {
         position: relative;
         display: inline-block;
       }
       .icon-favorites {
         font-size: 17px;
-        @include to('s') {
+        @include to('m') {
           font-size: 12px;
           color: #fff;
         }
@@ -103,7 +103,7 @@
   }
 
   &-info {
-    @include to('s') {
+    @include to('m') {
       display: flex;
       align-items: center;
     }
@@ -121,12 +121,12 @@
     .top {
       display: flex;
       justify-content: flex-end;
-      @include from('m') {
+      @include from('l') {
         margin-bottom: 20px;
         font-size: 14px;
         @include BebasNeueBold;
       }
-      @include to('s') {
+      @include to('m') {
         align-items: center;
         font-size: 10px;
         @include BebasNeueRegular;
@@ -135,7 +135,7 @@
         padding: 0 5px 5px;
         margin: 0;
         background-color: #000;
-        @include to('s') {
+        @include to('m') {
           padding-bottom: 0;
         }
         li {
@@ -152,7 +152,7 @@
   }
   .basket-count {
     padding-right: 10px;
-    @include to('s') {
+    @include to('m') {
       &:after {
         padding: 0 9px 0 10px;
       }
@@ -160,8 +160,15 @@
   }
 
   .icon-short_logo {
-    @include from('m') {
+    @include from('l') {
       display: none;
+    }
+  }
+
+  .currency-select {
+    @include to('m') {
+      position: absolute !important;
+      top: -100px;
     }
   }
 }
@@ -169,7 +176,7 @@
 .top-basket {
   display: flex;
   justify-content: flex-end;
-  @include to('s') {
+  @include to('m') {
     color: #fff;
     li:first-child {
       display: none;
@@ -187,51 +194,16 @@
     @include BebasNeueBold;
   }
   .icon-bag {
-    @include from('m') {
+    @include from('l') {
       font-size: 68px;
       height: 71px;
       margin: 0 19px 0 25px;
       display: inline-block;
       vertical-align: middle;
     }
-    @include to('s') {
+    @include to('m') {
       font-size: 25px;
       vertical-align: middle;
     }
-  }
-}
-
-.currency-select {
-  margin-left: 10px;
-  @include to('s') {
-    position: absolute !important;
-    top: -50px;
-  }
-  .jq-selectbox {
-    &__select {
-      height: auto;
-      padding: 2px 16px 0 5px;
-      border: 0;
-      background-color: transparent;
-      &-text {
-        width: auto !important;
-        font-size: 14px;
-        @include BebasNeueBold;
-      }
-    }
-    &__trigger {
-      border-left: 0;
-      &-arrow {
-        position: absolute;
-        top: 9px;
-        right: 0;
-        border-top: 6px solid #000;
-        border-right-width: 4px;
-        border-left-width: 4px;
-      }
-    }
-  }
-  &.jq-selectbox.focused .jq-selectbox__select {
-    outline: 0;
   }
 }

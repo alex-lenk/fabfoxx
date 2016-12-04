@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   @include MinionProRegular;
-  @include to('s') {
+  @include to('m') {
     width: 100%;
     padding: 0 5px;
     background-color: #fff;
@@ -21,7 +21,7 @@
   }
   & > li {
     letter-spacing: 1.5px;
-    @include from('m') {
+    @include from('l') {
       margin-left: 12px;
       margin-right: 12px;
     }
@@ -29,7 +29,7 @@
       padding-top: 8px;
       padding-bottom: 10px;
       @include to('m') {
-        padding: 7px 0 7px 22px;
+        padding: 7px 11px;
         font-size: 19px;
         border: 0;
       }
@@ -39,7 +39,7 @@
       border-top: 3px solid transparent;
       transition: .4s ease-in-out;
     }
-    @include from('m') {
+    @include from('l') {
       &.active > a, > a:hover {
         border-top-color: #000;
       }
@@ -58,7 +58,7 @@
       margin-left: -5px;
       transition: .4s ease-in-out;
     }
-    @include from('m') {
+    @include from('l') {
       &:hover {
         &:after {
           border-bottom-width: 7px;
@@ -73,14 +73,14 @@
   .child {
     list-style: none;
     position: relative;
-    @include from('m') {
+    @include from('l') {
       padding: 26px 0;
       top: 41px;
       left: 0;
       background-color: #fff;
       @include hide-display;
     }
-    @include to('s') {
+    @include to('m') {
       padding: 15px 0 15px 23px;
       background-color: #000;
       &:after {
@@ -97,7 +97,7 @@
     }
     li {
       font-size: 11px;
-      @include from('m') {
+      @include from('l') {
         margin-bottom: 2px;
       }
       &:hover .category-img {
@@ -112,7 +112,7 @@
       letter-spacing: 1.1px;
       line-height: 1;
       transition: .4s ease-in-out;
-      @include from('m') {
+      @include from('l') {
         background-color: transparent;
         color: #000;
         &:hover {
@@ -120,7 +120,7 @@
           color: #fff;
         }
       }
-      @include to('s') {
+      @include to('m') {
         padding: 5px 0 6px;
         letter-spacing: 3.2px;
         background-color: #000;
@@ -150,17 +150,17 @@
     }
   }
   &-search {
-    @include from('m') {
+    @include from('l') {
       order: 7;
     }
-    @include to('s') {
+    @include to('m') {
       margin: 0 12px 13px;
       border-bottom: 1px solid;
     }
     a {
       padding: 8px 0 10px 23px;
       background: url(../img/icon-search.png) no-repeat 0 8px;
-      @include to('s') {
+      @include to('m') {
         padding: 11px 0 8px 43px;
         background-position: 8px 11px;
       }
@@ -170,7 +170,8 @@
 
 .fixed-block-top {
   width: 100%;
-  z-index: 9;
+  z-index: 102;
+  position: relative;
 
   .top-panel__left-join {
     display: none;
@@ -262,7 +263,7 @@
       top: 10px;
       left: 105px;
     }
-    @include to('s') {
+    @include to('m') {
       top: 0;
       left: 45px;
     }
@@ -278,7 +279,7 @@
     opacity: 1;
   }
   .main-menu {
-    @include between('m') {
+    @include between('xs','m') {
       width: 100%;
       background-color: #fff;
       z-index: 5;
@@ -289,17 +290,20 @@
       transform: translateX(-103%);
       will-change: transform;
       transition: all 330ms ease-out;
+      .child:before {
+        display: none;
+      }
     }
     li {
       color: #000;
-    }
-    .child:before {
-      display: none;
     }
   }
   .info-panel .user li {
     padding-top: 10px;
     padding-bottom: 5px;
+  }
+  .icon-left {
+    padding-top: 7px;
   }
 }
 

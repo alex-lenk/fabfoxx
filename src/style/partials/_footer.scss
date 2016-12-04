@@ -36,6 +36,10 @@
     padding-top: 2px;
     background: #000;
     position: relative;
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &-nav {
@@ -74,8 +78,6 @@
     padding: 73px 0 75px;
     background-color: #efefef;
     .container {
-      padding-left: 15px;
-      padding-right: 15px;
       @include clearfix;
     }
     .logo {
