@@ -271,30 +271,6 @@
 
 
 
-/* This code can be reduced and pasted in any other CSS file :
-
-Here is a compact version :
--------------------------------
-
-.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
-.sliderkit a,
-.sliderkit a:hover{text-decoration:none;}
-.sliderkit a:focus{outline:1px dotted #000;}
-.sliderkit img{border:0;}
-.sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center;}
-.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:0 auto;}
-.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
-.sliderkit .sliderkit-nav-clip ul li{float:left;}
-.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
-.sliderkit .sliderkit-btn{z-index:10;}
-.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
-.sliderkit .sliderkit-panel-active{z-index:5;}
-.sliderkit .sliderkit-panel-old{z-index:4;}
-.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
-.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
-.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
-
-*/
 /*
  *  sliderkit-demos.css
  *	> CSS code for demos
@@ -463,62 +439,6 @@ Here is a compact version :
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-text{height:50px;padding:10px 15px;font-size:0.9em;color:#fff;}
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.1em;font-weight:bold;border:none;}
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{height:70px;width:500px;background:#000;opacity:0.6;}
-
-/*---------------------------------
- *  Photos gallery > Vertical
- *---------------------------------*/
-.photosgallery-vertical{width:516px;height:620px;}
-
-/* Nav */
-.photosgallery-vertical .sliderkit-nav{top:0;right:0;width:80px;height:100%;}
-.photosgallery-vertical .sliderkit-nav-clip ul li{margin:0;padding:0; outline: none;}
-.photosgallery-vertical .sliderkit-nav-clip ul li a{text-decoration: none;display:block;width:80px;height:118px;overflow:hidden;border: 1px solid #EEEEEE; margin-bottom:19px;}
-.photosgallery-vertical .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:1px solid #000; outline: none;}
-.photosgallery-vertical .sliderkit-nav-clip ul li img{width:100%;height:100%; outline: none;}
-
-/* Nav buttons */
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn{position:absolute;left:0;}
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a{display:block;width:20px;height:20px; margin: 0 auto;}
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a span{position: relative; display: block; width: 20px;height: 20px; background: #000;}
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a span svg{fill: #fff; width: 12px; position: absolute; top: 50%;
-  transform: translate(-50%, -50%);}
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev{top:1px; width: 100%;}
-.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next{bottom:1px; width: 100%;}
-/* Go Buttons */
-.photosgallery-vertical .sliderkit-go-btn a{width:200px;height:300px;background:#ccc;opacity:.8;}
-.photosgallery-vertical .sliderkit-go-prev{top:0;left:0;}
-.photosgallery-vertical .sliderkit-go-next{top:0;right:0;}
-
-/* Panel */
-.photosgallery-vertical .sliderkit-panel{top:0;left:0;width:414px;height:100%; border:1px solid #EFEFEF; background: #fff; display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;}
-/* Panel > Textbox */
-.photosgallery-vertical .sliderkit-panel .sliderkit-panel-textbox{bottom:0;left:0;height:85px;width:500px;}
-.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text{height:65px;padding:10px 15px 10px 115px;font-size:0.9em;color:#fff;}
-.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.1em;font-weight:bold;border:none;}
-.photosgallery-vertical .sliderkit-panel .sliderkit-panel-overlay{height:85px;width:500px;background:#000;opacity:0.6;}
-
-/*---------------------------------
- *  Photos gallery > Minimalistic
- *---------------------------------*/
-.photosgallery-minimalistic{width:500px;height:335px;padding:0 0 50px;}
-
-/* Navbar */
-.photosgallery-minimalistic .sliderkit-nav{left:0;bottom:0;width:500px;padding:0;background:#000;}
-.photosgallery-minimalistic .sliderkit-nav-clip{margin:0 auto;}
-.photosgallery-minimalistic .sliderkit-nav-clip ul li{float:left;margin:0 0 0 0;}
-.photosgallery-minimalistic .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;margin:0;padding:0;opacity:0.4;}
-.photosgallery-minimalistic .sliderkit-nav-clip ul li.sliderkit-selected a{opacity:1;}
-
-/* Panel */
-.photosgallery-minimalistic .sliderkit-panel{top:0;left:0;width:500px;height:335px;}
-
 
 /*
  *  NEWS SLIDERS
