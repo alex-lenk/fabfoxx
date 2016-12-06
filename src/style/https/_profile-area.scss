@@ -4,10 +4,6 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 35px;
-    @include to('l') {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
   }
 
   &-block {
@@ -15,6 +11,10 @@
     background: #fff;
     padding: 16px 28px;
     margin-bottom: 36px;
+    @include to('s') {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     &__title {
       overflow: hidden;
       margin-right: -14px;
@@ -49,11 +49,25 @@
         border-bottom: 1px solid #EDEDED;
       }
       .info {
+        padding-right: 10px;
         text-align: left;
-        padding-left: 25px;
         font-size: 11px;
         letter-spacing: 1.1px;
         flex-grow: 1;
+        @include from('m') {
+          padding-left: 25px;
+        }
+      }
+    }
+
+    .checkbox-single {
+      margin-left: 30px;
+      padding: 10px 30px;
+      border-left: 1px solid #ededed;
+      @include to('s') {
+        margin-left: 15px;
+        padding-left: 15px;
+        padding-right: 0;
       }
     }
   }
@@ -71,27 +85,27 @@
       font-size: 16px;
       text-align: right;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+      display: flex;;
       @include BebasNeueRegular;
       @include to('s') {
         flex-grow: 1;
+        padding-left: 20px;
       }
       @include from('m') {
+        flex-wrap: wrap;
         justify-content: center;
       }
       li {
-        margin: 0 40px 0 0;
         letter-spacing: 3.2px;
         &:last-child {
           margin-right: 25px;
         }
+        @include from('m') {
+          margin-right: 40px;
+        }
         @include to('s') {
           &:not(.active) {
             display: none;
-          }
-          &:first-of-type {
-            display: block;
           }
           .active {
             font-size: 16px;
@@ -99,21 +113,18 @@
         }
       }
       a {
-        padding-top: 8px;
+        padding-top: 11px;
         padding-bottom: 10px;
         display: block;
         transition: .4s ease-in-out;
         @include from('m') {
+          padding-top: 8px;
           border-top: 3px solid transparent;
         }
       }
       .active a,
       a:hover {
         border-top-color: #000;
-      }
-
-      &__open {
-
       }
 
       &__icon-menu {
@@ -125,9 +136,18 @@
           width: 20px;
           height: 2px;
           display: block;
-          margin: 23px 12px 0 7px;
+          margin: 20px 0 0 18px;
           box-shadow: 0 6px 0 0 #000, 0 -6px 0 0 #000;
           content: '';
+        }
+      }
+      &.profile-nav-menu__open {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        height: 100%;
+        li {
+          display: block;
         }
       }
     }
@@ -206,27 +226,29 @@
           border-bottom: 1px solid #e3e3e3;
         }
         li {
-          flex-basis: 11%;
+          @include to('s') {
+            padding: 3px;
+          }
+          @include from('m') {
+            flex-basis: 11%;
+          }
           &:not(:last-of-type) {
             border-right: 1px solid #e3e3e3;
           }
-          /*          &:first-of-type {
-                      flex-basis: 104px;
-                    }
-                    &:nth-child(2) {
-                      flex-basis: 142px;
-                    }
-                    &:nth-child(3) {
-                      flex-basis: 112px;
-                    }*/
           &:nth-child(4) {
-            //flex-basis: 134px;
             span {
               border-bottom: 1px solid;
             }
           }
           &:last-child {
             flex-grow: 1;
+            img {
+              @include to('m') {
+                &:not(:first-of-type) {
+                  display: none;
+                }
+              }
+            }
           }
         }
       }
@@ -255,7 +277,9 @@
           }
           &:first-of-type {
             text-align: left;
-            padding-left: 10px;
+            @include from('l') {
+              padding-left: 10px;
+            }
           }
           &:last-child {
             flex-grow: 1;
@@ -276,20 +300,20 @@
     .profile-block__title {
       margin-bottom: 0;
     }
-    .checkbox-single {
-      margin-left: 30px;
-      padding: 10px 30px;
-      border-left: 1px solid #ededed;
-    }
   }
 
   &-voucher {
     .gift {
       padding: 0 10px;
+      margin-right: 10px;
       border-right: 1px solid #ededed;
       img {
         max-width: 40px;
         margin-right: 20px;
+        @include to('s') {
+          max-width: 25px;
+          margin-right: 5px;
+        }
       }
       span {
         @include MinionProRegular;
@@ -310,11 +334,19 @@
       font-weight: 400;
       font-family: $RobotoCondensed;
       font-size: 13px;
+      @include to('s') {
+        text-align: center;
+      }
     }
     .amount {
       color: #ff0000;
       font-size: 16px;
       padding: 0 35px 0 25px;
+      @include to('s') {
+        display: block;
+        padding: 0;
+        white-space: nowrap;
+      }
     }
   }
 }
@@ -410,69 +442,74 @@
   }
 }
 
-.profile_box {
+.profile-box {
   background: #fff;
   margin-top: 36px;
   margin-bottom: 32px;
   display: flex;
-  .profile_box_avatar {
-    width: 204px;
-    height: 191px;
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
+  position: relative;
+  @include to('s'){
+    flex-wrap: wrap;
+  }
+  &-avatar {
+    width: 115px;
+    height: 115px;
+    @include from('m') {
+      width: 204px;
+      height: 191px;
     }
   }
-  .profile_box_info_wrap {
-    width: calc(100% - 204px);
-    padding-left: 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .login-area {
-      margin: 0;
-      margin-top: 50px;
-      padding-left: 25px;
-      width: 747px;
-      padding-bottom: 50px;
-      .login-area-body {
-        box-shadow: none !important;
-      }
-      .returns-form-group legend {
-        text-align: left;
-      }
-      .gender .label-block {
-        width: calc(50% - 14px);
-      }
-      .button {
-        max-width: 239px;
-        width: 100%;
-        height: 34px;
-        line-height: 34px;
-        font-size: 15px;
-        padding: 0;
-        margin-top: 40px;
-      }
+  &-user {
+    padding: 20px 25px 0;
+    flex-grow: 1;
+    @include to('s') {
+      flex-basis: calc(100% - 115px);
+      padding: 10px 10px 0;
     }
-    .profile_name, .profile_first_name, .profile_email {
+    .line {
       font-size: 18px;
       margin-bottom: 10px;
     }
     .label-block {
       margin-top: 20px;
       font-size: 14px;
-      color: #b4b4b4;
       font-style: italic;
-      font-weight: 300;
-      font-family: $RobotoCondensed;
+      @include to('s') {
+        .checkbox-custom-view {
+          line-height: 18px;
+          height: 37px;
+          display: flex;
+          align-items: center;
+        }
+      }
       .checkbox-custom + .checkbox-custom-view::before {
         width: 30px;
         height: 30px;
+        margin-top: 0;
       }
     }
-    .button-edit {
-      margin-right: 150px;
+  }
+  .button-edit {
+    margin-right: 150px;
+    align-self: center;
+    @include to('s') {
+      position: absolute;
+      bottom: 15px;
+      left: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .general-form {
+    padding: 50px;
+    flex-grow: 1;
+    @include to('s') {
+      padding: 5px;
+    }
+  }
+  .returns-form-group legend {
+    @include from('s') {
+      text-align: left;
     }
   }
 }

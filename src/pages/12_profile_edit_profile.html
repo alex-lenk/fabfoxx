@@ -6,135 +6,143 @@
 <body class="login-body">
 
 
-
 <div class="profile-area">
     <!-- include "templates/login-area-header.html" -->
 
-    <nav class="profile-menu">
-        <ul class="main-menu">
-            <li><a href="#">YOU Profile</a></li>
-            <li class="active"><a href="#">Favourites</a></li>
+    <nav class="profile-nav">
+        <span class="profile-nav-menu__icon-menu burger-menu"></span>
+        <ul class="profile-nav-menu">
+            <li class="active"><a href="#">YOU Profile</a></li>
+            <li><a href="#">Favourites</a></li>
             <li><a href="#">Purchase history</a></li>
             <li><a href="#">Ask a Question</a></li>
         </ul>
 
-        <ul class="profile-menu-currency">
-            <li value=""><span>£</span> GBP</li>
-            <li value=""><span>€</span> eur</li>
-            <li value=""><span>£</span> gbp</li>
-            <li value=""><span>$</span> usd</li>
-            <li value="" class="arabia"><span>.د.إ </span> aed</li>
-            <li value=""><span>C$</span> aud</li>
+        <ul class="profile-nav-currency">
+            <li><span>£</span> GBP</li>
+            <li><span>€</span> eur</li>
+            <li><span>£</span> gbp</li>
+            <li><span>$</span> usd</li>
+            <li class="arabia"><span>.د.إ </span> aed</li>
+            <li><span>C$</span> aud</li>
         </ul>
     </nav>
 
-    <div class="profile_box">
-        <div class="profile_box_avatar">
-            <img src="img/example/avatar.jpg" alt="">
-        </div>
-        <div class="profile_box_info_wrap">
-            <div class="register login-area">
-                <div class="login-area-body wrap-content">
-                    <form action="/" class="general-form">
-                        <div class="form-group necessarily">
-                            <input class="form-control hide-placeholder" placeholder="Email address" type="text"> <label
-                                class="form-label">Email address</label>
-                        </div>
-                        <div class="form-group necessarily">
-                            <input class="form-control hide-placeholder" placeholder="First name" type="text"> <label
-                                class="form-label">First name</label>
-                        </div>
-                        <div class="form-group necessarily">
-                            <input class="form-control hide-placeholder" placeholder="Last name" type="text"> <label
-                                class="form-label">Last name</label>
-                        </div>
-                        <div class="form-group necessarily password">
-                            <input class="form-control hide-placeholder" placeholder="Password" type="password"> <label
-                                class="form-label">Must be 6 or more characters and contain at least 1 number</label>
-                        </div>
-                        <fieldset class="date-area returns-form-group">
-                            <legend>Date of birth</legend>
-                            <div class="form-group">
-                                <input class="form-control hide-placeholder" placeholder="DD" type="text"> <input
-                                    class="month form-control hide-placeholder" placeholder="Month" type="text"> <input
-                                    class="form-control hide-placeholder" placeholder="YYYY" type="text">
-                                <p>
-                                    Tell us – you'll get a birthday treat if you do
-                                </p>
-                            </div>
-                        </fieldset>
-                        <fieldset class="gender returns-form-group">
-                            <legend>Gender</legend>
-                            <label class="label-block"><input class="checkbox-custom" name="" type="checkbox"> <span
-                                    class="checkbox-custom-view label">Guy</span></label> <label
-                                class="label-block"><input class="checkbox-custom" name="" type="checkbox"> <span
-                                class="checkbox-custom-view label">Girl</span></label>
-                        </fieldset>
-                        <button class="button button-black button-join">SAVE</button>
-                    </form>
-                </div>
+    <div class="profile-box">
+        <img src="img/example/avatar.jpg" alt="" class="profile-box-avatar">
+
+        <form action="/" class="general-form">
+            <div class="form-group necessarily">
+                <input type="text" class="form-control hide-placeholder" placeholder="Email address">
+                <label class="form-label">Email address</label>
             </div>
-        </div>
+            <div class="form-group necessarily">
+                <input type="text" class="form-control hide-placeholder" placeholder="First name">
+                <label class="form-label">First name</label>
+            </div>
+            <div class="form-group necessarily">
+                <input type="text" class="form-control hide-placeholder" placeholder="Last name">
+                <label class="form-label">Last name</label>
+            </div>
+            <div class="form-group necessarily password">
+                <input type="password" class="form-control hide-placeholder" placeholder="Password">
+                <label class="form-label">Must be 6 or more characters and contain at least 1 number</label>
+            </div>
+
+
+            <fieldset class="date-area returns-form-group">
+                <legend>Date of birth</legend>
+
+                <div class="form-group">
+                    <input type="text" class="form-control hide-placeholder" placeholder="DD">
+                    <input type="text" class="month form-control hide-placeholder" placeholder="Month">
+                    <input type="text" class="form-control hide-placeholder" placeholder="YYYY">
+                    <p>Tell us – you'll get a birthday treat if you do</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="gender returns-form-group">
+                <legend>Gender</legend>
+                <label class="label-block">
+                    <input type="checkbox" name="" class="checkbox-custom">
+                    <span class="checkbox-custom-view label">Guy</span>
+                </label>
+                <label class="label-block">
+                    <input type="checkbox" name="" class="checkbox-custom">
+                    <span class="checkbox-custom-view label">Girl</span>
+                </label>
+            </fieldset>
+
+            <div class="text-center"><button class="button button-black button-save">save</button></div>
+        </form>
+
     </div>
 
-    <div class="profile-address">
-        <div class="profil_main_title"><span>Address book</span></div>
-        <div class="profile-address_item">
-            <div class="profile-address_rname">
+    <div class="profile-address profile-block">
+        <div class="profile-block__title"><span class="text">Address book</span></div>
+
+        <div class="profile-block__item">
+            <div class="info">
                 Palm Jumeirah 5, 4, Dubai / United Arab Emirates
-                <button class="button button-edit button-black">edit</button>
             </div>
 
-            <label class="order_summary_edit checkbox-single">
+            <button class="button button-edit button-black">edit</button>
+
+            <label class="checkbox-single">
                 <input type="checkbox" name="" class="checkbox-single_custom">
-                <div class="checkbox-single_label"></div>
+                <span class="checkbox-single_label"></span>
             </label>
         </div>
 
-        <div class="profile-address_item">
-            <div class="profile-address_rname">
+        <div class="profile-block__item">
+            <div class="info">
                 Palm Jumeirah 5, 4, Dubai / United Arab Emirates
-                <button class="button button-edit button-black">edit</button>
             </div>
 
-            <label class="order_summary_edit checkbox-single">
+            <button class="button button-edit button-black">edit</button>
+
+            <label class="checkbox-single">
                 <input type="checkbox" name="" class="checkbox-single_custom">
-                <div class="checkbox-single_label"></div>
+                <span class="checkbox-single_label"></span>
             </label>
         </div>
 
-        <button class="button button-address">ADD ADDRESS</button>
+        <button class="button button-black button-address">ADD ADDRESS</button>
     </div>
 
-    <div class="discount_voucher">
-        <div class="profil_main_title"><span>Gift voucher</span></div>
-        <div class="d_v_row">
-            <div class="d_v_row_img">
+    <div class="profile-voucher profile-block">
+        <div class="profile-block__title"><span class="text">Gift voucher</span></div>
+
+        <div class="profile-block__item">
+            <div class="gift">
                 <img src="img/gift.png" alt="">
                 <span>$1000</span>
             </div>
-            <div class="select_d_v">
-                <div class="from">
-                    From: <span>Barack Obama</span>
-                </div>
-                <div class="left">Left: <span>$ 350</span></div>
+
+            <div class="info">
+                <span class="assign">From:</span>
+                <span class="name">Barack Obama</span>
             </div>
+
+            <div class="left">Left: <span class="amount">$ 350</span></div>
         </div>
-        <div class="d_v_row">
-            <div class="d_v_row_img">
+        <div class="profile-block__item">
+            <div class="gift">
                 <img src="img/gift.png" alt="">
                 <span>$1000</span>
             </div>
-            <div class="select_d_v">
-                <div class="from">
-                    From: <span>Barack Obama</span>
-                </div>
-                <div class="left">Left: <span>$ 350</span></div>
+
+            <div class="info">
+                <span class="assign">From:</span>
+                <span class="name">Donald Tramp</span>
             </div>
+
+            <div class="left">Left: <span class="amount">$ 150</span></div>
         </div>
     </div>
-    <ul class="profile-history">
-        <div class="profil_main_title"><span>Recent Orders</span></div>
+
+    <ul class="profile-history profile-block">
+        <div class="profile-block__title"><span class="text">Recent Orders</span></div>
         <li class="profile-history-line">
             <ul class="head">
                 <li>Order No.</li>
@@ -181,7 +189,6 @@
             </ul>
         </li>
     </ul>
-
 </div>
 <!-- include "templates/login-footer.html" -->
 

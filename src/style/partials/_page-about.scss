@@ -45,12 +45,10 @@
     }
   }
   .contacts-block-info {
+    flex-direction: column;
     @include to('l') {
       display: flex;
       justify-content: center;
-      .logo-small {
-        margin-right: 20px;
-      }
     }
   }
   .contacts-block {

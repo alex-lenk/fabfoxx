@@ -6,14 +6,13 @@
 <body class="login-body">
 
 
-
 <div class="profile-area">
 
     <!-- include "templates/login-area-header.html" -->
 
     <nav class="profile-nav">
+        <span class="profile-nav-menu__icon-menu burger-menu"></span>
         <ul class="profile-nav-menu">
-            <li class="profile-nav-menu__icon-menu burger-menu"></li>
             <li class="active"><a href="#">YOU Profile</a></li>
             <li><a href="#">Favourites</a></li>
             <li><a href="#">Purchase history</a></li>
@@ -30,22 +29,21 @@
         </ul>
     </nav>
 
-    <div class="profile_box">
-        <div class="profile_box_avatar">
-            <img src="img/example/avatar.jpg" alt="">
+    <div class="profile-box">
+        <img src="img/example/avatar.jpg" alt="" class="profile-box-avatar">
+
+        <div class="profile-box-user">
+            <div class="line">Jessica</div>
+            <div class="line">Mour</div>
+            <div class="line">jessica@Jetmour.com</div>
+
+            <label class="label-block">
+                <input type="checkbox" name="" class="checkbox-custom">
+                <span class="checkbox-custom-view label">Subscribe on Fabfoxx news</span>
+            </label>
         </div>
-        <div class="profile_box_info_wrap">
-            <div class="profile_box_info">
-                <div class="profile_name">Jessica</div>
-                <div class="profile_first_name">Mour</div>
-                <div class="profile_email">jessica@Jetmour.com</div>
-                <label class="label-block">
-                    <input type="checkbox" name="" class="checkbox-custom">
-                    <span class="checkbox-custom-view label">Subscribe on Fabfoxx news</span>
-                </label>
-            </div>
-            <button class="button button-edit button-black">edit</button>
-        </div>
+
+        <button class="button button-edit button-black">edit</button>
     </div>
 
 
