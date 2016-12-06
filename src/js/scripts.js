@@ -115,4 +115,7 @@ $(document).ready(function () {
         $('.filter-group').toggleClass("filter-group-open");
     });
 
+    $('.profile-nav-menu__icon-menu').on('click', function () {
+        $('.profile-nav-menu').toggleClass("profile-nav-menu__open");
+    });
 });

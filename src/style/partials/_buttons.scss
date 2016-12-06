@@ -63,6 +63,7 @@
     padding: 10px 15px 7px;
     min-width: 61px;
     letter-spacing: 2px;
+    @include BebasNeueRegular;
   }
   &-send {
     font-size: 17px;

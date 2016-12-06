@@ -11,15 +11,16 @@
 
     <!-- include "templates/login-area-header.html" -->
 
-    <nav class="profile-menu">
-        <ul class="main-menu">
-            <li><a href="#">YOU Profile</a></li>
-            <li class="active"><a href="#">Favourites</a></li>
+    <nav class="profile-nav">
+        <ul class="profile-nav-menu">
+            <li class="profile-nav-menu__icon-menu burger-menu"></li>
+            <li class="active"><a href="#">YOU Profile</a></li>
+            <li><a href="#">Favourites</a></li>
             <li><a href="#">Purchase history</a></li>
             <li><a href="#">Ask a Question</a></li>
         </ul>
 
-        <ul class="profile-menu-currency">
+        <ul class="profile-nav-currency">
             <li value=""><span>£</span> GBP</li>
             <li value=""><span>€</span> eur</li>
             <li value=""><span>£</span> gbp</li>
@@ -38,13 +39,12 @@
                 <div class="profile_name">Jessica</div>
                 <div class="profile_first_name">Mour</div>
                 <div class="profile_email">jessica@Jetmour.com</div>
-                <div class="profile_subscribe">
-                    <input checked hidden id="ps" type="checkbox">
-                    <label for="ps"></label>
-                    <span>Subscribe on Fabfoxx news</span>
-                </div>
+                <label class="label-block">
+                    <input type="checkbox" name="" class="checkbox-custom">
+                    <span class="checkbox-custom-view label">Subscribe on Fabfoxx news</span>
+                </label>
             </div>
-            <button class="profile_edit">edit</button>
+            <button class="button button-edit button-black">edit</button>
         </div>
     </div>
 

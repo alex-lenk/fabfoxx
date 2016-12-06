@@ -40,6 +40,12 @@
   }
 }
 
+/*
+<label class="label-block">
+    <input type="checkbox" name="" class="checkbox-custom">
+    <span class="checkbox-custom-view label">Fabfoxx</span>
+</label>
+*/
 .checkbox-custom {
   display: none;
   + .checkbox-custom-view::before {

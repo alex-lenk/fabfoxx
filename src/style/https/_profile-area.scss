@@ -58,26 +58,80 @@
     }
   }
 
-  &-menu {
+  &-nav {
     display: flex;
     justify-content: flex-end;
     position: relative;
     z-index: 5;
     background-color: #fff;
-    .main-menu {
+    &-menu {
       height: 44px;
       margin-bottom: 0;
-      text-align: right;
+      padding: 0;
       font-size: 16px;
+      text-align: right;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
       @include BebasNeueRegular;
+      @include to('s') {
+        flex-grow: 1;
+      }
+      @include from('m') {
+        justify-content: center;
+      }
       li {
         margin: 0 40px 0 0;
         letter-spacing: 3.2px;
         &:last-child {
           margin-right: 25px;
         }
+        @include to('s') {
+          &:not(.active) {
+            display: none;
+          }
+          &:first-of-type {
+            display: block;
+          }
+          .active {
+            font-size: 16px;
+          }
+        }
+      }
+      a {
+        padding-top: 8px;
+        padding-bottom: 10px;
+        display: block;
+        transition: .4s ease-in-out;
+        @include from('m') {
+          border-top: 3px solid transparent;
+        }
+      }
+      .active a,
+      a:hover {
+        border-top-color: #000;
+      }
+
+      &__open {
+
+      }
+
+      &__icon-menu {
+        @include from('m') {
+          display: none;
+        }
+        &::after {
+          background: #000;
+          width: 20px;
+          height: 2px;
+          display: block;
+          margin: 23px 12px 0 7px;
+          box-shadow: 0 6px 0 0 #000, 0 -6px 0 0 #000;
+          content: '';
+        }
       }
     }
+
     &-currency {
       width: 66px;
       height: 44px;
@@ -152,26 +206,27 @@
           border-bottom: 1px solid #e3e3e3;
         }
         li {
+          flex-basis: 11%;
           &:not(:last-of-type) {
             border-right: 1px solid #e3e3e3;
           }
-          &:first-of-type {
-            flex-basis: 104px;
-          }
-          &:nth-child(2) {
-            flex-basis: 142px;
-          }
-          &:nth-child(3) {
-            flex-basis: 112px;
-          }
+          /*          &:first-of-type {
+                      flex-basis: 104px;
+                    }
+                    &:nth-child(2) {
+                      flex-basis: 142px;
+                    }
+                    &:nth-child(3) {
+                      flex-basis: 112px;
+                    }*/
           &:nth-child(4) {
-            flex-basis: 134px;
+            //flex-basis: 134px;
             span {
               border-bottom: 1px solid;
             }
           }
           &:last-child {
-            flex-basis: 513px;
+            flex-grow: 1;
           }
         }
       }
@@ -203,7 +258,7 @@
             padding-left: 10px;
           }
           &:last-child {
-            flex-basis: 513px;
+            flex-grow: 1;
             text-align: left;
             img {
               margin-left: 10px;
@@ -400,38 +455,24 @@
         margin-top: 40px;
       }
     }
-    .profile_box_info {
+    .profile_name, .profile_first_name, .profile_email {
       font-size: 18px;
-      line-height: 29px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .profile_subscribe {
-        display: flex;
-        margin-top: 30px;
-        span {
-          float: left;
-          font-size: 14px;
-          color: #b4b4b4;
-          display: block;
-          margin-left: 17px;
-          font-family: $RobotoCondensed;
-          font-weight: 300;
-          font-style: italic;
-        }
+      margin-bottom: 10px;
+    }
+    .label-block {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #b4b4b4;
+      font-style: italic;
+      font-weight: 300;
+      font-family: $RobotoCondensed;
+      .checkbox-custom + .checkbox-custom-view::before {
+        width: 30px;
+        height: 30px;
       }
     }
-    .profile_edit {
-      max-width: 61px;
-      width: 100%;
-      height: 28px;
-      background: #000;
-      color: #fff;
-      border: 0;
-      font-size: 11px;
-      cursor: pointer;
+    .button-edit {
       margin-right: 150px;
-      letter-spacing: 2.2px;
     }
   }
 }
