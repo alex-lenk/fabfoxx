@@ -221,6 +221,9 @@ textarea.form-control {
     span {
       padding-right: 8px;
       background-color: #fff;
+      @include to('xs') {
+        line-height: 22px;
+      }
     }
   }
   .form-group {
@@ -241,18 +244,18 @@ textarea.form-control {
 
   .necessarily:after,
   .necessarily.select-area .jq-selectbox:after {
-      position: absolute;
-      top: 11px;
-      right: 13px;
-      font-size: 14px;
-      color: #767676;
-      content: '✳';
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    font-size: 14px;
+    color: #767676;
+    content: '✳';
   }
 
   .necessarily.select-area .jq-selectbox:after {
-      top: 10px;
-      right: 47px;
-      z-index: 101;
+    top: 10px;
+    right: 47px;
+    z-index: 101;
   }
 
   .label-block {
@@ -263,18 +266,20 @@ textarea.form-control {
     display: flex;
     justify-content: space-between;
     .returns-form-group {
-      flex-basis: 360px;
+      @include from('s') {
+        flex-basis: 360px;
+      }
     }
   }
   .no-robot {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 15px;
     float: right;
     .button {
       width: 100%;
       font-size: 16px;
       margin-top: 15px;
-      padding: 5px 15px 7px;
+      padding: 7px 15px 5px;
       letter-spacing: 1.5px;
       @include BebasNeueRegular;
     }

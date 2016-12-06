@@ -118,7 +118,7 @@
           display: none;
         }
       }
-      .search-by-filter {
+      &.search-by-filter {
         cursor: pointer;
         @include from('m') {
           display: none;

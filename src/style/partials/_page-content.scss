@@ -31,9 +31,11 @@
 }
 
 .search-title {
-  margin: 3px 0 0 -39px;
   font-size: 24px;
   letter-spacing: 2.5px;
+  @include from('m') {
+    margin: 3px 0 0 -39px;
+  }
   & + .sorting-goods {
     margin-top: 8px;
   }

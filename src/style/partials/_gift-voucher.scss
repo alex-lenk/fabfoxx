@@ -1,24 +1,30 @@
 .gift-voucher {
-  padding-top: 170px;
   background: url(../img/example/bg-gift-voucher.jpg) center top no-repeat;
+  @include from('m') {
+    padding-top: 170px;
+  }
   .content {
-    width: 735px;
+    max-width: 735px;
     padding: 35px 38px;
     position: relative;
     box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .03);
   }
   .head-block {
-    width: 100%;
-    top: -143px;
-    left: 0;
-    position: absolute;
+    @include from('l') {
+      width: 100%;
+      top: -143px;
+      left: 0;
+      position: absolute;
+    }
     h1 {
-      margin: 28px -119px 20px 0;
-      transform: translateX(-82%);
-      float: left;
-      display: inline-block;
-      letter-spacing: 0;
       font-size: 25px;
+      @include from('l') {
+        margin: 28px -119px 20px 0;
+        transform: translateX(-82%);
+        float: left;
+        display: inline-block;
+        letter-spacing: 0;
+      }
       span {
         padding: 18px 20px 14px 0;
       }
@@ -27,25 +33,37 @@
       font-size: 15px;
       font-weight: 300;
       font-family: $RobotoCondensed;
+      @include to('m') {
+        margin-top: 20px;
+      }
     }
   }
+
+  @include to('s') {
+    .jq-selectbox__select {
+      width: 100%;
+      position: absolute !important;
+    }
+  }
+
   .form-amount {
     .line {
       padding-left: 8px;
       display: flex;
       justify-content: space-between;
     }
-    .wrap {
-    }
     .name {
-      padding-top: 6px;
+      padding: 6px;
       vertical-align: top;
       letter-spacing: 1.7px;
       font-size: 17px;
       @include BebasNeueBold;
+      @include from('xs') {
+        flex-basis: 190px;
+      }
     }
     .form-group {
-      flex-basis: calc(100% - 180px);
+      flex-grow: 1;
     }
     .bold-input {
       font-size: 19px;

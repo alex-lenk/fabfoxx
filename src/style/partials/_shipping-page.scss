@@ -2,10 +2,18 @@
   .header-page-title {
     font-size: 25px;
     letter-spacing: 0;
+    @include to('s') {
+      display: block;
+    }
     span {
       padding: 19px 20px 14px 0;
       margin-bottom: 25px;
-      transform: translateX(-35%);
+      @include from('l') {
+        transform: translateX(-35%);
+      }
+      @include to('s') {
+        margin-right: -15px;
+      }
     }
   }
   h2 {
