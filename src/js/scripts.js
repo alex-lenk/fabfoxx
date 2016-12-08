@@ -118,4 +118,10 @@ $(document).ready(function () {
     $('.profile-nav-menu__icon-menu').on('click', function () {
         $('.profile-nav-menu').toggleClass("profile-nav-menu__open");
     });
+
+    $('.terms-item-link').on('click', function (e) {
+        $('.sidebar-nav').find('.terms-item-link').removeClass('active-link');
+        $(this).toggleClass('active-link').prevAll('.terms-item-link').removeClass('active-link');
+    });
+
 });

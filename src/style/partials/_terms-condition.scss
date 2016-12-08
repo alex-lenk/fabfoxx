@@ -1,36 +1,82 @@
 .terms-condition {
-  width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
   color: #000;
-  display: flex;
+  @include to('l') {
+    padding: 0 15px;
+  }
+  .head-terms {
+    margin: 0 0 17px;
+    @include from('m') {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .text-info {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+    @include from('m') {
+      padding-left: 22px;
+    }
+    @include to('s') {
+      margin-top: 20px;
+    }
+  }
   .title {
     margin: 0;
-    display: inline-block;
     line-height: 1;
-    letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
     @include MinionProRegular;
+    @include from('m') {
+      display: inline-block;
+    }
     span {
-      padding: 13px 15px 5px 0;
+      white-space: nowrap;
+      padding: 17px 0 15px 0;
       display: block;
       z-index: 5;
       background: #000;
       position: relative;
-      transform: translateX(-60%);
+      @include from('l') {
+        margin-left: -52px;
+      }
+      @include from('m') {
+        width: 272px;
+      }
+      &:after {
+        height: 100%;
+        width: 2000px;
+        left: -1999px;
+        top: 0;
+        position: absolute;
+        background-color: #000;
+        content: '';
+      }
+    }
+  }
+  .wrap {
+    padding-bottom: 50px;
+    @include from('m') {
+      display: flex;
     }
   }
   .sidebar {
-    width: 220px;
+    margin-bottom: 30px;
+    @include from('m') {
+      width: 220px;
+    }
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
     }
     li {
-      padding: 6px 8px;
+      padding: 7px 8px 6px;
       font-size: 13px;
       color: #000;
       background-color: transparent;
@@ -42,26 +88,38 @@
         margin-right: 5px;
       }
     }
-    .active {
+    .active-link {
       color: #fff;
       background-color: #000;
     }
   }
   .content {
-    padding-top: 20px;
-    padding-left: 20px;
-    flex-basis: calc(100% - 220px);
+    padding-left: 7px;
     font-size: 15px;
     font-weight: 300;
     font-family: $RobotoCondensed;
+    @include from('m') {
+      flex-basis: calc(100% - 220px);
+    }
     .bold {
       font-weight: 400;
     }
   }
-  h2 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    @include BebasNeueRegular;
+  ol {
+    padding: 0;
+    margin: 0;
+    counter-reset: item;
+    li {
+      display: block;
+      &:before {
+        content: counters(item, ".") ". ";
+        counter-increment: item;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: normal;
+        @include BebasNeueRegular;
+      }
+    }
   }
   .table {
     padding-top: 15px;
@@ -74,19 +132,37 @@
       margin-bottom: 1px;
       width: 163px;
       background-color: #f7f7f7;
+      @include to('xs') {
+        padding: 10px;
+        width: 120px;
+      }
     }
     .cont {
-      padding: 16px 25px 15px 17px;
       margin-left: 1px;
-      flex-basis: calc(100% - 164px);
+      @include from('s') {
+        padding: 16px 25px 15px 17px;
+        flex-basis: calc(100% - 164px);
+      }
+      @include to('xs') {
+        padding-right: 5px;
+        flex-basis: calc(100% - 122px);
+      }
     }
   }
-  .panel {
-    &-group {
-      padding-top: 15px;
+
+  .panel-group {
+    @include from('m') {
+      padding-left: 14px;
     }
-    &-heading {
-      margin: 0 0 15px;
-    }
+  }
+  .panel-heading {
+    margin: 0 0 12px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: normal;
+    @include BebasNeueRegular;
+  }
+  .panel-body {
+    padding-bottom: 20px;
   }
 }
