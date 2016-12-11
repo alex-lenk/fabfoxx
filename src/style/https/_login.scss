@@ -55,6 +55,10 @@
 .tab-content {
   > .tab-pane {
     display: none;
+    @include to('s') {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   > .active {
     padding-top: 50px;
@@ -97,6 +101,7 @@
 }
 
 .login-area {
+  width: 100%;
   max-width: 723px;
   margin: 25px auto 30px;
   &-header {
@@ -104,15 +109,16 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid;
-    .logo {
-      img {
-        height: 51px;
-      }
+    .logo img {
+      height: 51px;
     }
     .back-to-shop {
       font-size: 12px;
       letter-spacing: 2.5px;
       @include BebasNeueRegular;
+      @include to('s') {
+        padding-right: 10px;
+      }
     }
   }
   &-body {
@@ -266,11 +272,13 @@
 
 .tab-pane .general-form {
   margin-top: 40px;
-  padding: 40px 55px;
+  @include from('m') {
+    padding: 40px 55px;
+  }
 }
 
 .sign-in.general-form {
-  width: 344px;
+  max-width: 344px;
   padding-left: 0;
   padding-right: 0;
 }

@@ -24,6 +24,10 @@
   }
   .general-form {
     padding: 0 55px 0 40px;
+    @include to('s') {
+      padding-right: 15px;
+      padding-left: 0;
+    }
     .form-control {
       color: #000;
     }
@@ -34,10 +38,169 @@
 }
 
 .guest_checkout_text {
+  padding-right: 15px;
   margin-bottom: 35px;
   font-size: 13px;
   line-height: 19px;
   color: #090909;
   font-weight: 300;
   font-family: $RobotoCondensed;
+}
+
+.table-order {
+  margin-bottom: 22px;
+  @include from('s') {
+    li:not(:last-of-type) {
+      border-right: 1px solid #EDEDED;
+    }
+  }
+  &-head {
+    padding: 0;
+    background: #D9D9D9;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #EDEDED;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  &-body {
+    border-bottom: 1px solid #EDEDED;
+    padding: 10px 0;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+    .order_summary_img {
+      width: 40px;
+      border: 1px solid #E4E4E4;
+      @include from('s') {
+        margin-right: 17px;
+      }
+    }
+    .order_summary_price {
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+  .item {
+    padding-left: 0;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .option {
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    @include from('s') {
+      flex-basis: 155px;
+      letter-spacing: 1.2px;
+    }
+    @include to('xs') {
+      flex-basis: 130px;
+    }
+    .order_summary_row {
+      overflow: hidden;
+      width: 100px;
+      font-size: 12px;
+      line-height: 19px;
+      span {
+        width: 43px;
+        display: block;
+        float: left;
+      }
+      .color_box {
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+        float: left;
+        position: relative;
+        transform: translateY(50%);
+      }
+    }
+  }
+  .price {
+    align-items: center;
+    justify-content: center;
+    @include from('s') {
+      flex-basis: 100px;
+    }
+    @include to('xs') {
+      flex-basis: 60px;
+    }
+  }
+  .edit {
+    justify-content: center;
+    font-weight: 400;
+    font-family: $RobotoCondensed;
+    @include from('s') {
+      flex-basis: 75px;
+      letter-spacing: 1px;
+    }
+    @include to('xs') {
+      flex-basis: 30px;
+    }
+  }
+
+  .order_summary_name {
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 1.1px;
+    @include to('xs') {
+      display: none;
+    }
+  }
+  &-footer {
+    height: 49px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    @include from('s') {
+      padding-left: 21px;
+      padding-right: 17px;
+    }
+    li.item {
+      border: 0;
+      color: #a0a0a0;
+      font-family: $RobotoCondensed;
+    }
+    .subtotal_charges {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      @include from('s') {
+        flex-basis: 300px;
+        letter-spacing: 1.4px;
+      }
+      @include to('xs') {
+        div {
+          font-size: 9px;
+          margin-right: 10px;
+        }
+      }
+      span {
+        text-align: right;
+        font-size: 17px;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-family: $RobotoCondensed;
+      }
+    }
+  }
 }

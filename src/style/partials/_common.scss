@@ -59,13 +59,15 @@ a, .as-link {
   @include color-block(#38ebff);
 }
 
+@include to('xs') {
+  .hidden-xs {
+    display: none;
+  }
+}
+
 // @todo deleted?
-/*
 .table {
   display: table;
-  &-tr {
-    display: table-row
-  }
   &-thead {
     display: table-header-group
   }
@@ -81,6 +83,9 @@ a, .as-link {
   &-colgroup {
     display: table-column-group
   }
+  &-tr {
+    display: table-row
+  }
   &-td, &-th {
     display: table-cell
   }
@@ -88,7 +93,6 @@ a, .as-link {
     display: table-caption
   }
 }
-*/
 
 .sale {
   a {
@@ -361,7 +365,18 @@ a, .as-link {
 
 .returns-exchanges {
   .content {
-    width: 820px;
+    max-width: 820px;
+  }
+  @include from('s') {
+    .wrap-fieldset fieldset {
+      flex-grow: 1;
+      &:first-of-type {
+        margin-right: 10px;
+      }
+      &:last-of-type {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
