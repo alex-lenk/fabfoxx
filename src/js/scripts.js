@@ -97,13 +97,12 @@ $(document).ready(function () {
 
     $('.start-shopping').on('click', function () {
         $('.first-screen').hide();
-        $('.wrapper').css(over);
     });
 
     const topiconMenu = $('.top-icon-menu');
     topiconMenu.on('click', function () {
         $('.top-panel').toggleClass("top-panel-open");
-        $('.nav-area').toggleClass("nav-area-open");
+        $('body').toggleClass("nav-area-open");
         topiconMenu.toggleClass("icon-left burger-menu");
     });
 

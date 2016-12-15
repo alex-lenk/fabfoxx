@@ -203,6 +203,7 @@
     .filter-group {
       float: left;
       margin-right: 40px;
+      position: relative;
     }
     .catalog {
       padding-top: 25px;
@@ -213,9 +214,11 @@
   }
 
   &-history {
-    margin: 36px 0;
+    padding: 15px 0;
+    margin: 35px 0;
     list-style: none;
     text-align: center;
+    background-color: #fff;
     &-line {
       ul {
         margin: 0;
@@ -253,7 +256,7 @@
         }
       }
       .head {
-        padding: 0 0 4px;
+        padding: 5px 0;
         letter-spacing: 2px;
         font-size: 10px;
         @include BebasNeueRegular;

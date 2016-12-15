@@ -1,6 +1,10 @@
 .guest-checkout {
-  padding: 1px 0 70px 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #fff;
+  @include from('m') {
+    padding: 1px 0 70px 15px;
+  }
   .background-black {
     background-color: #000;
   }

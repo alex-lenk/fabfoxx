@@ -271,7 +271,7 @@
   .top-panel__left-join {
     display: block;
     .burger-menu::after {
-      margin: 15px 12px 0 7px;
+      margin: 15px 12px 0 0;
     }
   }
   .logo, .favorite, .info-panel {
@@ -279,7 +279,7 @@
     opacity: 1;
   }
   .main-menu {
-    @include between('xs','m') {
+    @include between('xs', 'm') {
       width: 100%;
       background-color: #fff;
       z-index: 5;
@@ -312,6 +312,10 @@
   position: relative;
   z-index: 9;
   &-open {
+    .fixed-block-top {
+      height: 100%;
+      overflow: scroll;
+    }
     .main-menu {
       transform: none;
     }

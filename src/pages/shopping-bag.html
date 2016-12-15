@@ -6,9 +6,7 @@
 
 </head>
 <body class="page">
-
-
-<div class="wrapper" id="to-top">
+<div class="wrapper shopping-bag" id="to-top">
 
     <header class="top-panel">
         <div class="logo">
@@ -208,13 +206,14 @@
         </nav>
     </div>
 
+    <!-- include "templates/nav-second.html" -->
+
     <!-- Контентная часть -->
-    <div class="container-fluid shopping_bag_bg">
+    <div class="shopping-bag-container">
 
         <aside class="shopping_bag">
             <div class="title_aside">SHOPPING BAG</div>
 
-            <!-- Блок DELIVERY INFO -->
             <div class="delivery_info aside_box aside_box_shadow">
                 <div class="delivery_info_title">Delivery info</div>
                 <div class="aside_box_wrap">
@@ -247,7 +246,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Конец блока DELIVERY INFO -->
 
             <div class="select_shipping">
                 <ul>
@@ -262,7 +260,6 @@
                 </ul>
             </div>
 
-            <!-- Блок return -->
             <div class="return_box aside_box aside_box_shadow">
                 <div class="aside_box_title">Return</div>
                 <div class="aside_box_wrap">
@@ -273,7 +270,6 @@
                 </div>
                 <a href="#" class="button button-read_more">reed more</a>
             </div>
-            <!-- Конец return -->
 
             <div class="aside_bag aside_box">
                 <a href="#" class="icon-bag"></a>
@@ -286,14 +282,14 @@
             <div class="main_head">
                 <div class="amount_item">3 item</div>
                 <div class="main_head_info">Stock reserved for 60 minutes only</div>
-                <a href="#" class="confirm_pay">Confirm and pay</a>
+                <a href="#" class="button button-black confirm_pay">Confirm and pay</a>
             </div>
 
             <div class="shopping_bag_item">
-                <div class="item_topline">BACK FOR MORE MIDI DRESS - MARSALA
-                    <span class="icon-close"></span>
-                </div>
+                <div class="item_topline">BACK FOR MORE MIDI DRESS - MARSALA <span class="icon-close"></span></div>
+
                 <div class="item_photo"><img src="img/example/shopping_bag_photo.jpg" alt=""></div>
+
                 <div class="item_param_box">
                     <div class="item_param_row">
                         <div class="color"></div>
@@ -317,7 +313,8 @@
                     <div class="price">$ 250</div>
                 </div>
             </div>
-            <div class="shopping_bag_item">
+
+           <div class="shopping_bag_item">
                 <div class="item_topline">BACK FOR MORE MIDI DRESS - MARSALA
                     <span class="icon-close"></span>
                 </div>
@@ -411,18 +408,13 @@
                     <div class="total_cost">TOTAL COST: $ 00.00</div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
-    <!-- Конец контентной части -->
 
 
     <!-- include "templates/footer.html" -->
 
 </div>
-
 
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>

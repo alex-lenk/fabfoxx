@@ -2,10 +2,17 @@ $blue: #BFE4FF;
 $red: #FF0000;
 $black: #000;
 
-.shopping_bag_bg {
+.shopping-bag {
+  height: auto;
+  min-height: 100%;
   background: #F9F9F9;
-  display: flex;
-  flex-direction: row;
+  &-container {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .aside_box_title {
@@ -72,7 +79,7 @@ $black: #000;
 }
 
 .aside_box {
-  max-width: 238px;
+  max-width: 245px;
   width: 100%;
   background: #FFF;
 }
@@ -223,33 +230,27 @@ $black: #000;
   box-sizing: border-box;
   .main_head {
     height: 58px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
     .amount_item {
       font-size: 20px;
       color: #090909;
-      line-height: 58px;
-      float: left;
     }
     .main_head_info {
       font-size: 14px;
       color: #afafaf;
       letter-spacing: 1.4px;
-      float: left;
-      line-height: 58px;
       margin-left: 25px;
+      flex-grow: 1;
     }
     .confirm_pay {
       max-width: 183px;
       width: 100%;
       height: 38px;
-      line-height: 38px;
-      text-align: center;
-      display: block;
-      color: #fff;
-      float: right;
-      font-size: 18px;
+      line-height: 42px;
       letter-spacing: 1.8px;
-      margin-top: 10px;
-      background: #000;
+      font-size: 18px;
     }
   }
   .shopping_bag_item {
