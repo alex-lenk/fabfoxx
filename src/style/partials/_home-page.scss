@@ -48,6 +48,10 @@
     }
     @include from('m') {
       height: 100%;
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%
     }
   }
   &-image {
@@ -201,6 +205,7 @@
         width: 513px;
         .img-cat {
           height: calc(100% - 126px);
+          position: relative;
         }
       }
       figcaption {

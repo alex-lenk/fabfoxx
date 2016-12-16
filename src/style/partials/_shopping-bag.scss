@@ -17,7 +17,7 @@ $black: #000;
 
 .aside_box_title {
   height: 33px;
-  line-height: 33px;
+  line-height: 36px;
   width: 100%;
   background: #000;
   color: #fff;
@@ -207,10 +207,8 @@ $black: #000;
     font-family: $RobotoCondensed;
   }
   .button-read_more {
-    color: #fff;
     display: inline-block;
     margin-top: 23px;
-    @include BebasNeueRegular;
   }
 }
 
@@ -425,10 +423,10 @@ $black: #000;
       }
     }
     .d_v_row {
+      padding-right: 20px;
       height: 80px;
       background: #fff;
       margin-bottom: 2px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -468,7 +466,6 @@ $black: #000;
         }
       }
       .select_d_v {
-        //margin-right: 22px;
         float: right;
         span {
           display: inline-block;
@@ -506,50 +503,40 @@ $black: #000;
       }
     }
   }
-  .total_cost_wrap {
-    padding-top: 22px;
-    padding-bottom: 60px;
-    .total_cost_row {
-      text-align: right;
-      color: #b1b1b1;
-      font-size: 16px;
-      letter-spacing: 1.92px;
-      span {
-        min-width: 88px;
-        padding-left: 18px;
-        text-align: left;
-        display: inline-block;
-        font-size: 19px;
-        color: #000;
-        @include MinionProRegular;
-        letter-spacing: normal;
-      }
-      .disc {
-        color: #f00;
-      }
-    }
-    .total_cost_pay {
-      margin-top: 25px;
-      overflow: hidden;
-      a {
-        max-width: 250px;
-        width: 100%;
-        background: #000;
-        height: 52px;
-        line-height: 52px;
-        color: #fff;
-        text-align: center;
-        font-size: 22px;
-        letter-spacing: 2.2px;
-        display: block;
-        float: right;
-      }
-      .total_cost {
-        margin-right: 27px;
-        float: right;
-        font-size: 35px;
-        line-height: 52px;
-      }
-    }
+}
+
+.total-cost-block {
+  padding-top: 22px;
+  padding-bottom: 60px;
+  .row-block {
+    text-align: right;
+    color: #b1b1b1;
+    font-size: 16px;
+    letter-spacing: 1.92px;
+  }
+  .sum {
+    min-width: 88px;
+    padding-left: 18px;
+    text-align: left;
+    display: inline-block;
+    font-size: 19px;
+    color: #000;
+    @include MinionProRegular;
+    letter-spacing: normal;
+  }
+  .red {
+    color: #f00;
+  }
+  .pay-block {
+    margin-top: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .total {
+    margin-right: 27px;
+    font-size: 35px;
+    line-height: 52px;
   }
 }
